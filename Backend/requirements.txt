@@ -1,0 +1,17 @@
+Django
+djangorestframework
+django-cors-headers
+
+python-dotenv
+
+psycopg2-binary
+Pillow
+
+openai
+
+pytesseract
+opencv-python
+
+requests
+
+pydantic
