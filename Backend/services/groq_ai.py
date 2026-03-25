@@ -1,0 +1,185 @@
+from __future__ import annotations
+
+import json
+from typing import Any
+from urllib import error, request
+
+from flask import current_app
+
+try:
+    from groq import Groq
+except ImportError:  # pragma: no cover
+    Groq = None
+
+
+ALLOWED_BANK_INCOME_LABELS = {
+    "salary",
+    "interest",
+    "rent",
+    "professional_receipts",
+    "sales",
+    "dividend",
+    "capital_gains",
+    "tax_refund",
+    "transfer",
+    "other_income",
+    "unknown",
+}
+
+
+def groq_status() -> dict[str, Any]:
+    api_key = str(current_app.config.get("GROQ_API_KEY", "")).strip()
+    enabled = bool(current_app.config.get("GROQ_ENABLED"))
+    return {
+        "enabled": enabled,
+        "has_api_key": bool(api_key),
+        "sdk_installed": Groq is not None,
+        "transport": "sdk" if Groq is not None else "http",
+        "model": current_app.config.get("GROQ_MODEL"),
+    }
+
+
+def groq_available() -> bool:
+    status = groq_status()
+    return bool(status["enabled"] and status["has_api_key"])
+
+
+def _extract_json_object(raw_text: str) -> dict[str, Any]:
+    text = raw_text.strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].startswith("```"):
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
+
+    start = text.find("{")
+    end = text.rfind("}")
+    if start == -1 or end == -1 or end < start:
+        raise ValueError("LLM response did not contain a JSON object.")
+    return json.loads(text[start : end + 1])
+
+
+def _sdk_completion(messages: list[dict[str, str]]) -> str:
+    client = Groq(api_key=current_app.config["GROQ_API_KEY"])
+    completion = client.chat.completions.create(
+        model=current_app.config["GROQ_MODEL"],
+        messages=messages,
+        temperature=0,
+        max_completion_tokens=current_app.config["GROQ_MAX_COMPLETION_TOKENS"],
+        top_p=1,
+        reasoning_effort=current_app.config["GROQ_REASONING_EFFORT"],
+        stream=False,
+        stop=None,
+    )
+    return completion.choices[0].message.content or "{}"
+
+
+def _http_completion(messages: list[dict[str, str]]) -> str:
+    payload = {
+        "model": current_app.config["GROQ_MODEL"],
+        "messages": messages,
+        "temperature": 0,
+        "max_completion_tokens": current_app.config["GROQ_MAX_COMPLETION_TOKENS"],
+        "top_p": 1,
+        "reasoning_effort": current_app.config["GROQ_REASONING_EFFORT"],
+        "stream": False,
+    }
+    body = json.dumps(payload).encode("utf-8")
+    req = request.Request(
+        current_app.config["GROQ_API_BASE_URL"],
+        data=body,
+        headers={
+            "Authorization": f"Bearer {current_app.config['GROQ_API_KEY']}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    with request.urlopen(req, timeout=30) as response:
+        raw = response.read().decode("utf-8")
+    parsed = json.loads(raw)
+    return parsed.get("choices", [{}])[0].get("message", {}).get("content", "{}")
+
+
+def _request_completion(messages: list[dict[str, str]]) -> tuple[str | None, dict[str, Any]]:
+    try:
+        if Groq is not None:
+            return _sdk_completion(messages), {"transport": "sdk"}
+        return _http_completion(messages), {"transport": "http"}
+    except error.HTTPError as exc:  # pragma: no cover
+        detail = exc.read().decode("utf-8", errors="ignore")
+        return None, {"transport": "http", "error": f"http_{exc.code}", "detail": detail[:240]}
+    except Exception as exc:  # pragma: no cover
+        return None, {"transport": "sdk" if Groq is not None else "http", "error": type(exc).__name__, "detail": str(exc)[:240]}
+
+
+def classify_bank_income_rows(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if not groq_available() or not rows:
+        return None
+
+    prompt_rows = [
+        {
+            "row_id": row["row_id"],
+            "date": row.get("date"),
+            "description": str(row.get("description", ""))[:120],
+            "amount": row.get("amount", 0.0),
+        }
+        for row in rows[: current_app.config["GROQ_BANK_ROWS_PER_CALL"]]
+    ]
+    messages = [
+        {
+            "role": "system",
+            "content": "You are a precise Indian tax transaction classification engine. Respond with valid JSON only.",
+        },
+        {
+            "role": "user",
+            "content": (
+                "Classify bank-statement income rows for Indian income-tax preparation.\n"
+                "Return strict JSON: "
+                '{"classifications":[{"row_id":"...","label":"salary|interest|rent|professional_receipts|sales|dividend|capital_gains|tax_refund|transfer|other_income|unknown","confidence":0.0,"reason":"short"}]}\n'
+                "Use transfer for self-transfer/internal movement, unknown if unclear, and keep reason under 12 words.\n"
+                f"Rows: {json.dumps(prompt_rows, separators=(',', ':'))}"
+            ),
+        },
+    ]
+
+    content, meta = _request_completion(messages)
+    if not content:
+        return {
+            "classifications": [],
+            "model": current_app.config["GROQ_MODEL"],
+            "rows_sent": len(prompt_rows),
+            "meta": {**groq_status(), **meta, "success": False},
+        }
+
+    try:
+        payload = _extract_json_object(content)
+    except Exception as exc:  # pragma: no cover
+        return {
+            "classifications": [],
+            "model": current_app.config["GROQ_MODEL"],
+            "rows_sent": len(prompt_rows),
+            "meta": {**groq_status(), **meta, "success": False, "error": type(exc).__name__, "detail": str(exc)[:240]},
+        }
+
+    valid_classifications: list[dict[str, Any]] = []
+    for item in payload.get("classifications", []):
+        label = str(item.get("label", "unknown")).strip()
+        if label not in ALLOWED_BANK_INCOME_LABELS:
+            label = "unknown"
+        valid_classifications.append(
+            {
+                "row_id": str(item.get("row_id", "")),
+                "label": label,
+                "confidence": round(float(item.get("confidence", 0.0) or 0.0), 3),
+                "reason": str(item.get("reason", "")).strip()[:80],
+            }
+        )
+
+    return {
+        "classifications": valid_classifications,
+        "model": current_app.config["GROQ_MODEL"],
+        "rows_sent": len(prompt_rows),
+        "meta": {**groq_status(), **meta, "success": True},
+    }

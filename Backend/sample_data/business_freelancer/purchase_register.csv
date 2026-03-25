@@ -1,0 +1,4 @@
+date,description,amount,gst_rate,amount_inclusive_gst,eligible_itc,category,vendor_state,business_state
+2024-04-15,Internet bill,1800,18,true,true,utilities,KA,KA
+2024-04-18,Design software subscription,2500,18,true,true,software,KA,KA
+2024-04-25,Office supplies,2200,12,true,true,office_expense,KA,KA

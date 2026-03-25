@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from auth import auth_bp
 from config import Config
 from extensions import db, jwt
+from tax_api import tax_bp
 
 
 load_dotenv()
@@ -19,6 +20,7 @@ def create_app() -> Flask:
     jwt.init_app(app)
 
     app.register_blueprint(auth_bp)
+    app.register_blueprint(tax_bp)
 
     @app.get("/health")
     def health():

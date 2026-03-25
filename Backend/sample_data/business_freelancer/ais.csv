@@ -1,0 +1,4 @@
+income_type,amount,tds,tcs,description
+interest,9000,900,0,Savings account interest
+dividend,2500,0,0,Dividend from stocks
+professional_fees,180000,18000,0,Freelance receipts reflected in AIS

@@ -1,5 +1,7 @@
 Flask
 Flask-JWT-Extended
 Flask-SQLAlchemy
+groq
+Pillow
 pandas
 python-dotenv

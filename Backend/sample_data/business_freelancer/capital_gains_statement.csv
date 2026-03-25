@@ -1,0 +1,3 @@
+asset_name,sale_value,cost_of_acquisition,net_gain,holding_period,asset_type
+Infosys Shares,65000,40000,25000,long_term,equity
+Nifty ETF,30000,24000,6000,short_term,etf

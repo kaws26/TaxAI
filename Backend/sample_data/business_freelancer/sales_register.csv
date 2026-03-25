@@ -1,0 +1,4 @@
+date,description,amount,gst_rate,amount_inclusive_gst,category,vendor_state,business_state
+2024-04-08,Client A invoice,45000,18,true,sales,KA,KA
+2024-04-10,Client B consulting invoice,35000,18,true,sales,MH,KA
+2024-04-22,Client C retainership invoice,55000,18,true,sales,DL,KA
