@@ -1,15 +1,18 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from flask import Flask, jsonify
 from dotenv import load_dotenv
 
 from auth import auth_bp
-from config import Config
 from extensions import db, jwt
 from tax_api import tax_bp
 
 
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).with_name(".env"))
+
+from config import Config
 
 
 def create_app() -> Flask:

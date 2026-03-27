@@ -11,6 +11,7 @@ from extensions import db
 from models import TaxFilingJob
 from services.pdf_export import save_itr_pdf
 from services.groq_ai import groq_status
+from services.image_ocr import IMAGE_EXTENSIONS, OcrConversionError, convert_image_to_csv_document
 from services.portal_adapter import portal_adapter_capabilities
 from services.tax_assistant import analyze_tax_documents, answer_tax_question
 from services.tax_constants import DEFAULT_FINANCIAL_YEAR, SUPPORTED_DOCUMENTS
@@ -56,26 +57,56 @@ def _get_job_or_404(job_id: str) -> TaxFilingJob | None:
     return job
 
 
+def _convert_uploaded_file(document_type: str, file_storage: Any) -> dict[str, str]:
+    filename = str(file_storage.filename or "uploaded").strip()
+    if not filename:
+        raise ValueError("Uploaded file must have a filename.")
+
+    lower_name = filename.lower()
+    content = file_storage.read()
+
+    if lower_name.endswith(".csv"):
+        try:
+            csv_content = content.decode("utf-8-sig")
+        except UnicodeDecodeError as exc:
+            raise ValueError(f"{filename} is not UTF-8 encoded CSV.") from exc
+        return {
+            "document_type": document_type,
+            "source_name": filename,
+            "csv_content": csv_content,
+        }
+
+    if any(lower_name.endswith(ext) for ext in IMAGE_EXTENSIONS):
+        try:
+            return convert_image_to_csv_document(
+                document_type=document_type,
+                source_name=filename,
+                image_bytes=content,
+            )
+        except OcrConversionError as exc:
+            raise ValueError(f"{filename}: {exc}") from exc
+
+    allowed_images = ", ".join(sorted(IMAGE_EXTENSIONS))
+    raise ValueError(
+        f"{filename} is not supported. Upload CSV or image files ({allowed_images})."
+    )
+
+
 def _parse_documents_from_request() -> tuple[list[dict[str, str]], str | None]:
     if request.files:
         uploaded_files = request.files.getlist("files")
         document_types = request.form.getlist("document_types")
         if not uploaded_files:
-            return [], "At least one CSV file must be uploaded under the files field."
+            return [], "At least one CSV or image file must be uploaded under the files field."
         if len(document_types) != len(uploaded_files):
             return [], "document_types count must match files count."
 
         documents: list[dict[str, str]] = []
         for document_type, file_storage in zip(document_types, uploaded_files):
-            if not file_storage.filename.lower().endswith(".csv"):
-                return [], f"{file_storage.filename} is not a CSV file."
-            documents.append(
-                {
-                    "document_type": document_type,
-                    "source_name": file_storage.filename,
-                    "csv_content": file_storage.read().decode("utf-8"),
-                }
-            )
+            try:
+                documents.append(_convert_uploaded_file(document_type, file_storage))
+            except ValueError as exc:
+                return [], str(exc)
         return documents, None
 
     payload: dict[str, Any] = request.get_json(silent=True) or {}
@@ -126,21 +157,16 @@ def analyze_files():
     if not profile_type:
         return _error("profile_type is required.", 400)
     if not uploaded_files:
-        return _error("At least one CSV file must be uploaded under the files field.", 400)
+        return _error("At least one CSV or image file must be uploaded under the files field.", 400)
     if len(document_types) != len(uploaded_files):
         return _error("document_types count must match files count.", 400)
 
     documents: list[dict[str, str]] = []
     for document_type, file_storage in zip(document_types, uploaded_files):
-        if not file_storage.filename.lower().endswith(".csv"):
-            return _error(f"{file_storage.filename} is not a CSV file.", 400)
-        documents.append(
-            {
-                "document_type": document_type,
-                "source_name": file_storage.filename,
-                "csv_content": file_storage.read().decode("utf-8"),
-            }
-        )
+        try:
+            documents.append(_convert_uploaded_file(document_type, file_storage))
+        except ValueError as exc:
+            return _error(str(exc), 400)
 
     tax_profile: dict[str, Any] = {}
     raw_tax_profile = request.form.get("tax_profile")

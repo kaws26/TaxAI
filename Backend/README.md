@@ -14,7 +14,7 @@ This backend now supports a job-based tax filing flow in addition to the legacy 
 - `POST /api/tax-assistant/jobs/{job_id}/approve`
 - `GET /api/tax-assistant/jobs/{job_id}/export/itr-pdf`
 
-### Supported CSV document types
+### Supported document types
 
 - `bank_statement`
 - `ais`
@@ -25,6 +25,9 @@ This backend now supports a job-based tax filing flow in addition to the legacy 
 - `interest_certificate`
 - `rent_summary`
 - `deduction_proof`
+
+The upload endpoints accept either CSV files or image files (`.png`, `.jpg`, `.jpeg`, `.webp`, `.tif`, `.tiff`, `.bmp`).
+Image uploads are processed through OCR and converted into CSV automatically before tax parsing.
 
 ### Processing pipeline
 
@@ -47,3 +50,24 @@ Groq is now integrated as an optional low-cost classification layer.
 - Low reasoning effort by default
 - Temperature `0` behavior in code for stable classifications
 - Limited completion budget through `GROQ_MAX_COMPLETION_TOKENS`
+
+## OCR image upload flow
+
+When an image is uploaded for a supported document type:
+
+1. OCR extracts raw text using Tesseract.
+2. Groq converts OCR text into document-type-aware CSV schema.
+3. The generated CSV is validated by the existing parser.
+4. On success, the same downstream tax pipeline runs unchanged.
+
+### OCR prerequisites
+
+- Python package: `pytesseract`
+- Tesseract OCR engine installed on machine
+- Optional env var: `TESSERACT_CMD` (set when Tesseract is not on PATH)
+- Groq key enabled for OCR text-to-CSV conversion
+
+### OCR-related env vars
+
+- `TESSERACT_CMD` (optional)
+- `GROQ_OCR_MAX_INPUT_CHARS` (default `12000`)
