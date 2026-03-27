@@ -183,3 +183,78 @@ def classify_bank_income_rows(rows: list[dict[str, Any]]) -> dict[str, Any] | No
         "rows_sent": len(prompt_rows),
         "meta": {**groq_status(), **meta, "success": True},
     }
+
+
+def extract_csv_from_ocr_text(
+    *,
+    document_type: str,
+    required_any_of: list[list[str]],
+    optional: list[str],
+    ocr_text: str,
+) -> dict[str, Any] | None:
+    if not groq_available() or not ocr_text.strip():
+        return None
+
+    max_chars = int(current_app.config.get("GROQ_OCR_MAX_INPUT_CHARS", 12000))
+    trimmed_text = ocr_text.strip()[:max_chars]
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You convert OCR-extracted Indian financial document text into strict CSV. "
+                "Return valid JSON only with keys csv_content, detected_columns, confidence, notes."
+            ),
+        },
+        {
+            "role": "user",
+            "content": (
+                "Convert this OCR text into one CSV that best matches the requested document type.\n"
+                f"Document type: {document_type}\n"
+                f"Required-any-of groups: {json.dumps(required_any_of)}\n"
+                f"Optional columns: {json.dumps(optional)}\n"
+                "Rules:\n"
+                "1) First row must be CSV headers.\n"
+                "2) Use snake_case headers.\n"
+                "3) Use only columns relevant to the document.\n"
+                "4) Include numeric values without currency symbols.\n"
+                "5) If uncertain, keep conservative rows only.\n"
+                "6) Return JSON only in this format:\n"
+                '{"csv_content":"header1,header2\\nvalue1,value2","detected_columns":["header1","header2"],"confidence":0.0,"notes":"short"}\n\n'
+                f"OCR text:\n{trimmed_text}"
+            ),
+        },
+    ]
+
+    content, meta = _request_completion(messages)
+    if not content:
+        return {
+            "csv_content": "",
+            "detected_columns": [],
+            "confidence": 0.0,
+            "notes": "",
+            "meta": {**groq_status(), **meta, "success": False},
+        }
+
+    try:
+        payload = _extract_json_object(content)
+    except Exception as exc:  # pragma: no cover
+        return {
+            "csv_content": "",
+            "detected_columns": [],
+            "confidence": 0.0,
+            "notes": "",
+            "meta": {**groq_status(), **meta, "success": False, "error": type(exc).__name__, "detail": str(exc)[:240]},
+        }
+
+    csv_content = str(payload.get("csv_content", "")).strip()
+    detected_columns = payload.get("detected_columns", [])
+    if not isinstance(detected_columns, list):
+        detected_columns = []
+
+    return {
+        "csv_content": csv_content,
+        "detected_columns": [str(column).strip() for column in detected_columns if str(column).strip()],
+        "confidence": round(float(payload.get("confidence", 0.0) or 0.0), 3),
+        "notes": str(payload.get("notes", "")).strip()[:180],
+        "meta": {**groq_status(), **meta, "success": True},
+    }
