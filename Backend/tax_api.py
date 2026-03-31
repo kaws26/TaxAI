@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+from collections import defaultdict
 from typing import Any
 
 from fastapi import APIRouter, Depends, Request, UploadFile
@@ -51,6 +52,205 @@ def _get_job_or_404(job_id: str, current_user_id: int) -> TaxFilingJob | None:
     if job is None:
         return None
     return job
+
+
+def _safe_amount(value: Any) -> float:
+    try:
+        return round(float(value or 0.0), 2)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _build_monthly_overview(result: dict[str, Any]) -> list[dict[str, Any]]:
+    ledger_preview = result.get("business_result", {}).get("ledger_preview", [])
+    monthly_rollup: dict[str, dict[str, float]] = defaultdict(lambda: {"income": 0.0, "expense": 0.0})
+
+    for entry in ledger_preview:
+        if not isinstance(entry, dict):
+            continue
+        date_text = str(entry.get("date", "")).strip()
+        if len(date_text) < 7:
+            continue
+        month_key = date_text[:7]
+        amount = _safe_amount(entry.get("amount"))
+        debit_account = str(entry.get("debit_account", "")).strip().lower()
+        credit_account = str(entry.get("credit_account", "")).strip().lower()
+        if debit_account == "cash/bank":
+            monthly_rollup[month_key]["income"] += amount
+        elif credit_account == "cash/bank":
+            monthly_rollup[month_key]["expense"] += amount
+
+    return [
+        {
+            "month": month,
+            "income": round(values["income"], 2),
+            "expense": round(values["expense"], 2),
+        }
+        for month, values in sorted(monthly_rollup.items())
+    ]
+
+
+def _build_expense_split(result: dict[str, Any]) -> list[dict[str, Any]]:
+    ledger_preview = result.get("business_result", {}).get("ledger_preview", [])
+    totals: dict[str, float] = defaultdict(float)
+
+    for entry in ledger_preview:
+        if not isinstance(entry, dict):
+            continue
+        if str(entry.get("credit_account", "")).strip().lower() != "cash/bank":
+            continue
+        category = str(entry.get("category", "")).strip().replace("_", " ").title() or "Other"
+        totals[category] += _safe_amount(entry.get("amount"))
+
+    grand_total = round(sum(totals.values()), 2)
+    if grand_total <= 0:
+        return []
+
+    return [
+        {
+            "category": category,
+            "amount": round(amount, 2),
+            "percentage": round((amount / grand_total) * 100, 2),
+        }
+        for category, amount in sorted(totals.items(), key=lambda item: item[1], reverse=True)
+    ]
+
+
+def _build_income_split(result: dict[str, Any]) -> list[dict[str, Any]]:
+    income_breakdown = result.get("tax_result", {}).get("income_breakdown", {})
+    series: list[dict[str, Any]] = []
+
+    for key, value in income_breakdown.items():
+        if key == "special_rate_income":
+            if isinstance(value, dict):
+                for special_key, special_value in value.items():
+                    amount = _safe_amount(special_value)
+                    if amount > 0:
+                        series.append(
+                            {
+                                "category": str(special_key).replace("_", " ").title(),
+                                "amount": amount,
+                            }
+                        )
+            continue
+
+        amount = _safe_amount(value)
+        if amount > 0:
+            series.append(
+                {
+                    "category": str(key).replace("_", " ").title(),
+                    "amount": amount,
+                }
+            )
+
+    total_income = round(sum(item["amount"] for item in series), 2)
+    if total_income <= 0:
+        return []
+
+    return [
+        {
+            **item,
+            "percentage": round((item["amount"] / total_income) * 100, 2),
+        }
+        for item in sorted(series, key=lambda entry: entry["amount"], reverse=True)
+    ]
+
+
+def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
+    result = dict(job.processing_result or {})
+    tax_result = result.get("tax_result", {})
+    tax_computation = tax_result.get("tax_computation", {})
+    net_result = tax_result.get("net_result", {})
+    regime_recommendation = tax_result.get("regime_recommendation", {})
+    profit_and_loss = result.get("business_result", {}).get("profit_and_loss", {})
+
+    estimated_savings = abs(
+        _safe_amount(regime_recommendation.get("old_regime_tax"))
+        - _safe_amount(regime_recommendation.get("new_regime_tax"))
+    )
+
+    optimization_recommendations = result.get("optimization_recommendations", [])
+    insights = result.get("business_result", {}).get("insights", [])
+    income_split = _build_income_split(result)
+    expense_split = _build_expense_split(result)
+    monthly_overview = _build_monthly_overview(result)
+    total_income = _safe_amount(tax_result.get("gross_total_income"))
+    total_expenses = _safe_amount(profit_and_loss.get("expenses"))
+
+    return {
+        "status": "success",
+        "job": {
+            "job_id": job.job_id,
+            "financial_year": job.financial_year,
+            "status": job.status,
+            "updated_at": job.updated_at.isoformat() if job.updated_at else None,
+        },
+        "summary": {
+            "total_income": total_income,
+            "total_expenses": total_expenses,
+            "total_credits": total_income,
+            "total_debits": total_expenses,
+            "net_cashflow": round(total_income - total_expenses, 2),
+            "gross_total_income": total_income,
+            "total_deductions": _safe_amount(tax_result.get("deductions", {}).get("total_deductions")),
+            "taxable_income": _safe_amount(tax_result.get("taxable_income")),
+            "total_tax_liability": _safe_amount(tax_computation.get("total_tax_liability")),
+            "refund_due": _safe_amount(net_result.get("refund_due")),
+            "balance_tax_payable": _safe_amount(net_result.get("balance_tax_payable")),
+            "estimated_savings": round(estimated_savings, 2),
+            "regime": tax_result.get("regime"),
+            "suggested_itr_form": tax_result.get("filing_position", {}).get("suggested_itr_form"),
+        },
+        "charts": {
+            "income_split": income_split,
+            "expense_split": expense_split,
+            "monthly_cashflow": monthly_overview,
+        },
+        "insights": [
+            str(item.get("message", "")).strip()
+            for item in [*optimization_recommendations, *insights]
+            if isinstance(item, dict) and str(item.get("message", "")).strip()
+        ],
+        "highlights": {
+            "assistant_summary": str(tax_result.get("assistant_summary", "")).strip(),
+            "compliance_flags": tax_result.get("compliance_flags", []),
+            "missing_data_count": len(result.get("missing_data_checklist", [])),
+        },
+    }
+
+
+def _empty_dashboard_payload() -> dict[str, Any]:
+    return {
+        "status": "success",
+        "job": None,
+        "summary": {
+            "total_income": 0.0,
+            "total_expenses": 0.0,
+            "total_credits": 0.0,
+            "total_debits": 0.0,
+            "net_cashflow": 0.0,
+            "gross_total_income": 0.0,
+            "total_deductions": 0.0,
+            "taxable_income": 0.0,
+            "total_tax_liability": 0.0,
+            "refund_due": 0.0,
+            "balance_tax_payable": 0.0,
+            "estimated_savings": 0.0,
+            "regime": None,
+            "suggested_itr_form": None,
+        },
+        "charts": {
+            "income_split": [],
+            "expense_split": [],
+            "monthly_cashflow": [],
+        },
+        "insights": [],
+        "highlights": {
+            "assistant_summary": "",
+            "compliance_flags": [],
+            "missing_data_count": 0,
+        },
+    }
 
 
 async def _convert_uploaded_file(document_type: str, file_storage: UploadFile) -> dict[str, str]:
@@ -246,6 +446,20 @@ def list_jobs(current_user_id: int = Depends(get_current_user_id)):
             for job in jobs
         ]
     }
+
+
+@tax_bp.get("/dashboard/financial-data")
+def dashboard_financial_data(current_user_id: int = Depends(get_current_user_id)):
+    jobs = (
+        TaxFilingJob.query.filter_by(user_id=current_user_id)
+        .order_by(TaxFilingJob.updated_at.desc(), TaxFilingJob.id.desc())
+        .all()
+    )
+    processed_jobs = [job for job in jobs if isinstance(job.processing_result, dict) and job.processing_result]
+    if not processed_jobs:
+        return _empty_dashboard_payload()
+
+    return _build_dashboard_payload(processed_jobs[0])
 
 
 @tax_bp.post("/jobs/{job_id}/documents")
