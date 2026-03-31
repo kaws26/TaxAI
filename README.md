@@ -21,7 +21,7 @@ Managing taxes in India can be complicated due to:
 ## Project Demo
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/be21c4f0-dbc0-4065-83a3-f4320886f8b9" width="700"/>
+  <img src="https://github.com/user-attachments/assets/be21c4f0-dbc0-4065-83a3-f4320886f8b9" alt="Screenshot of the TaxAI India tax and financial compliance copilot demo interface" width="700"/>
 </p>
 
 **TaxAI** acts as a **digital Chartered Accountant assistant**, automating many of the workflows typically handled by CA firms.
