@@ -13,7 +13,7 @@ from models import TaxFilingJob
 from runtime import get_runtime_config
 from security import get_current_user_id
 from services.groq_ai import groq_status
-from services.image_ocr import IMAGE_EXTENSIONS, OcrConversionError, convert_image_to_csv_document
+from services.image_ocr import IMAGE_EXTENSIONS, OcrConversionError, convert_image_to_csv_document,ocr_status
 from services.pdf_export import save_itr_pdf
 from services.portal_adapter import portal_adapter_capabilities
 from services.tax_assistant import analyze_tax_documents, answer_tax_question
@@ -44,6 +44,7 @@ def options():
         "job_statuses": sorted(JOB_STATUSES),
         "portal_adapter": portal_adapter_capabilities(),
         "ai_provider": groq_status(),
+        "ocr_provider": ocr_status(),
     }
 
 
