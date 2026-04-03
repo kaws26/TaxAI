@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import os
 from io import BytesIO
 from typing import Any
@@ -76,7 +75,7 @@ def convert_image_to_csv_document(
     document_type: str,
     source_name: str,
     image_bytes: bytes,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     if document_type not in SUPPORTED_DOCUMENTS:
         raise OcrConversionError(f"Unsupported document type: {document_type}")
     if not _is_image_filename(source_name):
@@ -119,12 +118,14 @@ def convert_image_to_csv_document(
         "document_type": document_type,
         "source_name": csv_source_name,
         "csv_content": csv_content,
-        "conversion_meta": json.dumps(
-            {
+        "storage_kind": "ocr_image_upload",
+        "metadata": {
+            "source": "OCR",
+            "conversion_meta": {
                 "origin": "image_ocr",
                 "original_source": source_name,
                 "ocr_chars": len(ocr_text),
                 "llm_meta": llm_result.get("meta", {}),
-            }
-        ),
+            },
+        },
     }

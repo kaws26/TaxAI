@@ -25,6 +25,7 @@ from services.tax_jobs import (
     create_filing_job,
     process_filing_job,
 )
+from services.transactions import summarize_transactions_for_job
 
 
 tax_bp = APIRouter(prefix="/api/tax-assistant")
@@ -177,6 +178,7 @@ def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
     monthly_overview = _build_monthly_overview(result)
     total_income = _safe_amount(tax_result.get("gross_total_income"))
     total_expenses = _safe_amount(profit_and_loss.get("expenses"))
+    transaction_summary = summarize_transactions_for_job(job.id)
 
     return {
         "status": "success",
@@ -223,7 +225,9 @@ def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
             "missing_data_checklist": result.get("missing_data_checklist", []),
             "regime_recommendation": regime_recommendation,
             "deductions": tax_result.get("deductions", {}),
+            "net_gst_payable": _safe_amount((result.get("business_result", {}).get("gst_summary") or {}).get("net_gst_payable")),
         },
+        "transactions": transaction_summary,
     }
 
 
@@ -264,6 +268,12 @@ def _empty_dashboard_payload() -> dict[str, Any]:
             "missing_data_checklist": [],
             "regime_recommendation": {},
             "deductions": {},
+            "net_gst_payable": 0.0,
+        },
+        "transactions": {
+            "total_transactions": 0,
+            "categories": [],
+            "recent_transactions": [],
         },
     }
 
@@ -285,6 +295,8 @@ async def _convert_uploaded_file(document_type: str, file_storage: UploadFile) -
             "document_type": document_type,
             "source_name": filename,
             "csv_content": csv_content,
+            "storage_kind": "csv_upload",
+            "metadata": {"source": "CSV"},
         }
 
     if any(lower_name.endswith(ext) for ext in IMAGE_EXTENSIONS):
@@ -470,6 +482,29 @@ def dashboard_financial_data(current_user_id: int = Depends(get_current_user_id)
         return _empty_dashboard_payload()
 
     return _build_dashboard_payload(processed_jobs[0])
+
+
+@tax_bp.get("/transactions")
+def list_transactions(current_user_id: int = Depends(get_current_user_id), job_id: str | None = None):
+    jobs_query = TaxFilingJob.query.filter_by(user_id=current_user_id)
+    if job_id:
+        job = jobs_query.filter_by(job_id=job_id).first()
+        if job is None:
+            return _error("Job not found.", 404)
+        transactions = [transaction.to_dict() for transaction in job.transactions]
+        return {"transactions": transactions, "count": len(transactions), "job_id": job.job_id}
+
+    jobs = jobs_query.order_by(TaxFilingJob.updated_at.desc(), TaxFilingJob.id.desc()).all()
+    transactions = [
+        transaction.to_dict()
+        for job in jobs
+        for transaction in sorted(
+            job.transactions,
+            key=lambda entry: (str(entry.transaction_date), int(entry.id)),
+            reverse=True,
+        )
+    ]
+    return {"transactions": transactions, "count": len(transactions), "job_id": None}
 
 
 @tax_bp.post("/jobs/{job_id}/documents")

@@ -18,6 +18,7 @@ from services.tax_assistant import _build_missing_data_checklist
 from services.tax_constants import DEFAULT_FINANCIAL_YEAR, SUPPORTED_DOCUMENTS
 from services.tax_engine import build_business_working
 from services.tax_rules import compute_tax_by_financial_year
+from services.transactions import sync_transactions_for_upload
 
 JOB_STATUSES = {
     "uploaded",
@@ -62,14 +63,23 @@ def attach_documents_to_job(job: TaxFilingJob, documents: list[dict[str, str]]) 
             job_id=job.id,
             document_type=str(document["document_type"]).strip(),
             source_name=str(document.get("source_name") or "uploaded.csv"),
+            storage_kind=str(document.get("storage_kind") or "inline_csv"),
             raw_content=document["csv_content"],
             parse_status="uploaded",
+            metadata_json=document.get("metadata", {}) if isinstance(document.get("metadata"), dict) else {},
         )
         db.session.add(upload)
         uploads.append(upload)
 
     if uploads:
         job.status = "uploaded"
+        db.session.flush()
+        for upload in uploads:
+            sync_result = sync_transactions_for_upload(job=job, upload=upload, csv_content=upload.raw_content)
+            upload.metadata_json = {
+                **(upload.metadata_json or {}),
+                "transaction_sync": sync_result,
+            }
         db.session.commit()
     return uploads
 

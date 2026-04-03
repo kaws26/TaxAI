@@ -39,6 +39,7 @@ class Config:
     GROQ_REASONING_EFFORT = os.getenv("GROQ_REASONING_EFFORT", "low")
     GROQ_MAX_COMPLETION_TOKENS = int(os.getenv("GROQ_MAX_COMPLETION_TOKENS", "600"))
     GROQ_BANK_ROWS_PER_CALL = int(os.getenv("GROQ_BANK_ROWS_PER_CALL", "20"))
+    GROQ_TRANSACTION_ROWS_PER_CALL = int(os.getenv("GROQ_TRANSACTION_ROWS_PER_CALL", "25"))
     GROQ_OCR_MAX_INPUT_CHARS = int(os.getenv("GROQ_OCR_MAX_INPUT_CHARS", "12000"))
     TESSERACT_CMD = os.getenv("TESSERACT_CMD", "")
     PDF_EXPORT_DIR = os.getenv("PDF_EXPORT_DIR", "generated_pdfs")

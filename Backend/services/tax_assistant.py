@@ -212,7 +212,7 @@ def _normalize_assistant_context(payload: dict[str, Any]) -> dict[str, Any]:
         "balance_tax_payable": _safe_float(summary.get("balance_tax_payable")),
         "standard_deduction": _safe_float((assistant_context.get("deductions") or {}).get("standard_deduction")),
         "chapter_vi_a": (assistant_context.get("deductions") or {}).get("chapter_vi_a", {}),
-        "net_gst_payable": 0.0,
+        "net_gst_payable": _safe_float(assistant_context.get("net_gst_payable")),
         "missing_data_checklist": assistant_context.get("missing_data_checklist", []),
         "regime_recommendation": assistant_context.get("regime_recommendation", {}),
         "insights": payload.get("insights", []),
