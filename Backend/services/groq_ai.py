@@ -263,3 +263,27 @@ def extract_csv_from_ocr_text(
         "notes": str(payload.get("notes", "")).strip()[:180],
         "meta": {**groq_status(), **meta, "success": True},
     }
+
+
+def answer_tax_question_with_groq(*, system_prompt: str, user_prompt: str) -> dict[str, Any] | None:
+    if not groq_available():
+        return None
+
+    config = get_runtime_config()
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+    content, meta = _request_completion(messages)
+    if not content:
+        return {
+            "answer": "",
+            "model": config.GROQ_MODEL,
+            "meta": {**groq_status(), **meta, "success": False},
+        }
+
+    return {
+        "answer": str(content).strip(),
+        "model": config.GROQ_MODEL,
+        "meta": {**groq_status(), **meta, "success": True},
+    }

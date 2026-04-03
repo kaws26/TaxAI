@@ -217,6 +217,13 @@ def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
             "compliance_flags": tax_result.get("compliance_flags", []),
             "missing_data_count": len(result.get("missing_data_checklist", [])),
         },
+        "assistant_context": {
+            "profile_type": job.profile_type,
+            "financial_year": job.financial_year,
+            "missing_data_checklist": result.get("missing_data_checklist", []),
+            "regime_recommendation": regime_recommendation,
+            "deductions": tax_result.get("deductions", {}),
+        },
     }
 
 
@@ -250,6 +257,13 @@ def _empty_dashboard_payload() -> dict[str, Any]:
             "assistant_summary": "",
             "compliance_flags": [],
             "missing_data_count": 0,
+        },
+        "assistant_context": {
+            "profile_type": None,
+            "financial_year": None,
+            "missing_data_checklist": [],
+            "regime_recommendation": {},
+            "deductions": {},
         },
     }
 
@@ -399,15 +413,10 @@ async def analyze_files(request: Request, current_user_id: int = Depends(get_cur
 
 @tax_bp.post("/ask")
 async def ask(request: Request, current_user_id: int = Depends(get_current_user_id)):
-    del current_user_id
     payload = await _json_payload(request)
     question = str(payload.get("question", "")).strip()
-    analysis = payload.get("analysis")
-
-    if not isinstance(analysis, dict):
-        return _error("analysis must be the JSON result returned by an analyze endpoint.", 400)
-
-    return answer_tax_question(analysis, question)
+    dashboard_payload = dashboard_financial_data(current_user_id)
+    return answer_tax_question(dashboard_payload, question)
 
 
 @tax_bp.post("/jobs")
