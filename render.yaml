@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: taxai-backend
+    runtime: python
+    buildCommand: "pip install --upgrade pip && pip install -r Backend/requirements.txt && apt-get update && apt-get install -y tesseract-ocr"
+    startCommand: "cd Backend && python app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: TESSERACT_CMD
+        value: "/usr/bin/tesseract"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false

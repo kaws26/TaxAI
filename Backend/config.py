@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import platform
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -40,5 +41,12 @@ class Config:
     GROQ_MAX_COMPLETION_TOKENS = int(os.getenv("GROQ_MAX_COMPLETION_TOKENS", "600"))
     GROQ_BANK_ROWS_PER_CALL = int(os.getenv("GROQ_BANK_ROWS_PER_CALL", "20"))
     GROQ_OCR_MAX_INPUT_CHARS = int(os.getenv("GROQ_OCR_MAX_INPUT_CHARS", "12000"))
-    TESSERACT_CMD = os.getenv("TESSERACT_CMD", "")
+    # Auto-detect Tesseract path: Windows local or Linux deployed
+    _tesseract_from_env = os.getenv("TESSERACT_CMD", "").strip()
+    if _tesseract_from_env:
+        TESSERACT_CMD = _tesseract_from_env
+    elif platform.system() == "Windows":
+        TESSERACT_CMD = "C:/Program Files/Tesseract-OCR/tesseract.exe"
+    else:
+        TESSERACT_CMD = "/usr/bin/tesseract"
     PDF_EXPORT_DIR = os.getenv("PDF_EXPORT_DIR", "generated_pdfs")

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 from io import BytesIO
 from typing import Any
 
@@ -24,12 +25,40 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".tiff", ".tif", ".bmp"}
 class OcrConversionError(ValueError):
     pass
 
-def ocr_status() -> dict[str, Any]:
+
+def _resolve_tesseract_cmd() -> str:
     config = get_runtime_config()
-    tesseract_cmd = str(getattr(config, "TESSERACT_CMD", "")).strip()
+    configured = str(getattr(config, "TESSERACT_CMD", "")).strip()
+    if configured:
+        if os.path.exists(configured):
+            return configured
+        # Handle common .env escaping mistakes on Windows where "\t" becomes a tab.
+        sanitized = configured.replace("\t", "\\t").strip()
+        if os.path.exists(sanitized):
+            return sanitized
+
+    discovered = shutil.which("tesseract")
+    if discovered:
+        return discovered
+
+    if os.name == "nt":
+        common_windows_paths = (
+            r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+            r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+        )
+        for candidate in common_windows_paths:
+            if os.path.exists(candidate):
+                return candidate
+
+    return ""
+
+def ocr_status() -> dict[str, Any]:
+    tesseract_cmd = _resolve_tesseract_cmd()
     return {
         "pytesseract_installed": pytesseract is not None,
-        "tesseract_cmd_configured": bool(tesseract_cmd),
+        "tesseract_cmd_configured": bool(str(getattr(get_runtime_config(), "TESSERACT_CMD", "")).strip()),
+        "tesseract_engine_available": bool(tesseract_cmd),
+        "tesseract_cmd": tesseract_cmd,
         "groq": groq_status(),
     }
 
@@ -43,10 +72,13 @@ def _extract_text_from_image(image_bytes: bytes) -> str:
             "pytesseract is not installed. Install it and ensure the Tesseract engine is available."
         )
 
-    config = get_runtime_config()
-    tesseract_cmd = str(getattr(config, "TESSERACT_CMD", "")).strip()
+    tesseract_cmd = _resolve_tesseract_cmd()
     if tesseract_cmd:
         pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+    else:
+        raise OcrConversionError(
+            "Tesseract executable not found. Install Tesseract or set TESSERACT_CMD in Backend/.env."
+        )
 
     try:
         image = Image.open(BytesIO(image_bytes))
@@ -60,7 +92,8 @@ def _extract_text_from_image(image_bytes: bytes) -> str:
         text = pytesseract.image_to_string(processed)
     except Exception as exc:
         raise OcrConversionError(
-            "OCR failed. Verify Tesseract is installed and TESSERACT_CMD is configured if needed."
+            "OCR failed. Verify Tesseract is installed and TESSERACT_CMD is configured if needed. "
+            f"Cause: {exc}"
         ) from exc
 
     normalized = "\n".join(line.rstrip() for line in text.splitlines())
