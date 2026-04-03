@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import AppLayout from '../components/AppLayout';
-
-const API_URL = 'https://taxai-77xc.onrender.com';
+import { API_BASE_URL } from '../utils/api';
 
 export default function Upload() {
   const [mode, setMode] = useState('analyze'); // 'analyze' or 'filing'
@@ -35,7 +34,7 @@ export default function Upload() {
         const token = localStorage.getItem('access_token');
 
         // Fetch options
-        const optResponse = await fetch(`${API_URL}/api/tax-assistant/options`, {
+        const optResponse = await fetch(`${API_BASE_URL}/api/tax-assistant/options`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const optData = await optResponse.json();
@@ -43,7 +42,7 @@ export default function Upload() {
         setAnalyzeOptions(optData);
 
         // Fetch jobs
-        const jobResponse = await fetch(`${API_URL}/api/tax-assistant/jobs`, {
+        const jobResponse = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const jobData = await jobResponse.json();
@@ -63,7 +62,7 @@ export default function Upload() {
         try {
           const jobId = selectedJob.job_id || selectedJob.id;
           const response = await fetch(
-            `${API_URL}/api/tax-assistant/jobs/${jobId}/documents`,
+            `${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/documents`,
             {
               headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` },
             }
@@ -142,7 +141,7 @@ export default function Upload() {
         });
 
         const response = await fetch(
-          `${API_URL}/api/tax-assistant/jobs/${jobId}/documents`,
+          `${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/documents`,
           {
             method: 'POST',
             headers: {
@@ -218,7 +217,7 @@ export default function Upload() {
         formData.append('files', file);
       });
 
-      const response = await fetch(`${API_URL}/api/tax-assistant/analyze-files`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/analyze-files`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,

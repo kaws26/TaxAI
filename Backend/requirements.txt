@@ -9,6 +9,4 @@ SQLAlchemy
 psycopg[binary]
 uvicorn
 Werkzeug
-transformers
-torch
-accelerate
+huggingface_hub

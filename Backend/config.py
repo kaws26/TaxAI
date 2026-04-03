@@ -41,5 +41,8 @@ class Config:
     GROQ_BANK_ROWS_PER_CALL = int(os.getenv("GROQ_BANK_ROWS_PER_CALL", "20"))
     GROQ_TRANSACTION_ROWS_PER_CALL = int(os.getenv("GROQ_TRANSACTION_ROWS_PER_CALL", "25"))
     GROQ_OCR_MAX_INPUT_CHARS = int(os.getenv("GROQ_OCR_MAX_INPUT_CHARS", "12000"))
+    HF_TOKEN = os.getenv("HF_TOKEN", "")
+    HF_OCR_MODEL = os.getenv("HF_OCR_MODEL", "zai-org/GLM-OCR")
+    HF_OCR_PROVIDER = os.getenv("HF_OCR_PROVIDER", "zai-org")
     TESSERACT_CMD = os.getenv("TESSERACT_CMD", "")
     PDF_EXPORT_DIR = os.getenv("PDF_EXPORT_DIR", "generated_pdfs")
