@@ -577,6 +577,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
   const [reviewState, setReviewState] = useState(null);
   const [approveLoading, setApproveLoading] = useState(false);
   const [exportLoading, setExportLoading] = useState(false);
+  const [processResponse, setProcessResponse] = useState(null);
 
   // Debug log
   useEffect(() => {
@@ -716,9 +717,10 @@ function JobDetail({ job, onBack, onJobUpdate }) {
       if (response.ok) {
         const data = await response.json();
         setCurrentJob(data.job);
+        setProcessResponse(data); // Store response for display
 
-        // Refetch review data if status is review or approved
-        if (data.job?.status === 'review' || data.job?.status === 'approved') {
+        // Refetch review/tax result data if status is computed, review, or approved
+        if (data.job?.status === 'computed' || data.job?.status === 'review' || data.job?.status === 'approved') {
           try {
             const revResponse = await fetch(
               `${API_URL}/api/tax-assistant/jobs/${jobId}/review`,
@@ -728,11 +730,14 @@ function JobDetail({ job, onBack, onJobUpdate }) {
             );
             if (revResponse.ok) {
               const revData = await revResponse.json();
-              setReviewState(revData);
+              // Extract review_state if it's nested, otherwise use the whole response
+              setReviewState(revData.review_state || revData);
             }
           } catch (error) {
             console.error('Failed to fetch review data:', error);
           }
+
+        
         }
 
         // Refresh the jobs list so status updates immediately in the list view
@@ -993,6 +998,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
         </div>
       )}
 
+
       {/* Results Display (after processing) */}
       {(currentJob.tax_result || currentJob.status === 'review' || currentJob.status === 'parsed' || currentJob.status === 'computed' || currentJob.status === 'approved') && (
         <ResultsDisplay
@@ -1002,6 +1008,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
           onExport={handleExport}
           approveLoading={approveLoading}
           exportLoading={exportLoading}
+          processResponse={processResponse}
         />
       )}
     </div>
@@ -1206,10 +1213,208 @@ function DocumentUploadForm({ options, onSubmit, onCancel, loading }) {
 }
 
 // Results Display Component
-function ResultsDisplay({ job, reviewState, onApprove, onExport, approveLoading, exportLoading }) {
+function ResultsDisplay({ job, reviewState, onApprove, onExport, approveLoading, exportLoading, processResponse }) {
   const [expandedSection, setExpandedSection] = useState('income');
 
   const result = job.tax_result;
+
+  // If processResponse exists and job status is computed, show the process response data
+  if (processResponse && (job.status === 'computed' || job.status === 'review') && !result) {
+    const processData = processResponse.draft_return?.itr_fields || processResponse.tax_result || {};
+    return (
+      <div className="space-y-6">
+        {/* Process Response Results */}
+        <div className="bg-white border border-[#e0ddd6] p-8">
+          <h3
+            className="mb-6"
+            style={{
+              fontFamily: "'Crimson Pro', serif",
+              fontSize: "1.5rem",
+              fontWeight: 600,
+              color: "#1a1816",
+            }}
+          >
+            Tax Computation Results
+          </h3>
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {[
+              { label: 'Gross Income', value: processData.gross_total_income },
+              { label: 'Total Deductions', value: processData.total_deductions },
+              { label: 'Taxable Income', value: processData.taxable_income },
+              { label: 'Tax Liability', value: processData.total_tax_liability },
+              { label: 'Total Paid', value: processData.total_taxes_paid || processData.balance_tax_payable },
+              { label: 'Refund Due', value: processData.refund_due },
+            ].map((item) => (
+              <div key={item.label}>
+                <p
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: "0.8125rem",
+                    color: "#8a867f",
+                    marginBottom: "0.5rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.05em",
+                  }}
+                >
+                  {item.label}
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: "1.5rem",
+                    fontWeight: 600,
+                    color: "#1a1816",
+                  }}
+                >
+                  ₹{item.value?.toLocaleString('en-IN') || '—'}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Income Breakdown */}
+        {processResponse.draft_return?.income_schedule && (
+          <div className="bg-white border border-[#e0ddd6] p-8">
+            <h3
+              style={{
+                fontFamily: "'Crimson Pro', serif",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                color: "#1a1816",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Income Breakdown
+            </h3>
+            <div className="space-y-3">
+              {Object.entries(processResponse.draft_return.income_schedule).map(([source, amount]) =>
+                amount && amount > 0 ? (
+                  <div key={source} className="flex justify-between py-2 border-b border-[#e0ddd6]">
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9375rem", color: "#5a5550", textTransform: "capitalize" }}>
+                      {source.replace(/_/g, ' ')}
+                    </span>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9375rem", fontWeight: 600, color: "#1a1816" }}>
+                      ₹{amount?.toLocaleString('en-IN') || '—'}
+                    </span>
+                  </div>
+                ) : null
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Documents Processed */}
+        {processResponse.documents_processed && processResponse.documents_processed.length > 0 && (
+          <div className="bg-white border border-[#e0ddd6] p-8">
+            <h3
+              style={{
+                fontFamily: "'Crimson Pro', serif",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                color: "#1a1816",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Documents Processed
+            </h3>
+            <div className="space-y-3">
+              {processResponse.documents_processed.map((doc, idx) => (
+                <div key={idx} className="flex items-start justify-between p-3 bg-[#f5f3ed] border border-[#e0ddd6]">
+                  <div>
+                    <p
+                      style={{
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontSize: "0.9375rem",
+                        fontWeight: 600,
+                        color: "#1a1816",
+                        marginBottom: "0.25rem",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      {doc.document_type?.replace(/_/g, ' ')}
+                    </p>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.8125rem", color: "#8a867f" }}>
+                      {doc.source_name}
+                    </p>
+                  </div>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.75rem", fontWeight: 600, backgroundColor: "#bbf7d0", color: "#065f46", padding: "0.25rem 0.5rem", borderRadius: "0.25rem" }}>
+                    Processed
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Optimization Recommendations */}
+        {processResponse.optimization_recommendations && processResponse.optimization_recommendations.length > 0 && (
+          <div className="bg-[#f0fdf4] border-l-4 border-[#22c55e] p-6">
+            <p
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.9375rem",
+                fontWeight: 600,
+                color: "#166534",
+                marginBottom: "1rem",
+              }}
+            >
+              💡 Recommendations
+            </p>
+            {processResponse.optimization_recommendations.map((rec, idx) => (
+              <p
+                key={idx}
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: "0.875rem",
+                  color: "#166534",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                • {rec.message}
+              </p>
+            ))}
+          </div>
+        )}
+
+        {/* Approval Message */}
+        <div className="bg-white border border-[#e0ddd6] p-8">
+          <p
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.9375rem",
+              color: "#8a867f",
+              marginBottom: "1.5rem",
+            }}
+          >
+            Tax computation complete. Ready for review and approval.
+          </p>
+
+          {/* Action Button */}
+          <button
+            onClick={onApprove}
+            disabled={approveLoading || (reviewState && !reviewState.ready_for_approval)}
+            className="w-full py-4 bg-[#2d5a3a] text-white hover:bg-[#3a6b47] transition-colors disabled:opacity-50"
+            title={
+              reviewState && !reviewState.ready_for_approval
+                ? 'Please acknowledge all review tasks'
+                : ''
+            }
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.875rem",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+            }}
+          >
+            {approveLoading ? 'Approving...' : 'Approve & Sign'}
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   // Show processing state if status is parsed but tax_result not ready yet
   if (!result && (job.status === 'parsed' || job.status === 'processing')) {
@@ -1513,8 +1718,24 @@ function ResultsDisplay({ job, reviewState, onApprove, onExport, approveLoading,
         </div>
       )}
 
+      {/* Approval Section - shown when status is computed or review */}
+      {(job.status === 'computed' || job.status === 'review') && (
+        <div className="bg-white border border-[#e0ddd6] p-8 mt-6">
+          <p
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.9375rem",
+              color: "#8a867f",
+              marginBottom: "1.5rem",
+            }}
+          >
+            Tax computation complete. Ready for review and approval.
+          </p>
+        </div>
+      )}
+
       {/* Action Buttons */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 mt-6">
         {(job.status === 'review' || job.status === 'computed') && (
           <button
             onClick={onApprove}

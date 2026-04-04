@@ -3,6 +3,152 @@ import AppLayout from '../components/AppLayout';
 
 const API_URL = 'https://taxai-77xc.onrender.com';
 
+// Simple markdown parser for tables, bold, headers, lists
+const renderMarkdown = (content) => {
+  const lines = content.split('\n');
+  const elements = [];
+  let inTable = false;
+  let tableRows = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Table detection
+    if (line.trim().startsWith('|')) {
+      if (!inTable) {
+        inTable = true;
+        tableRows = [];
+      }
+      tableRows.push(line);
+      i++;
+      continue;
+    } else if (inTable) {
+      // Table ended
+      inTable = false;
+      if (tableRows.length > 0) {
+        elements.push(
+          <div key={`table-${elements.length}`} className="my-4 overflow-x-auto">
+            <table style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.875rem",
+              borderCollapse: 'collapse',
+              width: '100%',
+            }}>
+              <tbody>
+                {tableRows.map((row, idx) => {
+                  const cells = row.split('|').filter(cell => cell.trim());
+                  const isHeader = idx === 0 || row.includes('---');
+                  if (row.includes('---')) return null;
+                  return (
+                    <tr key={idx} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                      {cells.map((cell, cellIdx) => (
+                        <td
+                          key={cellIdx}
+                          style={{
+                            padding: '0.75rem',
+                            textAlign: 'left',
+                            fontWeight: isHeader ? 600 : 400,
+                            backgroundColor: isHeader ? 'rgba(255,255,255,0.05)' : 'transparent',
+                          }}
+                        >
+                          {cell.trim()}
+                        </td>
+                      ))}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        );
+        tableRows = [];
+      }
+    }
+
+    // Headers (##)
+    if (line.trim().startsWith('##')) {
+      const headerText = line.replace(/#{1,}/g, '').trim();
+      elements.push(
+        <h3 key={`header-${elements.length}`} style={{
+          fontFamily: "'Crimson Pro', serif",
+          fontSize: "1.125rem",
+          fontWeight: 600,
+          color: '#FAFAF7',
+          marginTop: '1rem',
+          marginBottom: '0.5rem',
+        }}>
+          {headerText}
+        </h3>
+      );
+      i++;
+      continue;
+    }
+
+    // Headers (#)
+    if (line.trim().startsWith('#') && !line.trim().startsWith('##')) {
+      const headerText = line.replace(/#{1,}/g, '').trim();
+      elements.push(
+        <h2 key={`header-${elements.length}`} style={{
+          fontFamily: "'Crimson Pro', serif",
+          fontSize: "1.375rem",
+          fontWeight: 600,
+          color: '#FAFAF7',
+          marginTop: '1rem',
+          marginBottom: '0.75rem',
+        }}>
+          {headerText}
+        </h2>
+      );
+      i++;
+      continue;
+    }
+
+    // Bold text and lists
+    if (line.trim()) {
+      let text = line.trim();
+
+      // Check if it's a bullet list
+      if (text.startsWith('- ') || text.startsWith('* ')) {
+        text = text.slice(2);
+        elements.push(
+          <div key={`list-${elements.length}`} style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: "0.9375rem",
+            color: '#FAFAF7',
+            marginLeft: '1.5rem',
+            marginBottom: '0.5rem',
+          }}>
+            <span>• </span>
+            {text.split(/\*\*(.+?)\*\*/g).map((part, idx) =>
+              idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+            )}
+          </div>
+        );
+      } else {
+        // Regular paragraph with bold support
+        elements.push(
+          <p key={`para-${elements.length}`} style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: "0.9375rem",
+            color: '#FAFAF7',
+            lineHeight: '1.6',
+            marginBottom: '0.75rem',
+          }}>
+            {text.split(/\*\*(.+?)\*\*/g).map((part, idx) =>
+              idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+            )}
+          </p>
+        );
+      }
+    }
+
+    i++;
+  }
+
+  return <div>{elements}</div>;
+};
+
 export default function AIAssistant() {
   const [activeTab, setActiveTab] = useState('tax');
   const [message, setMessage] = useState('');
@@ -31,6 +177,7 @@ export default function AIAssistant() {
     ],
     personal: [],
   });
+  const [financialLoading, setFinancialLoading] = useState(false);
 
   const tabs = [
     { id: 'tax', label: 'Tax Assistant' },
@@ -147,16 +294,19 @@ export default function AIAssistant() {
   };
 
   // Handle chat send
-  const handleSend = async () => {
-    if (!message.trim()) return;
+  const handleSend = async (customMessage = null) => {
+    const messageToSend = customMessage || message;
+    if (!messageToSend.trim()) return;
 
     // Add user message immediately
-    const userMessage = { role: 'user', content: message };
-    setMessages({
-      ...messages,
-      [activeTab]: [...messages[activeTab], userMessage],
-    });
-    setMessage('');
+    const userMessage = { role: 'user', content: messageToSend };
+    setMessages((prev) => ({
+      ...prev,
+      [activeTab]: [...prev[activeTab], userMessage],
+    }));
+    if (!customMessage) {
+      setMessage('');
+    }
 
     // For personal Q&A, call the API
     if (activeTab === 'personal' && taxAnalysis) {
@@ -203,18 +353,51 @@ export default function AIAssistant() {
         }));
       }
     } else if (activeTab === 'financial') {
-      // Demo response for financial advisor
-      setMessages({
-        ...messages,
-        financial: [
-          ...messages.financial,
-          userMessage,
-          {
-            role: 'ai',
-            content: 'This is a demo response. In production, this will be powered by our AI engine.',
+      // Call the financial advisor API
+      try {
+        setFinancialLoading(true);
+        const response = await fetch(`${API_URL}/api/tax-assistant/ask`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${localStorage.getItem('access_token')}`,
           },
-        ],
-      });
+          body: JSON.stringify({
+            question: messageToSend,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setMessages((prev) => ({
+            ...prev,
+            financial: [
+              ...prev.financial,
+              { role: 'ai', content: data.answer, isFormatted: true },
+            ],
+          }));
+        } else {
+          setMessages((prev) => ({
+            ...prev,
+            financial: [
+              ...prev.financial,
+              { role: 'ai', content: 'Error: Unable to process your question.' },
+            ],
+          }));
+        }
+      } catch (error) {
+        console.error('Financial advisor error:', error);
+        setMessages((prev) => ({
+          ...prev,
+          financial: [
+            ...prev.financial,
+            { role: 'ai', content: 'Error: Connection failed.' },
+          ],
+        }));
+      } finally {
+        setFinancialLoading(false);
+      }
     }
   };
 
@@ -793,15 +976,34 @@ export default function AIAssistant() {
       {/* FINANCIAL ADVISOR TAB */}
       {activeTab === 'financial' && (
         <>
-          <div
-            className="bg-[#f5f3ed] border-l-4 border-[#c9a961] p-4 mb-6"
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: "0.875rem",
-              color: "#5a5550",
-            }}
-          >
-            Based on your last 3 months of transactions and AY 2025–26 data
+          <div className="mb-6 space-y-4">
+            <div
+              className="bg-[#f5f3ed] border-l-4 border-[#c9a961] p-4"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.875rem",
+                color: "#5a5550",
+              }}
+            >
+              Based on your last 3 months of transactions and AY 2025–26 data
+            </div>
+            <button
+              onClick={() => {
+                const defaultQuestion = "What are my top transaction categories and what is my likely preferred tax regime?";
+                handleSend(defaultQuestion);
+              }}
+              disabled={financialLoading}
+              className="px-6 py-3 bg-[#1A1208] text-[#FAFAF7] hover:bg-[#2a2218] transition-colors disabled:opacity-50"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.875rem",
+                fontWeight: 600,
+                letterSpacing: "0.05em",
+                textTransform: "uppercase",
+              }}
+            >
+              {financialLoading ? 'Analyzing...' : '📊 Get Financial Analysis'}
+            </button>
           </div>
 
           <div className="bg-white border border-[#e0ddd6] flex flex-col h-[600px]">
@@ -810,22 +1012,26 @@ export default function AIAssistant() {
               {messages.financial.map((msg, i) => (
                 <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   <div
-                    className={`max-w-2xl ${
+                    className={`max-w-3xl ${
                       msg.role === 'user'
                         ? 'bg-[#f5f3ed] border border-[#e0ddd6]'
                         : 'bg-[#1A1208] text-[#FAFAF7]'
                     } px-6 py-4`}
                   >
-                    <p
-                      style={{
-                        fontFamily: "'DM Sans', sans-serif",
-                        fontSize: "0.9375rem",
-                        lineHeight: "1.6",
-                        color: msg.role === 'user' ? '#1a1816' : '#FAFAF7',
-                      }}
-                    >
-                      {msg.content}
-                    </p>
+                    {msg.isFormatted ? (
+                      renderMarkdown(msg.content)
+                    ) : (
+                      <p
+                        style={{
+                          fontFamily: "'DM Sans', sans-serif",
+                          fontSize: "0.9375rem",
+                          lineHeight: "1.6",
+                          color: msg.role === 'user' ? '#1a1816' : '#FAFAF7',
+                        }}
+                      >
+                        {msg.content}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -851,7 +1057,8 @@ export default function AIAssistant() {
                 />
                 <button
                   onClick={handleSend}
-                  className="px-8 py-3 bg-[#1A1208] text-[#FAFAF7] hover:bg-[#2a2218] transition-colors"
+                  disabled={financialLoading}
+                  className="px-8 py-3 bg-[#1A1208] text-[#FAFAF7] hover:bg-[#2a2218] transition-colors disabled:opacity-50"
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "0.875rem",
@@ -860,11 +1067,158 @@ export default function AIAssistant() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Send
+                  {financialLoading ? 'Sending...' : 'Send'}
                 </button>
               </div>
             </div>
           </div>
+        </>
+      )}
+
+      {/* TRANSACTIONS TAB */}
+      {activeTab === 'transactions' && (
+        <>
+          <div className="mb-6 space-y-4">
+            <div
+              className="bg-[#f5f3ed] border-l-4 border-[#c9a961] p-4"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.875rem",
+                color: "#5a5550",
+              }}
+            >
+              All transactions extracted from your uploaded documents ({transactionCount} total)
+            </div>
+          </div>
+
+          {transactionsLoading ? (
+            <div
+              className="bg-white border border-[#e0ddd6] p-12 text-center"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.9375rem",
+                color: "#8a867f",
+              }}
+            >
+              Loading transactions...
+            </div>
+          ) : transactionsError ? (
+            <div
+              className="bg-[#fef3c7] border border-[#fcd34d] p-4"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.875rem",
+                color: "#92400e",
+              }}
+            >
+              {transactionsError}
+            </div>
+          ) : transactions.length === 0 ? (
+            <div
+              className="bg-white border border-[#e0ddd6] p-12 text-center"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: "0.9375rem",
+                color: "#8a867f",
+              }}
+            >
+              No transactions found
+            </div>
+          ) : (
+            <div className="bg-white border border-[#e0ddd6] overflow-x-auto">
+              <table style={{
+                fontFamily: "'DM Sans', sans-serif",
+                width: "100%",
+                borderCollapse: "collapse",
+              }}>
+                <thead>
+                  <tr style={{ backgroundColor: "#f5f3ed", borderBottom: "2px solid #e0ddd6" }}>
+                    <th style={{ padding: "1rem", textAlign: "left", fontWeight: 600, color: "#1a1816" }}>Date</th>
+                    <th style={{ padding: "1rem", textAlign: "left", fontWeight: 600, color: "#1a1816" }}>Merchant</th>
+                    <th style={{ padding: "1rem", textAlign: "left", fontWeight: 600, color: "#1a1816" }}>Category</th>
+                    <th style={{ padding: "1rem", textAlign: "right", fontWeight: 600, color: "#1a1816" }}>Amount</th>
+                    <th style={{ padding: "1rem", textAlign: "center", fontWeight: 600, color: "#1a1816" }}>Type</th>
+                    <th style={{ padding: "1rem", textAlign: "left", fontWeight: 600, color: "#1a1816" }}>Description</th>
+                    <th style={{ padding: "1rem", textAlign: "center", fontWeight: 600, color: "#1a1816" }}>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {transactions.map((txn, idx) => (
+                    <tr key={txn.id} style={{ borderBottom: "1px solid #e0ddd6" }}>
+                      <td style={{ padding: "0.75rem 1rem", color: "#5a5550", fontSize: "0.875rem" }}>
+                        {new Date(txn.date).toLocaleDateString('en-IN')}
+                      </td>
+                      <td style={{ padding: "0.75rem 1rem", color: "#1a1816", fontSize: "0.9375rem", fontWeight: 500 }}>
+                        {txn.merchant}
+                      </td>
+                      <td style={{ padding: "0.75rem 1rem", color: "#5a5550", fontSize: "0.875rem" }}>
+                        <span style={{
+                          backgroundColor: "#f5f3ed",
+                          padding: "0.25rem 0.75rem",
+                          borderRadius: "0.25rem",
+                          display: "inline-block",
+                        }}>
+                          {txn.category}
+                        </span>
+                      </td>
+                      <td style={{ padding: "0.75rem 1rem", textAlign: "right", color: "#1a1816", fontWeight: 600, fontSize: "0.9375rem" }}>
+                        ₹{txn.amount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                      </td>
+                      <td style={{
+                        padding: "0.75rem 1rem",
+                        textAlign: "center",
+                        fontSize: "0.8125rem",
+                        fontWeight: 600,
+                        color: txn.txn_type === 'income' ? '#2d5a3a' : '#d4534f',
+                        textTransform: "capitalize",
+                      }}>
+                        {txn.txn_type}
+                      </td>
+                      <td style={{ padding: "0.75rem 1rem", color: "#8a867f", fontSize: "0.8125rem", maxWidth: "300px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                        {txn.description}
+                      </td>
+                      <td style={{ padding: "0.75rem 1rem", textAlign: "center" }}>
+                        <div className="flex gap-2 justify-center">
+                          <button
+                            onClick={() => handleEditTransaction(txn)}
+                            style={{
+                              fontFamily: "'DM Sans', sans-serif",
+                              fontSize: "0.75rem",
+                              fontWeight: 600,
+                              padding: "0.5rem 0.75rem",
+                              backgroundColor: "#c9a961",
+                              color: "#1a1816",
+                              border: "none",
+                              cursor: "pointer",
+                              borderRadius: "0.25rem",
+                            }}
+                          >
+                            Edit
+                          </button>
+                          <button
+                            onClick={() => handleDeleteTransaction(txn.id)}
+                            style={{
+                              fontFamily: "'DM Sans', sans-serif",
+                              fontSize: "0.75rem",
+                              fontWeight: 600,
+                              padding: "0.5rem 0.75rem",
+                              backgroundColor: "#d4534f",
+                              color: "#fff",
+                              border: "none",
+                              cursor: "pointer",
+                              borderRadius: "0.25rem",
+                            }}
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </>
       )}
 

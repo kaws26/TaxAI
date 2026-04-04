@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import AppLayout from '../components/AppLayout';
 
-const API_URL = 'https://taxai-77xc.onrender.com';
+const API_URL = 'http://localhost:8000';
 
 export default function Dashboard() {
   const [dashboardData, setDashboardData] = useState(null);
