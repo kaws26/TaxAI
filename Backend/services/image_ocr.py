@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import os
 from io import BytesIO
 from typing import Any
@@ -9,7 +8,7 @@ from PIL import Image, ImageOps
 
 from runtime import get_runtime_config
 from services.document_ingestion import DocumentValidationError, parse_document
-from services.groq_ai import extract_csv_from_ocr_text
+from services.groq_ai import extract_csv_from_ocr_text, groq_status
 from services.tax_constants import SUPPORTED_DOCUMENTS
 
 try:
@@ -24,6 +23,14 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".tiff", ".tif", ".bmp"}
 class OcrConversionError(ValueError):
     pass
 
+def ocr_status() -> dict[str, Any]:
+    config = get_runtime_config()
+    tesseract_cmd = str(getattr(config, "TESSERACT_CMD", "")).strip()
+    return {
+        "pytesseract_installed": pytesseract is not None,
+        "tesseract_cmd_configured": bool(tesseract_cmd),
+        "groq": groq_status(),
+    }
 
 def _is_image_filename(filename: str) -> bool:
     return os.path.splitext(filename.lower())[1] in IMAGE_EXTENSIONS
@@ -68,7 +75,7 @@ def convert_image_to_csv_document(
     document_type: str,
     source_name: str,
     image_bytes: bytes,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     if document_type not in SUPPORTED_DOCUMENTS:
         raise OcrConversionError(f"Unsupported document type: {document_type}")
     if not _is_image_filename(source_name):
@@ -84,8 +91,14 @@ def convert_image_to_csv_document(
     )
 
     if not llm_result or not llm_result.get("meta", {}).get("success"):
+        meta = (llm_result or {}).get("meta", {})
+        detail = str(meta.get("detail", "")).strip()
+        error_code = str(meta.get("error", "")).strip()
+        suffix_parts = [part for part in [error_code, detail] if part]
+        suffix = f" Details: {' | '.join(suffix_parts)}" if suffix_parts else ""
         raise OcrConversionError(
-            "Unable to convert OCR text into structured CSV. Ensure Groq is configured and retry."
+            "Unable to convert OCR text into structured CSV. Ensure Groq is enabled and GROQ_API_KEY is valid."
+            f"{suffix}"
         )
 
     csv_content = str(llm_result.get("csv_content", "")).strip()
@@ -105,12 +118,14 @@ def convert_image_to_csv_document(
         "document_type": document_type,
         "source_name": csv_source_name,
         "csv_content": csv_content,
-        "conversion_meta": json.dumps(
-            {
+        "storage_kind": "ocr_image_upload",
+        "metadata": {
+            "source": "OCR",
+            "conversion_meta": {
                 "origin": "image_ocr",
                 "original_source": source_name,
                 "ocr_chars": len(ocr_text),
                 "llm_meta": llm_result.get("meta", {}),
-            }
-        ),
+            },
+        },
     }

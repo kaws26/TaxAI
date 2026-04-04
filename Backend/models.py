@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from sqlalchemy import func
+from sqlalchemy import Float, func
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from extensions import db
@@ -69,6 +69,13 @@ class TaxFilingJob(db.Model):
         cascade="all, delete-orphan",
         order_by="TaxDocumentUpload.id.asc()",
     )
+    transactions = db.relationship(
+        "TransactionRecord",
+        backref="job",
+        lazy="select",
+        cascade="all, delete-orphan",
+        order_by="TransactionRecord.transaction_date.desc(), TransactionRecord.id.desc()",
+    )
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -96,6 +103,13 @@ class TaxDocumentUpload(db.Model):
     parse_status = db.Column(db.String(20), nullable=False, default="uploaded")
     metadata_json = db.Column(db.JSON, nullable=False, default=dict)
     created_at = db.Column(db.DateTime(timezone=True), nullable=False, server_default=func.now())
+    transactions = db.relationship(
+        "TransactionRecord",
+        backref="document_upload",
+        lazy="select",
+        cascade="all, delete-orphan",
+        order_by="TransactionRecord.transaction_date.desc(), TransactionRecord.id.desc()",
+    )
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -104,6 +118,46 @@ class TaxDocumentUpload(db.Model):
             "source_name": self.source_name,
             "storage_kind": self.storage_kind,
             "parse_status": self.parse_status,
+            "metadata": self.metadata_json or {},
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+        }
+
+
+class TransactionRecord(db.Model):
+    __tablename__ = "transaction_records"
+
+    id = db.Column(db.Integer, primary_key=True)
+    job_id = db.Column(db.Integer, db.ForeignKey("tax_filing_jobs.id"), nullable=False, index=True)
+    document_upload_id = db.Column(db.Integer, db.ForeignKey("tax_document_uploads.id"), nullable=False, index=True)
+    transaction_date = db.Column(db.String(10), nullable=False, index=True)
+    merchant = db.Column(db.String(255), nullable=False, default="")
+    description = db.Column(db.Text, nullable=False, default="")
+    amount = db.Column(Float, nullable=False, default=0.0)
+    txn_type = db.Column(db.String(20), nullable=False, default="expense", index=True)
+    category = db.Column(db.String(80), nullable=False, default="Other", index=True)
+    source = db.Column(db.String(20), nullable=False, default="CSV", index=True)
+    document_type = db.Column(db.String(50), nullable=False, default="", index=True)
+    source_name = db.Column(db.String(255), nullable=False, default="")
+    confidence = db.Column(Float, nullable=False, default=0.0)
+    metadata_json = db.Column(db.JSON, nullable=False, default=dict)
+    created_at = db.Column(db.DateTime(timezone=True), nullable=False, server_default=func.now())
+
+    def to_dict(self) -> dict[str, object]:
+        return {
+            "id": self.id,
+            "job_id": self.job.job_id if self.job else None,
+            "document_upload_id": self.document_upload_id,
+            "date": self.transaction_date,
+            "merchant": self.merchant,
+            "amount": round(float(self.amount or 0.0), 2),
+            "txn_type": self.txn_type,
+            "category": self.category,
+            "source": self.source,
+            "document_type": self.document_type,
+            "source_name": self.source_name,
+            "description": self.description,
+            "confidence": round(float(self.confidence or 0.0), 3),
+            "actions": ["edit", "delete"],
             "metadata": self.metadata_json or {},
             "created_at": self.created_at.isoformat() if self.created_at else None,
         }

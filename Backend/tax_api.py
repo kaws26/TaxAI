@@ -13,7 +13,7 @@ from models import TaxFilingJob
 from runtime import get_runtime_config
 from security import get_current_user_id
 from services.groq_ai import groq_status
-from services.image_ocr import IMAGE_EXTENSIONS, OcrConversionError, convert_image_to_csv_document
+from services.image_ocr import IMAGE_EXTENSIONS, OcrConversionError, convert_image_to_csv_document,ocr_status
 from services.pdf_export import save_itr_pdf
 from services.portal_adapter import portal_adapter_capabilities
 from services.tax_assistant import analyze_tax_documents, answer_tax_question
@@ -25,6 +25,7 @@ from services.tax_jobs import (
     create_filing_job,
     process_filing_job,
 )
+from services.transactions import summarize_transactions_for_job
 
 
 tax_bp = APIRouter(prefix="/api/tax-assistant")
@@ -44,6 +45,7 @@ def options():
         "job_statuses": sorted(JOB_STATUSES),
         "portal_adapter": portal_adapter_capabilities(),
         "ai_provider": groq_status(),
+        "ocr_provider": ocr_status(),
     }
 
 
@@ -176,6 +178,7 @@ def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
     monthly_overview = _build_monthly_overview(result)
     total_income = _safe_amount(tax_result.get("gross_total_income"))
     total_expenses = _safe_amount(profit_and_loss.get("expenses"))
+    transaction_summary = summarize_transactions_for_job(job.id)
 
     return {
         "status": "success",
@@ -216,6 +219,15 @@ def _build_dashboard_payload(job: TaxFilingJob) -> dict[str, Any]:
             "compliance_flags": tax_result.get("compliance_flags", []),
             "missing_data_count": len(result.get("missing_data_checklist", [])),
         },
+        "assistant_context": {
+            "profile_type": job.profile_type,
+            "financial_year": job.financial_year,
+            "missing_data_checklist": result.get("missing_data_checklist", []),
+            "regime_recommendation": regime_recommendation,
+            "deductions": tax_result.get("deductions", {}),
+            "net_gst_payable": _safe_amount((result.get("business_result", {}).get("gst_summary") or {}).get("net_gst_payable")),
+        },
+        "transactions": transaction_summary,
     }
 
 
@@ -250,6 +262,19 @@ def _empty_dashboard_payload() -> dict[str, Any]:
             "compliance_flags": [],
             "missing_data_count": 0,
         },
+        "assistant_context": {
+            "profile_type": None,
+            "financial_year": None,
+            "missing_data_checklist": [],
+            "regime_recommendation": {},
+            "deductions": {},
+            "net_gst_payable": 0.0,
+        },
+        "transactions": {
+            "total_transactions": 0,
+            "categories": [],
+            "recent_transactions": [],
+        },
     }
 
 
@@ -270,6 +295,8 @@ async def _convert_uploaded_file(document_type: str, file_storage: UploadFile) -
             "document_type": document_type,
             "source_name": filename,
             "csv_content": csv_content,
+            "storage_kind": "csv_upload",
+            "metadata": {"source": "CSV"},
         }
 
     if any(lower_name.endswith(ext) for ext in IMAGE_EXTENSIONS):
@@ -398,15 +425,10 @@ async def analyze_files(request: Request, current_user_id: int = Depends(get_cur
 
 @tax_bp.post("/ask")
 async def ask(request: Request, current_user_id: int = Depends(get_current_user_id)):
-    del current_user_id
     payload = await _json_payload(request)
     question = str(payload.get("question", "")).strip()
-    analysis = payload.get("analysis")
-
-    if not isinstance(analysis, dict):
-        return _error("analysis must be the JSON result returned by an analyze endpoint.", 400)
-
-    return answer_tax_question(analysis, question)
+    dashboard_payload = dashboard_financial_data(current_user_id)
+    return answer_tax_question(dashboard_payload, question)
 
 
 @tax_bp.post("/jobs")
@@ -460,6 +482,29 @@ def dashboard_financial_data(current_user_id: int = Depends(get_current_user_id)
         return _empty_dashboard_payload()
 
     return _build_dashboard_payload(processed_jobs[0])
+
+
+@tax_bp.get("/transactions")
+def list_transactions(current_user_id: int = Depends(get_current_user_id), job_id: str | None = None):
+    jobs_query = TaxFilingJob.query.filter_by(user_id=current_user_id)
+    if job_id:
+        job = jobs_query.filter_by(job_id=job_id).first()
+        if job is None:
+            return _error("Job not found.", 404)
+        transactions = [transaction.to_dict() for transaction in job.transactions]
+        return {"transactions": transactions, "count": len(transactions), "job_id": job.job_id}
+
+    jobs = jobs_query.order_by(TaxFilingJob.updated_at.desc(), TaxFilingJob.id.desc()).all()
+    transactions = [
+        transaction.to_dict()
+        for job in jobs
+        for transaction in sorted(
+            job.transactions,
+            key=lambda entry: (str(entry.transaction_date), int(entry.id)),
+            reverse=True,
+        )
+    ]
+    return {"transactions": transactions, "count": len(transactions), "job_id": None}
 
 
 @tax_bp.post("/jobs/{job_id}/documents")

@@ -26,6 +26,24 @@ ALLOWED_BANK_INCOME_LABELS = {
     "unknown",
 }
 
+ALLOWED_TRANSACTION_CATEGORIES = {
+    "income",
+    "food",
+    "transportation",
+    "shopping",
+    "utilities",
+    "software",
+    "office_expense",
+    "travel",
+    "loan",
+    "tax_payment",
+    "marketing",
+    "transfer",
+    "rent",
+    "interest",
+    "other",
+}
+
 
 def groq_status() -> dict[str, Any]:
     config = get_runtime_config()
@@ -262,4 +280,108 @@ def extract_csv_from_ocr_text(
         "confidence": round(float(payload.get("confidence", 0.0) or 0.0), 3),
         "notes": str(payload.get("notes", "")).strip()[:180],
         "meta": {**groq_status(), **meta, "success": True},
+    }
+
+
+def answer_tax_question_with_groq(*, system_prompt: str, user_prompt: str) -> dict[str, Any] | None:
+    if not groq_available():
+        return None
+
+    config = get_runtime_config()
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+    content, meta = _request_completion(messages)
+    if not content:
+        return {
+            "answer": "",
+            "model": config.GROQ_MODEL,
+            "meta": {**groq_status(), **meta, "success": False},
+        }
+
+    return {
+        "answer": str(content).strip(),
+        "model": config.GROQ_MODEL,
+        "meta": {**groq_status(), **meta, "success": True},
+    }
+
+
+def enrich_transaction_rows(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if not groq_available() or not rows:
+        return None
+
+    config = get_runtime_config()
+    items: list[dict[str, Any]] = []
+    max_rows = int(getattr(config, "GROQ_TRANSACTION_ROWS_PER_CALL", 25))
+
+    for batch_start in range(0, len(rows), max_rows):
+        batch = rows[batch_start : batch_start + max_rows]
+        prompt_rows = [
+            {
+                "row_id": row["row_id"],
+                "date": row.get("date"),
+                "description": str(row.get("description", ""))[:160],
+                "amount": row.get("amount", 0.0),
+                "txn_type": row.get("txn_type", "expense"),
+                "category_hint": row.get("raw_category") or row.get("category"),
+            }
+            for row in batch
+        ]
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are an Indian business transaction enrichment engine. "
+                    "Extract a concise merchant name and classify each row. Respond with valid JSON only."
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "For each transaction row, return strict JSON in this format: "
+                    '{"items":[{"row_id":"...","merchant":"short merchant name","category":"income|food|transportation|shopping|utilities|software|office_expense|travel|loan|tax_payment|marketing|transfer|rent|interest|other","confidence":0.0}]}. '
+                    "Use concise merchant names, category 'income' for business receipts or salary credits, and 'transfer' for self/internal transfers.\n"
+                    f"Rows: {json.dumps(prompt_rows, separators=(',', ':'))}"
+                ),
+            },
+        ]
+
+        content, meta = _request_completion(messages)
+        if not content:
+            return {
+                "items": items,
+                "model": config.GROQ_MODEL,
+                "rows_sent": len(rows),
+                "meta": {**groq_status(), **meta, "success": False},
+            }
+
+        try:
+            payload = _extract_json_object(content)
+        except Exception as exc:  # pragma: no cover
+            return {
+                "items": items,
+                "model": config.GROQ_MODEL,
+                "rows_sent": len(rows),
+                "meta": {**groq_status(), **meta, "success": False, "error": type(exc).__name__, "detail": str(exc)[:240]},
+            }
+
+        for item in payload.get("items", []):
+            category = str(item.get("category", "other")).strip().lower()
+            if category not in ALLOWED_TRANSACTION_CATEGORIES:
+                category = "other"
+            items.append(
+                {
+                    "row_id": str(item.get("row_id", "")),
+                    "merchant": str(item.get("merchant", "")).strip()[:255],
+                    "category": category,
+                    "confidence": round(float(item.get("confidence", 0.0) or 0.0), 3),
+                }
+            )
+
+    return {
+        "items": items,
+        "model": config.GROQ_MODEL,
+        "rows_sent": len(rows),
+        "meta": {**groq_status(), "success": True},
     }

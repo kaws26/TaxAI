@@ -3,7 +3,7 @@
 Base URL:
 
 ```text
-http://127.0.0.1:5000
+http://127.0.0.1:8000
 ```
 
 Auth header for protected endpoints:
