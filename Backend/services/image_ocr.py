@@ -1,20 +1,15 @@
 from __future__ import annotations
 
 import os
-from io import BytesIO
+import tempfile
 from typing import Any
 
-from PIL import Image, ImageOps
+from huggingface_hub import InferenceClient
 
 from runtime import get_runtime_config
 from services.document_ingestion import DocumentValidationError, parse_document
 from services.groq_ai import extract_csv_from_ocr_text, groq_status
 from services.tax_constants import SUPPORTED_DOCUMENTS
-
-try:
-    import pytesseract
-except ImportError:  # pragma: no cover
-    pytesseract = None
 
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".tiff", ".tif", ".bmp"}
@@ -23,51 +18,56 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".tiff", ".tif", ".bmp"}
 class OcrConversionError(ValueError):
     pass
 
+
 def ocr_status() -> dict[str, Any]:
     config = get_runtime_config()
-    tesseract_cmd = str(getattr(config, "TESSERACT_CMD", "")).strip()
+    hf_token = str(getattr(config, "HF_TOKEN", "")).strip()
     return {
-        "pytesseract_installed": pytesseract is not None,
-        "tesseract_cmd_configured": bool(tesseract_cmd),
+        "provider": getattr(config, "HF_OCR_PROVIDER", "zai-org"),
+        "model": getattr(config, "HF_OCR_MODEL", "zai-org/GLM-OCR"),
+        "has_hf_token": bool(hf_token),
         "groq": groq_status(),
     }
+
 
 def _is_image_filename(filename: str) -> bool:
     return os.path.splitext(filename.lower())[1] in IMAGE_EXTENSIONS
 
 
-def _extract_text_from_image(image_bytes: bytes) -> str:
-    if pytesseract is None:
-        raise OcrConversionError(
-            "pytesseract is not installed. Install it and ensure the Tesseract engine is available."
-        )
-
+def _extract_text_from_image(image_bytes: bytes, source_name: str) -> str:
     config = get_runtime_config()
-    tesseract_cmd = str(getattr(config, "TESSERACT_CMD", "")).strip()
-    if tesseract_cmd:
-        pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+    hf_token = str(getattr(config, "HF_TOKEN", "")).strip()
+    if not hf_token:
+        raise OcrConversionError("HF_TOKEN is not configured. Set HF_TOKEN to use Hugging Face OCR.")
+
+    client = InferenceClient(
+        provider=str(getattr(config, "HF_OCR_PROVIDER", "zai-org")).strip() or "zai-org",
+        api_key=hf_token,
+    )
+
+    suffix = os.path.splitext(source_name)[1].lower() or ".png"
+    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as temp_file:
+        temp_file.write(image_bytes)
+        temp_path = temp_file.name
 
     try:
-        image = Image.open(BytesIO(image_bytes))
-    except Exception as exc:
-        raise OcrConversionError(f"Uploaded file is not a readable image: {exc}") from exc
-
-    # Grayscale + auto-contrast usually improves OCR quality on scans.
-    processed = ImageOps.autocontrast(ImageOps.grayscale(image))
-
-    try:
-        text = pytesseract.image_to_string(processed)
-    except Exception as exc:
-        raise OcrConversionError(
-            "OCR failed. Verify Tesseract is installed and TESSERACT_CMD is configured if needed."
-        ) from exc
-
-    normalized = "\n".join(line.rstrip() for line in text.splitlines())
-    if len(normalized.strip()) < 20:
-        raise OcrConversionError(
-            "OCR extracted too little text from the image. Upload a clearer image or use CSV."
+        output = client.image_to_text(
+            temp_path,
+            model=str(getattr(config, "HF_OCR_MODEL", "zai-org/GLM-OCR")).strip() or "zai-org/GLM-OCR",
         )
-    return normalized
+        normalized = "\n".join(line.rstrip() for line in str(output or "").splitlines())
+        if len(normalized.strip()) < 20:
+            raise OcrConversionError(
+                "OCR extracted too little text from the image. Upload a clearer image or use CSV."
+            )
+        return normalized
+    except OcrConversionError:
+        raise
+    except Exception as exc:
+        raise OcrConversionError(f"Hugging Face OCR inference failed: {exc}") from exc
+    finally:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
 
 
 def convert_image_to_csv_document(
@@ -76,12 +76,13 @@ def convert_image_to_csv_document(
     source_name: str,
     image_bytes: bytes,
 ) -> dict[str, Any]:
+    config = get_runtime_config()
     if document_type not in SUPPORTED_DOCUMENTS:
         raise OcrConversionError(f"Unsupported document type: {document_type}")
     if not _is_image_filename(source_name):
         raise OcrConversionError(f"{source_name} is not a supported image format.")
 
-    ocr_text = _extract_text_from_image(image_bytes)
+    ocr_text = _extract_text_from_image(image_bytes, source_name)
     schema = SUPPORTED_DOCUMENTS[document_type]
     llm_result = extract_csv_from_ocr_text(
         document_type=document_type,
@@ -122,7 +123,9 @@ def convert_image_to_csv_document(
         "metadata": {
             "source": "OCR",
             "conversion_meta": {
-                "origin": "image_ocr",
+                "origin": "huggingface_glm_ocr",
+                "provider": getattr(config, "HF_OCR_PROVIDER", "zai-org"),
+                "model": getattr(config, "HF_OCR_MODEL", "zai-org/GLM-OCR"),
                 "original_source": source_name,
                 "ocr_chars": len(ocr_text),
                 "llm_meta": llm_result.get("meta", {}),

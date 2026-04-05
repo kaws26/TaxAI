@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import AppLayout from '../components/AppLayout';
-
-const API_URL = 'https://taxai-77xc.onrender.com';
+import { API_BASE_URL } from '../utils/api';
 
 export default function Filing() {
   const { user } = useAuth();
@@ -29,7 +28,7 @@ export default function Filing() {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const response = await fetch(`${API_URL}/api/tax-assistant/options`, {
+        const response = await fetch(`${API_BASE_URL}/api/tax-assistant/options`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` },
         });
         const data = await response.json();
@@ -56,7 +55,7 @@ export default function Filing() {
   const fetchJobs = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${API_URL}/api/tax-assistant/jobs`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` },
       });
       const data = await response.json();
@@ -82,7 +81,7 @@ export default function Filing() {
       if (formData.deduction_80d) payload.deduction_80d = parseFloat(formData.deduction_80d);
       if (formData.advance_tax) payload.advance_tax = parseFloat(formData.advance_tax);
 
-      const response = await fetch(`${API_URL}/api/tax-assistant/jobs`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -591,7 +590,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
         const token = localStorage.getItem('access_token');
 
         // Fetch options
-        const optResponse = await fetch(`${API_URL}/api/tax-assistant/options`, {
+        const optResponse = await fetch(`${API_BASE_URL}/api/tax-assistant/options`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!optResponse.ok) throw new Error('Failed to fetch options');
@@ -612,7 +611,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
         // Fetch review state if status is review or approved
         if (job.status === 'review' || job.status === 'approved') {
           const revResponse = await fetch(
-            `${API_URL}/api/tax-assistant/jobs/${jobId}/review`,
+            `${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/review`,
             {
               headers: { Authorization: `Bearer ${token}` },
             }
@@ -652,7 +651,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
           docFormData.append('files', file);
         });
 
-        const uploadUrl = `${API_URL}/api/tax-assistant/jobs/${jobId}/documents`;
+        const uploadUrl = `${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/documents`;
         console.log('Uploading to:', uploadUrl, 'Document type:', docItem.documentType);
 
         const response = await fetch(uploadUrl, {
@@ -707,7 +706,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
     try {
       setProcessLoading(true);
       const jobId = currentJob.job_id || currentJob.id;
-      const response = await fetch(`${API_URL}/api/tax-assistant/jobs/${jobId}/process`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/process`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,
@@ -723,7 +722,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
         if (data.job?.status === 'computed' || data.job?.status === 'review' || data.job?.status === 'approved') {
           try {
             const revResponse = await fetch(
-              `${API_URL}/api/tax-assistant/jobs/${jobId}/review`,
+              `${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/review`,
               {
                 headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` },
               }
@@ -759,7 +758,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
     try {
       setApproveLoading(true);
       const jobId = currentJob.job_id || currentJob.id;
-      const response = await fetch(`${API_URL}/api/tax-assistant/jobs/${jobId}/approve`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/approve`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -791,7 +790,7 @@ function JobDetail({ job, onBack, onJobUpdate }) {
     try {
       setExportLoading(true);
       const jobId = currentJob.job_id || currentJob.id;
-      const response = await fetch(`${API_URL}/api/tax-assistant/jobs/${jobId}/export/itr-pdf`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/jobs/${jobId}/export/itr-pdf`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,
         },

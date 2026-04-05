@@ -3,10 +3,10 @@ groq
 PyJWT
 Pillow
 pandas
-pytesseract
 python-dotenv
 python-multipart
 SQLAlchemy
 psycopg[binary]
 uvicorn
 Werkzeug
+huggingface_hub

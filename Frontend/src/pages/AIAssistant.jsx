@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AppLayout from '../components/AppLayout';
-
-const API_URL = 'https://taxai-77xc.onrender.com';
+import { API_BASE_URL } from '../utils/api';
 
 // Simple markdown parser for tables, bold, headers, lists
 const renderMarkdown = (content) => {
@@ -267,7 +266,7 @@ export default function AIAssistant() {
         });
       }
 
-      const response = await fetch(`${API_URL}/api/tax-assistant/analyze`, {
+      const response = await fetch(`${API_BASE_URL}/api/tax-assistant/analyze`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -311,7 +310,7 @@ export default function AIAssistant() {
     // For personal Q&A, call the API
     if (activeTab === 'personal' && taxAnalysis) {
       try {
-        const response = await fetch(`${API_URL}/api/tax-assistant/ask`, {
+        const response = await fetch(`${API_BASE_URL}/api/tax-assistant/ask`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

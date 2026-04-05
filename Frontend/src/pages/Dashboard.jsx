@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import AppLayout from '../components/AppLayout';
-
-const API_URL = 'https://taxai-77xc.onrender.com';
+import { API_BASE_URL } from '../utils/api';
 
 // Donut Chart Component
 const DonutChart = ({ data, colors, width = 200, height = 200 }) => {
@@ -234,7 +233,7 @@ export default function Dashboard() {
     const fetchDashboardData = async () => {
       try {
         const token = localStorage.getItem('access_token');
-        const response = await fetch(`${API_URL}/api/tax-assistant/dashboard/financial-data`, {
+        const response = await fetch(`${API_BASE_URL}/api/tax-assistant/dashboard/financial-data`, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
