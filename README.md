@@ -1,6 +1,5 @@
 # TaxAI India
 
-
 ### AI-Powered Tax & Financial Compliance Copilot for India
 
 An intelligent platform that simplifies **tax planning, compliance, and financial insights** for freelancers, students, creators, and small businesses.
@@ -9,7 +8,7 @@ Instead of navigating complex financial regulations or hiring expensive consulta
 
 ---
 
-# Project Overview
+# 🚀 Project Overview
 
 Managing taxes in India can be complicated due to:
 
@@ -18,26 +17,35 @@ Managing taxes in India can be complicated due to:
 * Compliance requirements
 * Financial document handling
 
-## Project Demo
+## 🎥 Demo Video
+
+👉 **Watch Demo:**
+https://drive.google.com/file/d/1wUDI_HkTDMxSwj57Kp7ScI01ukWHYbyK/view?usp=sharing
+
+---
+
+## 🖼️ Project Preview
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/be21c4f0-dbc0-4065-83a3-f4320886f8b9" alt="Screenshot of the TaxAI India tax and financial compliance copilot demo interface" width="700"/>
+  <img src="https://res.cloudinary.com/dzyhbyyaf/image/upload/v1776154438/Screenshot_2026-04-14_133924_bpxch7.png" alt="TaxAI India Preview" width="800"/>
 </p>
+
+---
 
 **TaxAI** acts as a **digital Chartered Accountant assistant**, automating many of the workflows typically handled by CA firms.
 
 The system integrates:
 
-* **AI reasoning**
-* **Structured tax computation**
-* **Document intelligence**
-* **Compliance monitoring**
+* AI reasoning
+* Structured tax computation
+* Document intelligence
+* Compliance monitoring
 
 This hybrid architecture ensures **accuracy, interpretability, and user-friendly financial insights**.
 
 ---
 
-# Problem Statement
+# ❗ Problem Statement
 
 Many individuals such as:
 
@@ -60,9 +68,9 @@ Our platform solves this by combining **AI + financial logic** to provide **pers
 
 ---
 
-# Key Features
+# ✨ Key Features
 
-## AI Chartered Accountant Copilot
+## 🧠 AI Chartered Accountant Copilot
 
 A conversational AI assistant that answers finance and tax queries such as:
 
@@ -71,24 +79,20 @@ A conversational AI assistant that answers finance and tax queries such as:
 * “Can I claim my laptop as a business expense?”
 * “How can I reduce my tax liability?”
 
-The AI combines **user financial data, tax rules, and contextual reasoning** to provide clear explanations.
-
 ---
 
-## Smart Financial Dashboard
+## 📊 Smart Financial Dashboard
 
-A visual overview of the user's financial data including:
+A structured overview of the user's financial data including:
 
 * Income breakdown
 * Expense categories
 * Estimated tax liability
 * Financial insights
 
-Interactive charts help users understand where their money goes.
-
 ---
 
-## Intelligent Document Processing
+## 📄 Intelligent Document Processing
 
 Users can upload financial documents such as:
 
@@ -100,215 +104,170 @@ Users can upload financial documents such as:
 
 The system uses **OCR + AI extraction** to convert documents into structured financial data.
 
-Extracted information includes:
-
-* Income
-* TDS
-* Expense categories
-* Relevant financial fields
-
 ---
 
-## Deterministic Tax Calculation Engine
+## ⚙️ Deterministic Tax Calculation Engine
 
-Unlike typical AI tools, our system includes a **rule-based tax computation engine** that calculates:
+A rule-based engine that calculates:
 
 * Income tax liability
 * Old vs New regime comparison
 * Deduction impact
 
-Supported deduction categories include examples such as:
+Supports sections like:
 
-* Section 80C
-* Section 80D
-* Other basic exemptions
+* 80C
+* 80D
+* Other exemptions
 
-This ensures **accuracy and reliability**.
+Ensures **accuracy and reliability**.
 
 ---
 
-## Tax Optimization Engine
+## 📈 Tax Optimization Engine
 
-The platform simulates tax-saving strategies using **scenario analysis**.
-
-Examples include:
+Simulates tax-saving strategies:
 
 * “What if I invest ₹50,000 under 80C?”
 * “What if I switch tax regimes?”
 
-The system calculates **tax before and after optimization** and recommends the best strategy.
+Provides **before vs after comparisons**.
 
 ---
 
-## Compliance & Risk Detection
+## 🚨 Compliance & Risk Detection
 
-A built-in compliance engine detects potential issues such as:
+Detects issues such as:
 
 * Missing deductions
 * Unusual financial patterns
-* High taxable income without optimization
+* High taxable income
 
-Users receive **alerts and suggestions** with references to relevant tax sections.
+Provides **actionable suggestions**.
 
 ---
 
-## Automated Tax Summary Report
+## 📑 Automated Tax Summary Report
 
-The platform can generate a structured **tax summary report**, similar to what a CA might provide.
-
-Reports include:
+Generates structured reports including:
 
 * Income summary
 * Deductions
-* Estimated tax liability
+* Estimated tax
 * Optimization suggestions
-
-These reports help users prepare for **ITR filing**.
 
 ---
 
-# AI Architecture
-
-The system follows a **modular AI orchestration architecture**.
+# 🧠 AI Architecture
 
 ### Core Components
 
 **AI Orchestrator**
 
-The central controller responsible for:
+Handles:
 
 * Intent detection
 * Workflow routing
 * Data aggregation
-* AI response generation
+* Response generation
 
 ---
 
-**Document Processing Pipeline**
+### Document Pipeline
 
 ```
-Upload Document
-      ↓
-OCR Extraction
-      ↓
-LLM Structured Data Extraction
-      ↓
-Database Storage
+Upload → OCR → AI Extraction → Database
 ```
 
 ---
 
-**Tax Intelligence Pipeline**
+### Tax Intelligence Pipeline
 
 ```
-User Query
-      ↓
-Fetch Financial Data
-      ↓
-Tax Calculation Engine
-      ↓
-Compliance Rule Engine
-      ↓
-LLM Explanation Layer
+Query → Data → Tax Engine → Compliance → AI Explanation
 ```
 
 ---
 
-**Optimization Pipeline**
+### Optimization Pipeline
 
 ```
-Baseline Tax Calculation
-      ↓
-Scenario Simulation
-      ↓
-Savings Comparison
-      ↓
-AI Recommendations
+Baseline → Simulation → Comparison → Recommendation
 ```
 
 ---
 
-# System Architecture
 
-### Frontend
+# 🧩 Tech Stack
 
-* Next.js
-* TailwindCSS
-* ShadCN UI
-* Recharts for visualization
+## 🎨 Frontend & API
 
----
-
-### Backend
-
-* Python- Flask
+* **React.js** — Responsive and dynamic user interface
+* **FastAPI** — High-performance backend API layer
+* **JWT Authentication** — Secure user authentication and session management
 
 ---
 
-### Database
+## 🗄️ Data Layer
 
-* Supabase
-* PostgreSQL storage
-* Secure authentication
-
----
-
-### AI Layer
-
-* Large Language Model (LLM) API
-* Prompt-based reasoning
-* Context-aware responses
+* **MongoDB** — Primary database for storing user and financial data
+* **Vector Database** — Enables RAG-based semantic search and retrieval
+* **Pageless Indexing** — Efficient document indexing for faster querying
 
 ---
 
-### Supporting Tools
+## 🤖 AI Layer
 
-* OCR engine for document extraction
-* Deterministic tax logic engine
-* Compliance rule engine
-
----
-
-# System Workflow
-
-1. User logs into the platform
-2. Uploads financial documents or manually enters financial data
-3. System extracts and stores financial information
-4. Tax engine calculates liabilities and deductions
-5. AI assistant provides explanations and recommendations
-6. Compliance engine flags potential issues
-7. Users receive insights and downloadable reports
+* **Groq LLM** — Ultra-fast language model inference
+* **LangChain** — AI orchestration and RAG pipeline management
+* **OCR Engine** — Extracts structured data from images and documents
 
 ---
 
-# Contributors
+## 🔄 System Flow
 
-This project was built collaboratively by:
+```text
+React.js 
+   ↓
+FastAPI 
+   ↓
+MongoDB + Vector DB 
+   ↓
+AI Layer (OCR + LLM + LangChain)
+```
+---
 
+# 🔄 System Workflow
+
+1. User logs in
+2. Uploads or enters financial data
+3. Data is processed and stored
+4. Tax is calculated
+5. AI provides insights
+6. Compliance checks run
+7. Reports are generated
+
+---
+
+# 👨‍💻 Contributors
+
+* **Kawaljeet Singh**
+* **Harsh Pachauri**
 * **Akshit Maheshwari**
 * **Divyam Gupta**
-* **Harsh Pachauri**
-* **Kawaljeet Singh**
 
 ---
 
-# Future Improvements
+# 🚀 Future Improvements
 
-Potential future expansions include:
-
-* Direct ITR filing integration
+* ITR filing integration
 * AIS / Form 26AS verification
-* GST support for small businesses
-* Investment recommendation engine
-* Real-time financial API integrations
+* GST support
+* Investment recommendations
+* Real-time APIs
 
 ---
 
-# License
+# 📜 License
 
-This project is developed for **educational and hackathon purposes**.
-Future versions may include open-source licensing.
-
----
-
-
+This project is built for **educational and hackathon purposes**.

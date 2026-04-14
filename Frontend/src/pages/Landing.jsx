@@ -27,13 +27,13 @@ export default function Landing() {
           scrolled ? 'bg-[#16100A] border-b border-[#c9a961]/20' : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
             <h1
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "2rem",
+                fontSize: "1.75rem",
                 fontWeight: 600,
                 color: "#f5f5f0",
               }}
@@ -43,7 +43,7 @@ export default function Landing() {
           </div>
 
           {/* Nav Links */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-6">
             {['Features', 'How It Works', 'Pricing', 'About'].map((link) => (
               <li key={link}>
                 <a
@@ -51,7 +51,7 @@ export default function Landing() {
                   className="text-[#f5f5f0] hover:text-[#c9a961] transition-colors"
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.875rem",
+                    fontSize: "0.8125rem",
                     fontWeight: 500,
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
@@ -66,10 +66,10 @@ export default function Landing() {
           {/* CTA Button */}
           <button
             onClick={() => navigate('/auth')}
-            className="px-6 py-2.5 bg-[#c9a961] text-[#1a1816] hover:bg-[#d4b76f] transition-colors"
+            className="px-5 py-2 bg-[#c9a961] text-[#1a1816] hover:bg-[#d4b76f] transition-colors"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: "0.875rem",
+              fontSize: "0.8125rem",
               fontWeight: 600,
               letterSpacing: "0.025em",
             }}
@@ -106,40 +106,40 @@ export default function Landing() {
           ₹
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 py-24 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 py-16 w-full">
           <div className="max-w-3xl">
             <h1
-              className="mb-16"
+              className="mb-12"
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
               }}
             >
               <div
                 style={{
-                  fontSize: "5rem",
+                  fontSize: "4rem",
                   lineHeight: "1.1",
                   fontWeight: 300,
                   color: "#f5f5f0",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.4rem",
                 }}
               >
                 Your personal
               </div>
               <div
                 style={{
-                  fontSize: "5rem",
+                  fontSize: "4rem",
                   lineHeight: "1.1",
                   fontWeight: 400,
                   fontStyle: "italic",
                   color: "#c9a961",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.4rem",
                 }}
               >
                 Chartered Accountant
               </div>
               <div
                 style={{
-                  fontSize: "5rem",
+                  fontSize: "4rem",
                   lineHeight: "1.1",
                   fontWeight: 700,
                   color: "#ffffff",
@@ -150,11 +150,11 @@ export default function Landing() {
             </h1>
 
             <p
-              className="mb-12"
+              className="mb-10"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: "1.25rem",
-                lineHeight: "1.7",
+                fontSize: "1rem",
+                lineHeight: "1.6",
                 color: "#b8b5af",
                 maxWidth: "40rem",
               }}
@@ -164,10 +164,10 @@ export default function Landing() {
 
             <button
               onClick={() => navigate('/auth')}
-              className="px-8 py-4 bg-[#c9a961] text-[#1a1816] transition-all hover:bg-[#d4b76f]"
+              className="px-6 py-3 bg-[#c9a961] text-[#1a1816] transition-all hover:bg-[#d4b76f]"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: "1rem",
+                fontSize: "0.9375rem",
                 fontWeight: 600,
                 letterSpacing: "0.025em",
               }}
@@ -178,14 +178,14 @@ export default function Landing() {
         </div>
 
         {/* Stats Strip */}
-        <div className="absolute bottom-0 left-0 right-0 bg-[#0f0e0d]/50 backdrop-blur-sm border-t border-[#3a3632] py-8">
+        <div className="absolute bottom-0 left-0 right-0 bg-[#0f0e0d]/50 backdrop-blur-sm border-t border-[#3a3632] py-6">
           <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-4 gap-6">
               <div>
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "2.5rem",
+                    fontSize: "2rem",
                     fontWeight: 600,
                     color: "#c9a961",
                   }}
@@ -195,10 +195,10 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 500,
                     color: "#8a867f",
-                    marginTop: "0.5rem",
+                    marginTop: "0.4rem",
                     letterSpacing: "0.05em",
                     textTransform: "uppercase",
                   }}
@@ -211,7 +211,7 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "2.5rem",
+                    fontSize: "2rem",
                     fontWeight: 600,
                     color: "#c9a961",
                   }}
@@ -221,10 +221,10 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 500,
                     color: "#8a867f",
-                    marginTop: "0.5rem",
+                    marginTop: "0.4rem",
                     letterSpacing: "0.05em",
                     textTransform: "uppercase",
                   }}
@@ -237,7 +237,7 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "2.5rem",
+                    fontSize: "2rem",
                     fontWeight: 600,
                     color: "#c9a961",
                   }}
@@ -247,10 +247,10 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 500,
                     color: "#8a867f",
-                    marginTop: "0.5rem",
+                    marginTop: "0.4rem",
                     letterSpacing: "0.05em",
                     textTransform: "uppercase",
                   }}
@@ -263,7 +263,7 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "2.5rem",
+                    fontSize: "2rem",
                     fontWeight: 600,
                     color: "#c9a961",
                   }}
@@ -273,10 +273,10 @@ export default function Landing() {
                 <div
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "0.875rem",
+                    fontSize: "0.75rem",
                     fontWeight: 500,
                     color: "#8a867f",
-                    marginTop: "0.5rem",
+                    marginTop: "0.4rem",
                     letterSpacing: "0.05em",
                     textTransform: "uppercase",
                   }}
@@ -290,9 +290,9 @@ export default function Landing() {
       </section>
 
       {/* How It Works */}
-      <section className="py-32 bg-[#faf8f5]">
+      <section className="py-24 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div
               style={{
                 fontFamily: "'DM Sans', sans-serif",
@@ -301,7 +301,7 @@ export default function Landing() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "#c9a961",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               § How It Works
@@ -309,7 +309,7 @@ export default function Landing() {
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3.5rem",
+                fontSize: "2.75rem",
                 fontWeight: 500,
                 color: "#1a1816",
                 lineHeight: "1.2",
@@ -319,13 +319,13 @@ export default function Landing() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-12">
-              <div className="flex gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-10">
+              <div className="flex gap-5">
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "4rem",
+                    fontSize: "3.25rem",
                     fontWeight: 300,
                     color: "#c9a961",
                     lineHeight: "1",
@@ -337,10 +337,10 @@ export default function Landing() {
                   <h3
                     style={{
                       fontFamily: "'Crimson Pro', serif",
-                      fontSize: "1.75rem",
+                      fontSize: "1.5rem",
                       fontWeight: 600,
                       color: "#1a1816",
-                      marginBottom: "0.75rem",
+                      marginBottom: "0.5rem",
                     }}
                   >
                     Upload Your Documents
@@ -348,8 +348,8 @@ export default function Landing() {
                   <p
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: "1.0625rem",
-                      lineHeight: "1.7",
+                      fontSize: "0.95rem",
+                      lineHeight: "1.6",
                       color: "#5a5550",
                     }}
                   >
@@ -358,11 +358,11 @@ export default function Landing() {
                 </div>
               </div>
 
-              <div className="flex gap-6">
+              <div className="flex gap-5">
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "4rem",
+                    fontSize: "3.25rem",
                     fontWeight: 300,
                     color: "#c9a961",
                     lineHeight: "1",
@@ -374,10 +374,10 @@ export default function Landing() {
                   <h3
                     style={{
                       fontFamily: "'Crimson Pro', serif",
-                      fontSize: "1.75rem",
+                      fontSize: "1.5rem",
                       fontWeight: 600,
                       color: "#1a1816",
-                      marginBottom: "0.75rem",
+                      marginBottom: "0.5rem",
                     }}
                   >
                     AI Processes Everything
@@ -385,8 +385,8 @@ export default function Landing() {
                   <p
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: "1.0625rem",
-                      lineHeight: "1.7",
+                      fontSize: "0.95rem",
+                      lineHeight: "1.6",
                       color: "#5a5550",
                     }}
                   >
@@ -395,11 +395,11 @@ export default function Landing() {
                 </div>
               </div>
 
-              <div className="flex gap-6">
+              <div className="flex gap-5">
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "4rem",
+                    fontSize: "3.25rem",
                     fontWeight: 300,
                     color: "#c9a961",
                     lineHeight: "1",
@@ -411,10 +411,10 @@ export default function Landing() {
                   <h3
                     style={{
                       fontFamily: "'Crimson Pro', serif",
-                      fontSize: "1.75rem",
+                      fontSize: "1.5rem",
                       fontWeight: 600,
                       color: "#1a1816",
-                      marginBottom: "0.75rem",
+                      marginBottom: "0.5rem",
                     }}
                   >
                     Review & File
@@ -422,8 +422,8 @@ export default function Landing() {
                   <p
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: "1.0625rem",
-                      lineHeight: "1.7",
+                      fontSize: "0.95rem",
+                      lineHeight: "1.6",
                       color: "#5a5550",
                     }}
                   >
@@ -491,13 +491,13 @@ export default function Landing() {
       </section>
 
       {/* Value Proposition */}
-      <section className="py-32 bg-[#faf8f5]">
+      <section className="py-24 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-8 text-center">
           <h2
             className="mb-6"
             style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "3.5rem",
+              fontSize: "2.75rem",
               color: "#1a1816",
             }}
           >
@@ -507,7 +507,7 @@ export default function Landing() {
           <p
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: "1.125rem",
+              fontSize: "1rem",
               color: "#5a5550",
               maxWidth: "48rem",
               margin: "0 auto",
@@ -519,9 +519,9 @@ export default function Landing() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-32 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div
               style={{
                 fontFamily: "'DM Sans', sans-serif",
@@ -530,7 +530,7 @@ export default function Landing() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "#c9a961",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               ¶ Features
@@ -538,7 +538,7 @@ export default function Landing() {
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3.5rem",
+                fontSize: "2.75rem",
                 fontWeight: 500,
                 color: "#1a1816",
                 lineHeight: "1.2",
@@ -548,7 +548,7 @@ export default function Landing() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: "§",
@@ -589,14 +589,14 @@ export default function Landing() {
             ].map((feature, i) => (
               <div
                 key={i}
-                className="border border-[#e0ddd6] p-8 hover:border-[#c9a961] transition-colors"
+                className="border border-[#e0ddd6] p-6 hover:border-[#c9a961] transition-colors"
               >
                 <div
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "3rem",
+                    fontSize: "2.5rem",
                     color: "#c9a961",
-                    marginBottom: "1rem",
+                    marginBottom: "0.75rem",
                   }}
                 >
                   {feature.icon}
@@ -604,10 +604,10 @@ export default function Landing() {
                 <h3
                   style={{
                     fontFamily: "'Crimson Pro', serif",
-                    fontSize: "1.5rem",
+                    fontSize: "1.25rem",
                     fontWeight: 600,
                     color: "#1a1816",
-                    marginBottom: "0.75rem",
+                    marginBottom: "0.5rem",
                   }}
                 >
                   {feature.title}
@@ -615,8 +615,8 @@ export default function Landing() {
                 <p
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.7",
+                    fontSize: "0.9375rem",
+                    lineHeight: "1.6",
                     color: "#5a5550",
                   }}
                 >
@@ -629,9 +629,9 @@ export default function Landing() {
       </section>
 
       {/* Regime Comparison */}
-      <section className="py-32 bg-[#faf8f5]">
+      <section className="py-24 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div
               style={{
                 fontFamily: "'DM Sans', sans-serif",
@@ -640,7 +640,7 @@ export default function Landing() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "#c9a961",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               ⚖ Tax Comparison
@@ -648,7 +648,7 @@ export default function Landing() {
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3.5rem",
+                fontSize: "2.75rem",
                 fontWeight: 500,
                 color: "#1a1816",
                 lineHeight: "1.2",
@@ -658,47 +658,47 @@ export default function Landing() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Old Regime */}
-            <div className="bg-white border-2 border-[#c9a961] p-8 relative">
-              <div className="absolute top-0 right-0 bg-[#c9a961] text-[#1a1816] px-4 py-1 text-sm font-semibold">
+            <div className="bg-white border-2 border-[#c9a961] p-6 relative">
+              <div className="absolute top-0 right-0 bg-[#c9a961] text-[#1a1816] px-3 py-1 text-xs font-semibold">
                 Recommended
               </div>
               <h3
                 style={{
                   fontFamily: "'Crimson Pro', serif",
-                  fontSize: "1.75rem",
+                  fontSize: "1.5rem",
                   fontWeight: 600,
                   color: "#1a1816",
-                  marginBottom: "1.5rem",
-                  marginTop: "1rem",
+                  marginBottom: "1rem",
+                  marginTop: "0.75rem",
                 }}
               >
                 Old Tax Regime
               </h3>
 
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Gross Salary</span>
-                  <span className="font-semibold text-[#1a1816]">₹8,50,000</span>
+              <div className="space-y-3 mb-5">
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Gross Salary</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">₹8,50,000</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Deductions (80C, 80D)</span>
-                  <span className="font-semibold text-[#2d5a3a]">-₹1,80,000</span>
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Deductions (80C, 80D)</span>
+                  <span className="font-semibold text-[#2d5a3a] text-sm">-₹1,80,000</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Taxable Income</span>
-                  <span className="font-semibold text-[#1a1816]">₹6,70,000</span>
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Taxable Income</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">₹6,70,000</span>
                 </div>
               </div>
 
-              <div className="bg-[#f5f3ed] p-4 mb-4">
+              <div className="bg-[#f5f3ed] p-3 mb-3">
                 <div className="flex justify-between items-center">
-                  <span className="font-semibold text-[#1a1816]">Total Tax Liability</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">Total Tax Liability</span>
                   <span
                     style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: "2rem",
+                      fontSize: "1.5rem",
                       fontWeight: 600,
                       color: "#1a1816",
                     }}
@@ -710,41 +710,41 @@ export default function Landing() {
             </div>
 
             {/* New Regime */}
-            <div className="bg-white border border-[#e0ddd6] p-8 opacity-75">
+            <div className="bg-white border border-[#e0ddd6] p-6 opacity-75">
               <h3
                 style={{
                   fontFamily: "'Crimson Pro', serif",
-                  fontSize: "1.75rem",
+                  fontSize: "1.5rem",
                   fontWeight: 600,
                   color: "#1a1816",
-                  marginBottom: "1.5rem",
+                  marginBottom: "1rem",
                 }}
               >
                 New Tax Regime
               </h3>
 
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Gross Salary</span>
-                  <span className="font-semibold text-[#1a1816]">₹8,50,000</span>
+              <div className="space-y-3 mb-5">
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Gross Salary</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">₹8,50,000</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Deductions</span>
-                  <span className="font-semibold text-[#8a867f]">Not Allowed</span>
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Deductions</span>
+                  <span className="font-semibold text-[#8a867f] text-sm">Not Allowed</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-[#e0ddd6]">
-                  <span className="text-[#5a5550]">Taxable Income</span>
-                  <span className="font-semibold text-[#1a1816]">₹8,50,000</span>
+                <div className="flex justify-between py-1.5 border-b border-[#e0ddd6]">
+                  <span className="text-[#5a5550] text-sm">Taxable Income</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">₹8,50,000</span>
                 </div>
               </div>
 
-              <div className="bg-[#f5f3ed] p-4 mb-4">
+              <div className="bg-[#f5f3ed] p-3 mb-3">
                 <div className="flex justify-between items-center">
-                  <span className="font-semibold text-[#1a1816]">Total Tax Liability</span>
+                  <span className="font-semibold text-[#1a1816] text-sm">Total Tax Liability</span>
                   <span
                     style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: "2rem",
+                      fontSize: "1.5rem",
                       fontWeight: 600,
                       color: "#1a1816",
                     }}
@@ -757,26 +757,26 @@ export default function Landing() {
           </div>
 
           {/* Savings Callout */}
-          <div className="bg-[#2d5a3a] text-white p-8 text-center">
+          <div className="bg-[#2d5a3a] text-white p-6 text-center">
             <div
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3rem",
+                fontSize: "2.25rem",
                 fontWeight: 600,
                 marginBottom: "0.5rem",
               }}
             >
               Save ₹18,200 with Old Regime
             </div>
-            <p className="text-lg opacity-90">Based on your current income and deductions</p>
+            <p className="text-sm opacity-90">Based on your current income and deductions</p>
           </div>
         </div>
       </section>
 
       {/* Deduction Tracker */}
-      <section className="py-32 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div
               style={{
                 fontFamily: "'DM Sans', sans-serif",
@@ -785,7 +785,7 @@ export default function Landing() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "#c9a961",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               § Deduction Tracking
@@ -793,7 +793,7 @@ export default function Landing() {
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3.5rem",
+                fontSize: "2.75rem",
                 fontWeight: 500,
                 color: "#1a1816",
                 lineHeight: "1.2",
@@ -803,9 +803,9 @@ export default function Landing() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Progress Bars */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:col-span-2 space-y-6">
               {[
                 { section: "80C", subtitle: "ELSS, PPF, Life Insurance", used: 150000, limit: 150000 },
                 { section: "80D", subtitle: "Health Insurance", used: 25000, limit: 50000 },
@@ -813,37 +813,37 @@ export default function Landing() {
                 { section: "HRA", subtitle: "House Rent Allowance", used: 96000, limit: 120000 },
               ].map((item, i) => (
                 <div key={i}>
-                  <div className="flex justify-between mb-2">
+                  <div className="flex justify-between mb-1.5">
                     <div>
                       <div
                         style={{
                           fontFamily: "'Crimson Pro', serif",
-                          fontSize: "1.25rem",
+                          fontSize: "1.1rem",
                           fontWeight: 600,
                           color: "#1a1816",
                         }}
                       >
                         Section {item.section}
                       </div>
-                      <div className="text-sm text-[#8a867f]">{item.subtitle}</div>
+                      <div className="text-xs text-[#8a867f]">{item.subtitle}</div>
                     </div>
                     <div className="text-right">
-                      <div className="font-semibold text-[#1a1816]">
+                      <div className="font-semibold text-[#1a1816] text-sm">
                         ₹{item.used.toLocaleString()}
                       </div>
-                      <div className="text-sm text-[#8a867f]">
+                      <div className="text-xs text-[#8a867f]">
                         of ₹{item.limit.toLocaleString()}
                       </div>
                     </div>
                   </div>
-                  <div className="w-full bg-[#e0ddd6] rounded-full h-3 overflow-hidden">
+                  <div className="w-full bg-[#e0ddd6] rounded-full h-2.5 overflow-hidden">
                     <div
                       className="bg-[#c9a961] h-full transition-all"
                       style={{ width: `${(item.used / item.limit) * 100}%` }}
                     />
                   </div>
                   {item.used < item.limit && (
-                    <div className="text-sm text-[#5a5550] mt-2">
+                    <div className="text-xs text-[#5a5550] mt-1.5">
                       ₹{(item.limit - item.used).toLocaleString()} remaining
                     </div>
                   )}
@@ -852,25 +852,25 @@ export default function Landing() {
             </div>
 
             {/* KPI Panel */}
-            <div className="bg-[#1a1816] text-white p-8 h-fit">
+            <div className="bg-[#1a1816] text-white p-6 h-fit">
               <h3
                 style={{
                   fontFamily: "'Crimson Pro', serif",
-                  fontSize: "1.5rem",
+                  fontSize: "1.25rem",
                   fontWeight: 600,
-                  marginBottom: "2rem",
+                  marginBottom: "1.5rem",
                 }}
               >
                 Your Tax Summary
               </h3>
 
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <div>
-                  <div className="text-[#8a867f] text-sm mb-1">Total Deductions</div>
+                  <div className="text-[#8a867f] text-xs mb-0.5">Total Deductions</div>
                   <div
                     style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: "2rem",
+                      fontSize: "1.6rem",
                       fontWeight: 600,
                       color: "#c9a961",
                     }}
@@ -880,11 +880,11 @@ export default function Landing() {
                 </div>
 
                 <div>
-                  <div className="text-[#8a867f] text-sm mb-1">Additional Savings Possible</div>
+                  <div className="text-[#8a867f] text-xs mb-0.5">Additional Savings Possible</div>
                   <div
                     style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: "2rem",
+                      fontSize: "1.6rem",
                       fontWeight: 600,
                       color: "#c9a961",
                     }}
@@ -894,11 +894,11 @@ export default function Landing() {
                 </div>
 
                 <div>
-                  <div className="text-[#8a867f] text-sm mb-1">Tax Savings</div>
+                  <div className="text-[#8a867f] text-xs mb-0.5">Tax Savings</div>
                   <div
                     style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: "2rem",
+                      fontSize: "1.6rem",
                       fontWeight: 600,
                       color: "#c9a961",
                     }}
@@ -908,7 +908,7 @@ export default function Landing() {
                 </div>
               </div>
 
-              <button className="w-full mt-8 px-6 py-3 bg-[#c9a961] text-[#1a1816] font-semibold hover:bg-[#d4b76f] transition-colors">
+              <button className="w-full mt-6 px-6 py-2 bg-[#c9a961] text-[#1a1816] font-semibold text-sm hover:bg-[#d4b76f] transition-colors">
                 Optimize Further
               </button>
             </div>
@@ -917,9 +917,9 @@ export default function Landing() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-32 bg-[#1a1816]">
+      <section className="py-24 bg-[#1a1816]">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div
               style={{
                 fontFamily: "'DM Sans', sans-serif",
@@ -928,7 +928,7 @@ export default function Landing() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "#c9a961",
-                marginBottom: "1rem",
+                marginBottom: "0.75rem",
               }}
             >
               ✦ Testimonials
@@ -936,7 +936,7 @@ export default function Landing() {
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "3.5rem",
+                fontSize: "2.75rem",
                 fontWeight: 500,
                 color: "#f5f5f0",
                 lineHeight: "1.2",
@@ -946,7 +946,7 @@ export default function Landing() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 quote:
@@ -973,26 +973,26 @@ export default function Landing() {
                 initials: "SR",
               },
             ].map((testimonial, i) => (
-              <div key={i} className="bg-[#2a2624] border border-[#3a3632] p-8">
+              <div key={i} className="bg-[#2a2624] border border-[#3a3632] p-6">
                 <p
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "1.0625rem",
-                    lineHeight: "1.7",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
                     color: "#b8b5af",
-                    marginBottom: "2rem",
+                    marginBottom: "1.5rem",
                   }}
                 >
                   "{testimonial.quote}"
                 </p>
 
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-[#c9a961] rounded-full flex items-center justify-center font-bold text-[#1a1816]">
+                  <div className="w-10 h-10 bg-[#c9a961] rounded-full flex items-center justify-center font-bold text-[#1a1816] text-sm">
                     {testimonial.initials}
                   </div>
                   <div>
-                    <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-sm text-[#8a867f]">
+                    <div className="font-semibold text-white text-sm">{testimonial.name}</div>
+                    <div className="text-xs text-[#8a867f]">
                       {testimonial.role} · {testimonial.location}
                     </div>
                   </div>
@@ -1004,16 +1004,16 @@ export default function Landing() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-32 bg-[#faf8f5]">
+      <section className="py-24 bg-[#faf8f5]">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <h2
             style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: "3.5rem",
+              fontSize: "2.75rem",
               fontWeight: 500,
               color: "#1a1816",
               lineHeight: "1.2",
-              marginBottom: "1.5rem",
+              marginBottom: "1rem",
             }}
           >
             Ready to take control of your finances?
@@ -1022,19 +1022,19 @@ export default function Landing() {
           <p
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: "1.125rem",
+              fontSize: "1rem",
               color: "#5a5550",
-              marginBottom: "2.5rem",
+              marginBottom: "2rem",
             }}
           >
             Join thousands of smart taxpayers who are saving money and time with TaxHacker.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => navigate('/auth')} className="px-8 py-4 bg-[#c9a961] text-[#1a1816] font-semibold text-lg hover:bg-[#d4b76f] transition-colors">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <button onClick={() => navigate('/auth')} className="px-6 py-2.5 bg-[#c9a961] text-[#1a1816] font-semibold text-sm hover:bg-[#d4b76f] transition-colors">
               Get Started Free
             </button>
-            <button onClick={() => navigate('/auth')} className="px-8 py-4 bg-transparent border-2 border-[#1a1816] text-[#1a1816] font-semibold text-lg hover:bg-[#1a1816] hover:text-white transition-colors">
+            <button onClick={() => navigate('/auth')} className="px-6 py-2.5 bg-transparent border border-[#1a1816] text-[#1a1816] font-semibold text-sm hover:bg-[#1a1816] hover:text-white transition-colors">
               Schedule a Demo
             </button>
           </div>
@@ -1042,31 +1042,31 @@ export default function Landing() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1a1816] text-white py-20">
+      <footer className="bg-[#1a1816] text-white py-16">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
             {/* Brand */}
             <div>
               <h3
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "2rem",
+                  fontSize: "1.75rem",
                   fontWeight: 600,
                   color: "#c9a961",
-                  marginBottom: "1rem",
+                  marginBottom: "0.75rem",
                 }}
               >
                 TaxHacker
               </h3>
-              <p className="text-[#8a867f] text-sm leading-relaxed">
+              <p className="text-[#8a867f] text-xs leading-relaxed">
                 Your AI-powered financial operating system for smarter tax filing and wealth management.
               </p>
             </div>
 
             {/* Product */}
             <div>
-              <h4 className="font-semibold mb-4 text-[#f5f5f0]">Product</h4>
-              <ul className="space-y-2 text-[#8a867f]">
+              <h4 className="font-semibold mb-3 text-[#f5f5f0] text-sm">Product</h4>
+              <ul className="space-y-1.5 text-[#8a867f] text-xs">
                 <li>
                   <a href="#" className="hover:text-[#c9a961] transition-colors">
                     Features
@@ -1092,8 +1092,8 @@ export default function Landing() {
 
             {/* Resources */}
             <div>
-              <h4 className="font-semibold mb-4 text-[#f5f5f0]">Resources</h4>
-              <ul className="space-y-2 text-[#8a867f]">
+              <h4 className="font-semibold mb-3 text-[#f5f5f0] text-sm">Resources</h4>
+              <ul className="space-y-1.5 text-[#8a867f] text-xs">
                 <li>
                   <a href="#" className="hover:text-[#c9a961] transition-colors">
                     Blog
@@ -1119,8 +1119,8 @@ export default function Landing() {
 
             {/* Company */}
             <div>
-              <h4 className="font-semibold mb-4 text-[#f5f5f0]">Company</h4>
-              <ul className="space-y-2 text-[#8a867f]">
+              <h4 className="font-semibold mb-3 text-[#f5f5f0] text-sm">Company</h4>
+              <ul className="space-y-1.5 text-[#8a867f] text-xs">
                 <li>
                   <a href="#" className="hover:text-[#c9a961] transition-colors">
                     About Us
@@ -1145,9 +1145,9 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className="border-t border-[#3a3632] pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-[#8a867f] text-sm">
+          <div className="border-t border-[#3a3632] pt-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3">
+              <p className="text-[#8a867f] text-xs">
                 © 2026 TaxHacker. All rights reserved.
               </p>
               <p className="text-[#8a867f] text-xs text-center md:text-right">

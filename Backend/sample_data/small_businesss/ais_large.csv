@@ -1,0 +1,13 @@
+income_type,description,amount,tds,tcs
+business receipts,Turnover captured from digital marketplace settlements,1850000,18500,0
+professional fees,Annual consulting retained clients,420000,42000,0
+interest,Savings and FD interest reported in AIS,98500,9850,0
+dividend,Dividend income from listed equity funds,16500,0,0
+rent,Sub-lease rental recovery from warehouse mezzanine,120000,12000,0
+capital gains,Sale of debt mutual fund units,46000,0,0
+other income,Promotional incentive from supplier,28000,0,0
+salary,Director remuneration reported,240000,12000,0
+interest,Bond interest income,22000,2200,0
+professional fees,One-time implementation project receipts,180000,18000,0
+business receipts,Online B2B portal remittances,760000,7600,0
+other income,GST interest refund adjustment,5400,0,0

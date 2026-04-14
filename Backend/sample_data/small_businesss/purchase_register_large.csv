@@ -1,0 +1,1801 @@
+date,description,amount,gst_rate,vendor_state,business_state,amount_inclusive_gst,eligible_itc,category
+2024-05-05,PINV-05-00001 Delta Office Systems utilities expense,65510.93,12,KA,KA,true,true,utilities
+2024-07-30,PINV-07-00002 Apex Packaging Works utilities expense,72997.48,12,KA,KA,false,true,utilities
+2025-03-01,PINV-03-00003 Royal Insurance Brokers purchase expense,56507.27,0,TN,KA,false,true,purchase
+2024-06-29,PINV-06-00004 Mohan Industrial Gases office expense expense,29778.28,18,GJ,KA,true,true,office_expense
+2024-11-29,PINV-11-00005 LightSpeed Internet software expense,27327.93,12,DL,KA,true,true,software
+2024-09-11,PINV-09-00006 Insight Marketing LLP utilities expense,94048.9,18,DL,KA,true,true,utilities
+2024-05-15,PINV-05-00007 Nexa Facility Services rent expense,8617.2,12,DL,KA,true,false,rent
+2024-11-06,PINV-11-00008 Insight Marketing LLP purchase expense,10446.48,18,GJ,KA,true,true,purchase
+2024-07-18,PINV-07-00009 SmartCloud Software purchase expense,36792.02,18,TN,KA,true,true,purchase
+2024-04-01,PINV-04-00010 Eco Power Utilities purchase expense,87172.94,5,KA,KA,true,true,purchase
+2025-02-13,PINV-02-00011 Pioneer Chemicals purchase expense,10296.32,18,MH,KA,true,true,purchase
+2025-01-18,PINV-01-00012 Himalaya Foods Supply loan expense,95023.05,18,TS,KA,true,false,loan
+2024-11-19,PINV-11-00013 Mohan Industrial Gases purchase expense,48343.03,18,TN,KA,true,true,purchase
+2024-12-08,PINV-12-00014 Pioneer Chemicals purchase expense,98825.64,18,TN,KA,true,true,purchase
+2025-02-28,PINV-02-00015 Mohan Industrial Gases office expense expense,81576.25,0,GJ,KA,false,true,office_expense
+2024-12-30,PINV-12-00016 TruEdge Consulting travel expense,30732.53,18,MH,KA,false,true,travel
+2025-02-18,PINV-02-00017 SmartCloud Software marketing expense,31948.15,18,KA,KA,true,true,marketing
+2025-02-17,PINV-02-00018 Mohan Industrial Gases purchase expense,85186.0,5,GJ,KA,true,true,purchase
+2025-02-21,PINV-02-00019 Kuber Warehousing purchase expense,5028.04,0,KA,KA,false,true,purchase
+2024-09-28,PINV-09-00020 Apex Packaging Works loan expense,32887.79,18,TN,KA,false,false,loan
+2024-08-24,PINV-08-00021 Pioneer Chemicals purchase expense,12955.5,0,TN,KA,false,true,purchase
+2024-10-20,PINV-10-00022 Jai Stationers purchase expense,44456.1,18,GJ,KA,true,true,purchase
+2024-11-16,PINV-11-00023 SmartCloud Software travel expense,89662.16,12,MH,KA,true,true,travel
+2024-10-15,PINV-10-00024 LightSpeed Internet travel expense,26822.42,18,KA,KA,true,true,travel
+2024-10-26,PINV-10-00025 Himalaya Foods Supply software expense,47917.17,18,TS,KA,true,true,software
+2024-10-15,PINV-10-00026 Insight Marketing LLP utilities expense,96630.02,18,KA,KA,true,true,utilities
+2025-02-20,PINV-02-00027 SmartCloud Software office expense expense,59520.23,0,MH,KA,false,true,office_expense
+2024-04-26,PINV-04-00028 LightSpeed Internet office expense expense,19140.59,18,MH,KA,true,true,office_expense
+2024-12-27,PINV-12-00029 FirstFleet Logistics travel expense,43596.6,18,KA,KA,true,true,travel
+2024-09-08,PINV-09-00030 TruEdge Consulting purchase expense,72424.88,18,DL,KA,false,true,purchase
+2025-02-08,PINV-02-00031 Mohan Industrial Gases software expense,63050.48,12,DL,KA,true,true,software
+2024-08-13,PINV-08-00032 Jai Stationers food expense,25502.33,12,GJ,KA,true,true,food
+2024-06-02,PINV-06-00033 Mohan Industrial Gases utilities expense,25601.86,18,TS,KA,true,true,utilities
+2024-08-11,PINV-08-00034 Insight Marketing LLP utilities expense,55303.68,12,TN,KA,true,true,utilities
+2024-08-14,PINV-08-00035 Apex Packaging Works utilities expense,66420.63,18,MH,KA,true,true,utilities
+2024-07-24,PINV-07-00036 Bharat Transport Co office expense expense,14103.18,18,TS,KA,true,true,office_expense
+2024-07-21,PINV-07-00037 SmartCloud Software office expense expense,77609.78,18,DL,KA,true,true,office_expense
+2024-05-22,PINV-05-00038 Himalaya Foods Supply purchase expense,100073.2,18,TN,KA,true,true,purchase
+2024-06-06,PINV-06-00039 Bharat Transport Co food expense,41318.18,0,GJ,KA,false,false,food
+2024-09-26,PINV-09-00040 Global Tech Tools purchase expense,42235.17,18,GJ,KA,true,true,purchase
+2024-06-07,PINV-06-00041 Eco Power Utilities purchase expense,26488.43,0,DL,KA,false,true,purchase
+2024-10-13,PINV-10-00042 Crystal Print House purchase expense,48678.86,18,MH,KA,false,true,purchase
+2024-09-30,PINV-09-00043 Delta Office Systems purchase expense,62695.7,0,TN,KA,false,true,purchase
+2024-09-30,PINV-09-00044 QuickFix Maintenance food expense,32388.5,12,TN,KA,true,false,food
+2024-04-02,PINV-04-00045 Royal Insurance Brokers rent expense,9216.1,18,KA,KA,true,false,rent
+2024-08-12,PINV-08-00046 LightSpeed Internet utilities expense,62480.18,5,MH,KA,true,true,utilities
+2024-05-14,PINV-05-00047 Crystal Print House purchase expense,32288.68,18,DL,KA,false,true,purchase
+2024-07-03,PINV-07-00048 Global Tech Tools tax payment expense,60279.16,5,MH,KA,true,true,tax_payment
+2024-09-06,PINV-09-00049 Omkar Repairs purchase expense,20857.81,12,DL,KA,true,true,purchase
+2024-07-28,PINV-07-00050 Omkar Repairs food expense,74733.69,18,GJ,KA,true,false,food
+2024-04-15,PINV-04-00051 Bharat Transport Co utilities expense,95310.39,18,TS,KA,true,true,utilities
+2024-06-12,PINV-06-00052 SmartCloud Software marketing expense,56021.38,12,TS,KA,true,true,marketing
+2024-05-16,PINV-05-00053 Pioneer Chemicals travel expense,45063.65,12,KA,KA,true,true,travel
+2024-09-02,PINV-09-00054 Global Tech Tools marketing expense,20338.32,0,DL,KA,false,true,marketing
+2024-04-25,PINV-04-00055 FirstFleet Logistics purchase expense,94794.14,18,DL,KA,true,true,purchase
+2024-07-02,PINV-07-00056 Omkar Repairs loan expense,75963.83,18,MH,KA,true,false,loan
+2024-12-23,PINV-12-00057 Eco Power Utilities office expense expense,13252.35,5,TN,KA,true,true,office_expense
+2025-01-19,PINV-01-00058 Delta Office Systems purchase expense,24131.81,18,DL,KA,true,true,purchase
+2024-10-27,PINV-10-00059 Omkar Repairs travel expense,11495.31,18,TN,KA,false,true,travel
+2024-10-04,PINV-10-00060 Apex Packaging Works travel expense,78140.66,18,DL,KA,true,true,travel
+2024-09-09,PINV-09-00061 Himalaya Foods Supply marketing expense,24495.9,0,KA,KA,false,true,marketing
+2024-05-11,PINV-05-00062 FirstFleet Logistics marketing expense,56408.22,18,TN,KA,true,true,marketing
+2024-06-27,PINV-06-00063 Himalaya Foods Supply purchase expense,78120.0,12,KA,KA,false,true,purchase
+2024-06-05,PINV-06-00064 Royal Insurance Brokers purchase expense,82670.82,0,TS,KA,false,true,purchase
+2024-04-09,PINV-04-00065 Crystal Print House travel expense,14893.47,5,DL,KA,false,true,travel
+2024-04-27,PINV-04-00066 LightSpeed Internet purchase expense,61721.39,18,DL,KA,false,true,purchase
+2025-03-05,PINV-03-00067 Royal Insurance Brokers travel expense,9713.27,18,TS,KA,false,true,travel
+2025-02-20,PINV-02-00068 Pioneer Chemicals purchase expense,10071.98,12,GJ,KA,false,true,purchase
+2024-07-03,PINV-07-00069 Insight Marketing LLP purchase expense,52178.66,12,TN,KA,true,true,purchase
+2024-06-18,PINV-06-00070 Pioneer Chemicals office expense expense,83206.13,12,MH,KA,true,true,office_expense
+2024-09-10,PINV-09-00071 TruEdge Consulting purchase expense,78737.47,18,TN,KA,true,true,purchase
+2024-12-30,PINV-12-00072 Jai Stationers food expense,73077.94,18,MH,KA,true,false,food
+2025-02-16,PINV-02-00073 Global Tech Tools travel expense,8961.75,18,MH,KA,true,true,travel
+2024-05-14,PINV-05-00074 Crystal Print House rent expense,39571.15,0,DL,KA,false,false,rent
+2025-03-19,PINV-03-00075 Royal Insurance Brokers software expense,62149.64,18,KA,KA,true,true,software
+2024-11-19,PINV-11-00076 Bharat Transport Co marketing expense,59322.5,18,MH,KA,false,true,marketing
+2025-02-01,PINV-02-00077 Eco Power Utilities software expense,62667.36,18,DL,KA,true,true,software
+2024-07-01,PINV-07-00078 TruEdge Consulting purchase expense,76994.83,18,MH,KA,true,true,purchase
+2024-06-29,PINV-06-00079 Eco Power Utilities marketing expense,75424.57,18,GJ,KA,true,true,marketing
+2024-11-19,PINV-11-00080 FirstFleet Logistics purchase expense,28492.92,12,TN,KA,true,true,purchase
+2024-06-30,PINV-06-00081 Mohan Industrial Gases office expense expense,23044.4,18,TN,KA,false,true,office_expense
+2024-07-08,PINV-07-00082 Global Tech Tools food expense,46416.68,0,DL,KA,false,true,food
+2024-09-02,PINV-09-00083 Omkar Repairs marketing expense,26736.65,18,TN,KA,false,true,marketing
+2024-12-17,PINV-12-00084 TruEdge Consulting utilities expense,26775.42,12,MH,KA,true,true,utilities
+2024-04-06,PINV-04-00085 LightSpeed Internet office expense expense,48974.68,12,GJ,KA,true,true,office_expense
+2024-09-08,PINV-09-00086 Global Tech Tools loan expense,26866.63,18,TN,KA,true,false,loan
+2025-02-19,PINV-02-00087 Global Tech Tools purchase expense,74697.04,18,DL,KA,true,true,purchase
+2024-07-04,PINV-07-00088 Omkar Repairs rent expense,80008.05,18,MH,KA,true,false,rent
+2024-04-09,PINV-04-00089 Nexa Facility Services purchase expense,52283.12,12,GJ,KA,true,true,purchase
+2024-06-08,PINV-06-00090 Apex Packaging Works office expense expense,93125.61,18,DL,KA,true,true,office_expense
+2024-05-30,PINV-05-00091 Crystal Print House purchase expense,93273.01,18,KA,KA,true,true,purchase
+2024-06-17,PINV-06-00092 SmartCloud Software purchase expense,70746.68,18,TN,KA,true,true,purchase
+2024-08-04,PINV-08-00093 Omkar Repairs office expense expense,65270.6,18,GJ,KA,true,true,office_expense
+2024-08-30,PINV-08-00094 FirstFleet Logistics purchase expense,32806.83,12,GJ,KA,true,true,purchase
+2024-04-14,PINV-04-00095 Royal Insurance Brokers purchase expense,64951.68,5,GJ,KA,true,true,purchase
+2024-04-21,PINV-04-00096 Bharat Transport Co purchase expense,85565.44,18,MH,KA,true,true,purchase
+2024-05-03,PINV-05-00097 Crystal Print House purchase expense,84829.1,5,KA,KA,true,true,purchase
+2024-10-08,PINV-10-00098 Jai Stationers utilities expense,12555.55,18,MH,KA,true,true,utilities
+2024-11-09,PINV-11-00099 Royal Insurance Brokers software expense,34842.63,18,KA,KA,false,true,software
+2025-01-24,PINV-01-00100 Delta Office Systems utilities expense,51766.61,12,DL,KA,true,true,utilities
+2024-06-08,PINV-06-00101 Apex Packaging Works purchase expense,54843.54,12,TN,KA,true,true,purchase
+2024-11-13,PINV-11-00102 QuickFix Maintenance utilities expense,52912.91,18,TN,KA,true,true,utilities
+2025-02-21,PINV-02-00103 Mohan Industrial Gases purchase expense,75473.62,18,KA,KA,true,true,purchase
+2025-01-31,PINV-01-00104 Nexa Facility Services food expense,59201.77,5,TN,KA,true,false,food
+2024-06-14,PINV-06-00105 FirstFleet Logistics purchase expense,28153.11,5,DL,KA,true,true,purchase
+2024-06-23,PINV-06-00106 TruEdge Consulting purchase expense,86837.34,5,TN,KA,true,true,purchase
+2024-12-18,PINV-12-00107 SmartCloud Software loan expense,12482.77,18,MH,KA,true,false,loan
+2024-10-26,PINV-10-00108 SmartCloud Software office expense expense,28874.61,18,KA,KA,true,true,office_expense
+2025-02-28,PINV-02-00109 FirstFleet Logistics utilities expense,65963.96,5,MH,KA,true,true,utilities
+2024-11-08,PINV-11-00110 Nexa Facility Services software expense,75097.04,18,KA,KA,true,true,software
+2024-04-03,PINV-04-00111 LightSpeed Internet rent expense,54738.34,18,KA,KA,true,false,rent
+2024-04-02,PINV-04-00112 Kuber Warehousing office expense expense,18187.44,12,GJ,KA,true,true,office_expense
+2024-07-30,PINV-07-00113 Royal Insurance Brokers food expense,56113.76,18,GJ,KA,true,false,food
+2024-06-27,PINV-06-00114 SmartCloud Software loan expense,39002.34,0,TN,KA,false,false,loan
+2024-11-10,PINV-11-00115 Himalaya Foods Supply marketing expense,47776.88,5,GJ,KA,false,true,marketing
+2025-02-07,PINV-02-00116 Mohan Industrial Gases office expense expense,18282.35,18,TN,KA,false,true,office_expense
+2024-05-13,PINV-05-00117 QuickFix Maintenance purchase expense,54086.68,0,TN,KA,false,true,purchase
+2024-06-30,PINV-06-00118 Mohan Industrial Gases travel expense,47470.17,5,KA,KA,false,true,travel
+2024-04-01,PINV-04-00119 Crystal Print House purchase expense,79643.32,18,MH,KA,true,true,purchase
+2025-02-06,PINV-02-00120 Eco Power Utilities purchase expense,43778.93,18,DL,KA,false,true,purchase
+2024-07-05,PINV-07-00121 Omkar Repairs food expense,7675.43,18,TS,KA,true,false,food
+2025-03-25,PINV-03-00122 Apex Packaging Works software expense,50166.64,18,KA,KA,true,true,software
+2024-11-03,PINV-11-00123 LightSpeed Internet tax payment expense,54396.58,5,TS,KA,false,false,tax_payment
+2024-08-15,PINV-08-00124 Himalaya Foods Supply loan expense,47603.62,18,TN,KA,true,false,loan
+2024-12-14,PINV-12-00125 Delta Office Systems software expense,58724.76,18,MH,KA,true,true,software
+2025-01-03,PINV-01-00126 Jai Stationers software expense,74038.81,18,TS,KA,true,true,software
+2024-06-17,PINV-06-00127 Mohan Industrial Gases software expense,82696.21,18,MH,KA,true,true,software
+2025-02-08,PINV-02-00128 LightSpeed Internet utilities expense,28323.78,0,GJ,KA,false,true,utilities
+2024-12-16,PINV-12-00129 SmartCloud Software utilities expense,35375.59,18,DL,KA,true,true,utilities
+2025-03-10,PINV-03-00130 Nexa Facility Services office expense expense,38435.5,0,MH,KA,false,true,office_expense
+2025-01-22,PINV-01-00131 TruEdge Consulting purchase expense,45942.45,12,TN,KA,true,true,purchase
+2024-11-03,PINV-11-00132 SmartCloud Software rent expense,73094.08,12,KA,KA,true,false,rent
+2025-01-13,PINV-01-00133 Apex Packaging Works utilities expense,31772.75,18,DL,KA,true,true,utilities
+2025-01-12,PINV-01-00134 LightSpeed Internet office expense expense,29521.47,18,GJ,KA,true,true,office_expense
+2024-07-09,PINV-07-00135 TruEdge Consulting tax payment expense,12544.86,18,TN,KA,true,false,tax_payment
+2024-12-22,PINV-12-00136 Kuber Warehousing purchase expense,54460.82,18,TN,KA,true,true,purchase
+2024-08-28,PINV-08-00137 SmartCloud Software utilities expense,27683.91,12,MH,KA,false,true,utilities
+2025-03-06,PINV-03-00138 QuickFix Maintenance tax payment expense,33718.14,18,KA,KA,true,true,tax_payment
+2024-06-23,PINV-06-00139 Mohan Industrial Gases purchase expense,40644.04,18,GJ,KA,true,true,purchase
+2024-05-02,PINV-05-00140 Apex Packaging Works tax payment expense,48303.09,5,MH,KA,true,false,tax_payment
+2024-04-01,PINV-04-00141 Royal Insurance Brokers marketing expense,20199.4,18,KA,KA,true,true,marketing
+2024-09-16,PINV-09-00142 Pioneer Chemicals purchase expense,55907.53,18,TS,KA,true,true,purchase
+2024-11-29,PINV-11-00143 Insight Marketing LLP tax payment expense,11896.35,18,MH,KA,true,true,tax_payment
+2024-04-08,PINV-04-00144 Eco Power Utilities rent expense,38058.26,18,KA,KA,true,false,rent
+2025-03-14,PINV-03-00145 LightSpeed Internet food expense,41295.63,18,GJ,KA,true,true,food
+2024-09-30,PINV-09-00146 Global Tech Tools purchase expense,36760.74,18,GJ,KA,true,true,purchase
+2024-08-12,PINV-08-00147 SmartCloud Software purchase expense,46566.16,18,DL,KA,false,true,purchase
+2024-11-08,PINV-11-00148 Omkar Repairs utilities expense,48865.72,18,KA,KA,true,true,utilities
+2025-03-01,PINV-03-00149 Delta Office Systems utilities expense,74792.06,5,KA,KA,false,true,utilities
+2024-05-28,PINV-05-00150 Global Tech Tools travel expense,13566.4,18,DL,KA,true,true,travel
+2024-09-03,PINV-09-00151 Insight Marketing LLP purchase expense,5694.3,18,TS,KA,true,true,purchase
+2024-09-23,PINV-09-00152 Nexa Facility Services utilities expense,82352.57,18,DL,KA,true,true,utilities
+2024-04-20,PINV-04-00153 Mohan Industrial Gases purchase expense,10990.28,18,GJ,KA,false,true,purchase
+2025-01-31,PINV-01-00154 Nexa Facility Services marketing expense,79338.38,0,MH,KA,false,true,marketing
+2024-07-02,PINV-07-00155 Delta Office Systems office expense expense,21565.73,12,TS,KA,true,true,office_expense
+2024-08-29,PINV-08-00156 Omkar Repairs loan expense,26952.01,12,DL,KA,false,false,loan
+2025-03-17,PINV-03-00157 Kuber Warehousing software expense,39718.09,5,MH,KA,true,true,software
+2024-12-30,PINV-12-00158 Himalaya Foods Supply purchase expense,9508.24,18,DL,KA,true,true,purchase
+2024-09-26,PINV-09-00159 Global Tech Tools purchase expense,86639.45,18,KA,KA,true,true,purchase
+2024-08-06,PINV-08-00160 Mohan Industrial Gases purchase expense,8859.7,5,TS,KA,false,true,purchase
+2024-11-28,PINV-11-00161 Himalaya Foods Supply rent expense,64039.96,18,DL,KA,true,false,rent
+2024-12-31,PINV-12-00162 Royal Insurance Brokers food expense,56364.36,18,DL,KA,true,false,food
+2024-06-27,PINV-06-00163 FirstFleet Logistics utilities expense,65285.08,12,TS,KA,true,true,utilities
+2024-09-08,PINV-09-00164 Delta Office Systems software expense,33819.47,18,KA,KA,true,true,software
+2024-11-16,PINV-11-00165 Crystal Print House purchase expense,53734.83,18,DL,KA,true,true,purchase
+2024-09-05,PINV-09-00166 TruEdge Consulting purchase expense,31798.73,18,DL,KA,true,true,purchase
+2025-02-21,PINV-02-00167 Global Tech Tools software expense,37934.6,0,TS,KA,false,true,software
+2024-08-30,PINV-08-00168 Delta Office Systems tax payment expense,13191.35,18,GJ,KA,true,false,tax_payment
+2024-11-22,PINV-11-00169 Global Tech Tools purchase expense,61046.47,18,MH,KA,true,true,purchase
+2024-12-07,PINV-12-00170 QuickFix Maintenance utilities expense,12242.19,5,KA,KA,true,true,utilities
+2024-05-06,PINV-05-00171 Global Tech Tools purchase expense,78165.62,18,TN,KA,false,true,purchase
+2024-04-20,PINV-04-00172 QuickFix Maintenance travel expense,15871.92,18,KA,KA,false,true,travel
+2024-09-28,PINV-09-00173 FirstFleet Logistics travel expense,2008.06,18,TN,KA,false,true,travel
+2024-07-04,PINV-07-00174 Kuber Warehousing office expense expense,12815.75,12,TN,KA,true,true,office_expense
+2024-09-15,PINV-09-00175 Global Tech Tools rent expense,41644.47,18,KA,KA,false,false,rent
+2024-12-19,PINV-12-00176 SmartCloud Software marketing expense,65687.83,12,DL,KA,true,true,marketing
+2024-10-13,PINV-10-00177 Pioneer Chemicals purchase expense,63405.31,18,GJ,KA,false,true,purchase
+2024-10-21,PINV-10-00178 SmartCloud Software rent expense,20011.75,18,GJ,KA,false,false,rent
+2025-01-20,PINV-01-00179 Insight Marketing LLP marketing expense,37234.97,18,DL,KA,false,true,marketing
+2024-04-27,PINV-04-00180 TruEdge Consulting utilities expense,4282.96,18,KA,KA,true,true,utilities
+2024-12-29,PINV-12-00181 TruEdge Consulting utilities expense,58515.52,18,MH,KA,true,true,utilities
+2025-03-17,PINV-03-00182 Kuber Warehousing purchase expense,54843.28,18,GJ,KA,true,true,purchase
+2024-08-27,PINV-08-00183 Jai Stationers purchase expense,24407.18,12,GJ,KA,false,true,purchase
+2024-08-31,PINV-08-00184 TruEdge Consulting loan expense,67667.48,18,TN,KA,true,false,loan
+2024-06-27,PINV-06-00185 Royal Insurance Brokers marketing expense,74094.63,12,TS,KA,true,true,marketing
+2025-03-30,PINV-03-00186 SmartCloud Software software expense,94905.67,18,GJ,KA,true,true,software
+2024-04-27,PINV-04-00187 FirstFleet Logistics purchase expense,59145.17,18,GJ,KA,true,true,purchase
+2025-03-05,PINV-03-00188 Crystal Print House tax payment expense,52068.28,12,TN,KA,true,true,tax_payment
+2024-05-12,PINV-05-00189 Omkar Repairs purchase expense,55836.75,12,DL,KA,true,true,purchase
+2024-09-16,PINV-09-00190 Delta Office Systems loan expense,21797.05,18,GJ,KA,true,true,loan
+2024-10-18,PINV-10-00191 QuickFix Maintenance purchase expense,20409.95,5,GJ,KA,true,true,purchase
+2024-12-14,PINV-12-00192 Kuber Warehousing loan expense,12696.38,18,TN,KA,true,false,loan
+2025-01-01,PINV-01-00193 Crystal Print House purchase expense,49505.48,18,KA,KA,false,true,purchase
+2025-02-11,PINV-02-00194 SmartCloud Software office expense expense,10531.17,5,KA,KA,true,true,office_expense
+2024-10-07,PINV-10-00195 Kuber Warehousing purchase expense,92845.3,18,MH,KA,true,true,purchase
+2024-10-09,PINV-10-00196 Crystal Print House office expense expense,75036.48,18,KA,KA,true,true,office_expense
+2024-11-24,PINV-11-00197 Apex Packaging Works loan expense,20714.09,18,TS,KA,true,false,loan
+2024-06-02,PINV-06-00198 Delta Office Systems utilities expense,9308.94,18,GJ,KA,true,true,utilities
+2024-06-04,PINV-06-00199 SmartCloud Software rent expense,62004.85,12,TS,KA,true,false,rent
+2024-11-05,PINV-11-00200 Bharat Transport Co utilities expense,33858.86,18,KA,KA,true,true,utilities
+2024-12-14,PINV-12-00201 Delta Office Systems purchase expense,83873.42,12,TS,KA,true,true,purchase
+2024-11-23,PINV-11-00202 Global Tech Tools software expense,79357.43,18,GJ,KA,false,true,software
+2024-12-11,PINV-12-00203 Global Tech Tools software expense,91896.11,18,TS,KA,true,true,software
+2024-09-26,PINV-09-00204 QuickFix Maintenance food expense,25676.8,18,KA,KA,true,false,food
+2025-03-27,PINV-03-00205 Apex Packaging Works office expense expense,82940.84,18,TN,KA,false,true,office_expense
+2024-05-17,PINV-05-00206 LightSpeed Internet office expense expense,63820.1,12,DL,KA,true,true,office_expense
+2024-10-15,PINV-10-00207 Mohan Industrial Gases purchase expense,19802.23,18,KA,KA,true,true,purchase
+2024-05-22,PINV-05-00208 Mohan Industrial Gases purchase expense,65057.46,12,MH,KA,true,true,purchase
+2024-12-17,PINV-12-00209 Himalaya Foods Supply travel expense,3738.95,5,GJ,KA,true,true,travel
+2024-11-02,PINV-11-00210 Mohan Industrial Gases software expense,24749.25,12,KA,KA,true,true,software
+2024-10-11,PINV-10-00211 Insight Marketing LLP purchase expense,68949.58,18,KA,KA,true,true,purchase
+2025-02-14,PINV-02-00212 Omkar Repairs rent expense,85030.11,12,TS,KA,true,true,rent
+2024-09-01,PINV-09-00213 Nexa Facility Services tax payment expense,32482.96,0,GJ,KA,false,false,tax_payment
+2025-01-05,PINV-01-00214 Apex Packaging Works purchase expense,2234.02,18,TN,KA,true,true,purchase
+2024-07-16,PINV-07-00215 Nexa Facility Services purchase expense,87678.69,18,DL,KA,true,true,purchase
+2025-03-13,PINV-03-00216 Insight Marketing LLP travel expense,58670.98,18,MH,KA,true,true,travel
+2024-04-12,PINV-04-00217 SmartCloud Software software expense,42787.99,18,TS,KA,true,true,software
+2025-03-04,PINV-03-00218 TruEdge Consulting office expense expense,1771.37,18,GJ,KA,true,true,office_expense
+2024-12-31,PINV-12-00219 Insight Marketing LLP rent expense,65328.85,18,DL,KA,false,false,rent
+2024-05-28,PINV-05-00220 Himalaya Foods Supply tax payment expense,46254.03,18,TN,KA,false,false,tax_payment
+2024-06-03,PINV-06-00221 Omkar Repairs purchase expense,57732.29,5,GJ,KA,true,true,purchase
+2025-01-12,PINV-01-00222 Delta Office Systems loan expense,71520.24,18,KA,KA,false,false,loan
+2024-07-13,PINV-07-00223 Jai Stationers rent expense,64888.56,18,MH,KA,false,false,rent
+2025-01-06,PINV-01-00224 Pioneer Chemicals travel expense,96522.69,18,MH,KA,true,true,travel
+2024-07-19,PINV-07-00225 Mohan Industrial Gases purchase expense,2792.92,18,MH,KA,true,true,purchase
+2024-04-05,PINV-04-00226 TruEdge Consulting purchase expense,94572.6,18,GJ,KA,true,true,purchase
+2025-02-21,PINV-02-00227 Nexa Facility Services rent expense,12497.76,5,MH,KA,true,false,rent
+2024-04-21,PINV-04-00228 Insight Marketing LLP purchase expense,86689.25,18,KA,KA,true,true,purchase
+2025-02-07,PINV-02-00229 Bharat Transport Co food expense,44689.07,12,KA,KA,true,false,food
+2024-04-11,PINV-04-00230 Bharat Transport Co food expense,59912.33,18,MH,KA,true,false,food
+2024-06-21,PINV-06-00231 Insight Marketing LLP software expense,84497.22,18,KA,KA,true,true,software
+2025-02-13,PINV-02-00232 Pioneer Chemicals food expense,81208.18,12,DL,KA,false,false,food
+2025-01-04,PINV-01-00233 Omkar Repairs purchase expense,56595.34,18,TN,KA,true,true,purchase
+2024-08-09,PINV-08-00234 SmartCloud Software software expense,32473.68,5,DL,KA,false,true,software
+2024-06-13,PINV-06-00235 FirstFleet Logistics purchase expense,84882.78,12,MH,KA,true,true,purchase
+2024-06-28,PINV-06-00236 Nexa Facility Services purchase expense,62907.7,18,DL,KA,true,true,purchase
+2024-10-13,PINV-10-00237 QuickFix Maintenance travel expense,22687.16,18,MH,KA,true,true,travel
+2025-01-05,PINV-01-00238 Mohan Industrial Gases travel expense,5900.39,18,KA,KA,false,true,travel
+2024-04-17,PINV-04-00239 TruEdge Consulting purchase expense,33959.41,18,TS,KA,false,true,purchase
+2024-06-09,PINV-06-00240 Crystal Print House utilities expense,85592.8,5,KA,KA,true,true,utilities
+2024-09-21,PINV-09-00241 Omkar Repairs travel expense,6969.02,12,MH,KA,true,true,travel
+2024-09-18,PINV-09-00242 SmartCloud Software rent expense,39864.89,0,KA,KA,false,false,rent
+2025-03-02,PINV-03-00243 Omkar Repairs purchase expense,18311.45,0,GJ,KA,false,true,purchase
+2024-04-22,PINV-04-00244 QuickFix Maintenance travel expense,33869.23,0,KA,KA,false,true,travel
+2024-04-13,PINV-04-00245 Insight Marketing LLP purchase expense,77900.2,18,KA,KA,true,true,purchase
+2024-12-10,PINV-12-00246 Delta Office Systems utilities expense,99589.02,18,KA,KA,true,true,utilities
+2024-11-19,PINV-11-00247 Insight Marketing LLP purchase expense,98643.73,18,MH,KA,true,true,purchase
+2024-09-02,PINV-09-00248 Jai Stationers marketing expense,14443.44,18,KA,KA,true,true,marketing
+2025-02-26,PINV-02-00249 Mohan Industrial Gases purchase expense,21492.43,12,KA,KA,true,true,purchase
+2024-06-12,PINV-06-00250 Apex Packaging Works utilities expense,70191.94,12,TN,KA,false,true,utilities
+2024-07-02,PINV-07-00251 Mohan Industrial Gases office expense expense,17329.75,5,DL,KA,true,true,office_expense
+2024-09-09,PINV-09-00252 Delta Office Systems purchase expense,35472.13,0,GJ,KA,false,true,purchase
+2024-09-01,PINV-09-00253 Royal Insurance Brokers purchase expense,12423.88,18,TS,KA,false,true,purchase
+2024-10-01,PINV-10-00254 SmartCloud Software utilities expense,4305.24,0,GJ,KA,false,true,utilities
+2025-03-08,PINV-03-00255 Delta Office Systems purchase expense,49924.86,18,MH,KA,false,true,purchase
+2024-11-07,PINV-11-00256 Royal Insurance Brokers marketing expense,70943.19,18,GJ,KA,true,true,marketing
+2024-10-29,PINV-10-00257 Insight Marketing LLP travel expense,74844.13,18,TS,KA,false,true,travel
+2024-11-02,PINV-11-00258 Eco Power Utilities purchase expense,6861.55,12,GJ,KA,true,true,purchase
+2024-08-16,PINV-08-00259 Jai Stationers travel expense,63983.08,0,TS,KA,false,true,travel
+2025-01-11,PINV-01-00260 Crystal Print House rent expense,3925.93,0,MH,KA,false,true,rent
+2024-05-14,PINV-05-00261 Nexa Facility Services purchase expense,49073.31,0,GJ,KA,false,true,purchase
+2024-07-13,PINV-07-00262 Mohan Industrial Gases office expense expense,14059.07,18,DL,KA,true,true,office_expense
+2024-07-27,PINV-07-00263 Insight Marketing LLP utilities expense,23861.11,18,KA,KA,false,true,utilities
+2024-12-15,PINV-12-00264 FirstFleet Logistics purchase expense,53605.4,18,TN,KA,true,true,purchase
+2024-07-05,PINV-07-00265 Eco Power Utilities food expense,6723.93,0,TN,KA,false,false,food
+2025-03-18,PINV-03-00266 Eco Power Utilities marketing expense,28757.92,12,MH,KA,false,true,marketing
+2024-04-02,PINV-04-00267 Bharat Transport Co purchase expense,32784.5,18,TS,KA,false,true,purchase
+2024-10-24,PINV-10-00268 Omkar Repairs purchase expense,1604.69,0,GJ,KA,false,true,purchase
+2025-01-16,PINV-01-00269 Crystal Print House purchase expense,68099.32,0,KA,KA,false,true,purchase
+2024-10-14,PINV-10-00270 SmartCloud Software loan expense,82540.43,18,TN,KA,true,false,loan
+2025-01-23,PINV-01-00271 Royal Insurance Brokers rent expense,46885.94,18,KA,KA,true,false,rent
+2025-01-03,PINV-01-00272 Kuber Warehousing purchase expense,80890.02,18,GJ,KA,false,true,purchase
+2024-11-04,PINV-11-00273 Pioneer Chemicals rent expense,5157.41,12,GJ,KA,true,false,rent
+2024-12-20,PINV-12-00274 Insight Marketing LLP office expense expense,11707.99,5,MH,KA,true,true,office_expense
+2024-11-15,PINV-11-00275 Crystal Print House rent expense,9837.25,18,TS,KA,true,false,rent
+2024-10-07,PINV-10-00276 Insight Marketing LLP purchase expense,49245.15,0,MH,KA,false,true,purchase
+2024-04-10,PINV-04-00277 Global Tech Tools office expense expense,67147.23,18,MH,KA,true,true,office_expense
+2024-09-13,PINV-09-00278 Himalaya Foods Supply purchase expense,45565.5,18,GJ,KA,true,true,purchase
+2025-02-05,PINV-02-00279 TruEdge Consulting purchase expense,60199.69,18,TN,KA,false,true,purchase
+2024-11-13,PINV-11-00280 Eco Power Utilities food expense,47334.95,0,KA,KA,false,false,food
+2024-06-11,PINV-06-00281 Royal Insurance Brokers marketing expense,16466.89,18,MH,KA,true,true,marketing
+2024-12-19,PINV-12-00282 Omkar Repairs office expense expense,97150.15,18,TN,KA,true,true,office_expense
+2024-06-12,PINV-06-00283 Bharat Transport Co utilities expense,8340.63,18,DL,KA,true,true,utilities
+2024-06-09,PINV-06-00284 Omkar Repairs purchase expense,64422.26,18,DL,KA,true,true,purchase
+2024-06-21,PINV-06-00285 Himalaya Foods Supply software expense,2248.73,18,GJ,KA,true,true,software
+2024-05-19,PINV-05-00286 Royal Insurance Brokers rent expense,34247.03,18,KA,KA,true,false,rent
+2025-02-16,PINV-02-00287 FirstFleet Logistics loan expense,35625.07,18,TN,KA,true,false,loan
+2024-05-29,PINV-05-00288 Bharat Transport Co purchase expense,23077.85,18,TN,KA,true,true,purchase
+2024-04-13,PINV-04-00289 Bharat Transport Co purchase expense,53070.19,18,KA,KA,true,true,purchase
+2024-05-16,PINV-05-00290 FirstFleet Logistics purchase expense,48781.5,18,TS,KA,false,true,purchase
+2024-11-05,PINV-11-00291 Crystal Print House software expense,56077.6,0,GJ,KA,false,true,software
+2024-10-09,PINV-10-00292 Apex Packaging Works utilities expense,75720.41,18,TS,KA,true,true,utilities
+2024-08-11,PINV-08-00293 Jai Stationers software expense,74551.75,0,MH,KA,false,true,software
+2024-11-12,PINV-11-00294 Nexa Facility Services rent expense,26327.07,18,GJ,KA,false,false,rent
+2024-05-16,PINV-05-00295 Kuber Warehousing purchase expense,61467.16,12,MH,KA,false,true,purchase
+2024-09-06,PINV-09-00296 Pioneer Chemicals marketing expense,30506.73,12,KA,KA,false,true,marketing
+2024-12-08,PINV-12-00297 Nexa Facility Services utilities expense,29227.65,5,TS,KA,true,true,utilities
+2024-06-04,PINV-06-00298 Omkar Repairs office expense expense,41125.03,5,TN,KA,true,true,office_expense
+2024-11-01,PINV-11-00299 Mohan Industrial Gases rent expense,66829.79,18,DL,KA,false,true,rent
+2024-05-10,PINV-05-00300 TruEdge Consulting marketing expense,41836.79,18,GJ,KA,true,true,marketing
+2024-08-17,PINV-08-00301 TruEdge Consulting purchase expense,9378.1,18,KA,KA,true,true,purchase
+2025-02-22,PINV-02-00302 Global Tech Tools software expense,82902.25,0,GJ,KA,false,true,software
+2024-09-03,PINV-09-00303 QuickFix Maintenance utilities expense,97684.94,18,DL,KA,true,true,utilities
+2024-08-18,PINV-08-00304 Global Tech Tools purchase expense,40695.58,12,TN,KA,true,true,purchase
+2025-01-06,PINV-01-00305 Eco Power Utilities rent expense,30849.14,5,GJ,KA,true,true,rent
+2024-09-30,PINV-09-00306 FirstFleet Logistics software expense,15619.26,18,TS,KA,false,true,software
+2025-03-20,PINV-03-00307 Insight Marketing LLP tax payment expense,10112.0,18,GJ,KA,true,false,tax_payment
+2024-12-09,PINV-12-00308 Global Tech Tools utilities expense,13497.79,0,TS,KA,false,true,utilities
+2024-11-06,PINV-11-00309 Himalaya Foods Supply purchase expense,56414.89,12,GJ,KA,true,true,purchase
+2024-07-01,PINV-07-00310 Crystal Print House utilities expense,76557.45,12,TN,KA,true,true,utilities
+2024-10-25,PINV-10-00311 Insight Marketing LLP marketing expense,72157.0,0,KA,KA,false,true,marketing
+2024-07-03,PINV-07-00312 Crystal Print House purchase expense,32169.13,18,DL,KA,true,true,purchase
+2024-05-13,PINV-05-00313 FirstFleet Logistics purchase expense,60549.93,0,GJ,KA,false,true,purchase
+2024-12-27,PINV-12-00314 Nexa Facility Services purchase expense,50528.84,18,TS,KA,true,true,purchase
+2025-02-23,PINV-02-00315 QuickFix Maintenance software expense,21453.43,18,TS,KA,true,true,software
+2024-07-13,PINV-07-00316 Delta Office Systems office expense expense,59977.74,18,KA,KA,true,true,office_expense
+2024-05-12,PINV-05-00317 Crystal Print House tax payment expense,2306.69,0,KA,KA,false,true,tax_payment
+2024-08-02,PINV-08-00318 Delta Office Systems loan expense,9487.94,18,GJ,KA,false,false,loan
+2024-10-30,PINV-10-00319 Bharat Transport Co loan expense,54022.57,0,DL,KA,false,true,loan
+2025-03-17,PINV-03-00320 TruEdge Consulting rent expense,72786.37,18,DL,KA,true,false,rent
+2025-02-20,PINV-02-00321 Omkar Repairs tax payment expense,35569.4,12,MH,KA,true,false,tax_payment
+2024-11-11,PINV-11-00322 Kuber Warehousing purchase expense,71244.8,18,MH,KA,true,true,purchase
+2025-01-11,PINV-01-00323 QuickFix Maintenance office expense expense,53091.42,18,MH,KA,true,true,office_expense
+2024-11-26,PINV-11-00324 TruEdge Consulting loan expense,40414.06,18,KA,KA,false,false,loan
+2025-01-08,PINV-01-00325 QuickFix Maintenance purchase expense,97921.64,18,MH,KA,true,true,purchase
+2025-03-13,PINV-03-00326 TruEdge Consulting marketing expense,99097.98,18,TN,KA,true,true,marketing
+2024-06-01,PINV-06-00327 Royal Insurance Brokers purchase expense,22619.75,12,TN,KA,true,true,purchase
+2025-01-12,PINV-01-00328 Delta Office Systems marketing expense,68094.93,0,TS,KA,false,true,marketing
+2025-01-07,PINV-01-00329 LightSpeed Internet loan expense,97361.23,18,DL,KA,true,false,loan
+2025-03-09,PINV-03-00330 Jai Stationers purchase expense,22506.7,18,MH,KA,true,true,purchase
+2024-06-23,PINV-06-00331 Delta Office Systems software expense,84439.73,0,TN,KA,false,true,software
+2025-01-08,PINV-01-00332 LightSpeed Internet marketing expense,63887.93,12,TN,KA,true,true,marketing
+2025-03-16,PINV-03-00333 LightSpeed Internet purchase expense,13123.29,18,DL,KA,true,true,purchase
+2025-03-23,PINV-03-00334 Eco Power Utilities purchase expense,10873.88,0,DL,KA,false,true,purchase
+2024-06-14,PINV-06-00335 Mohan Industrial Gases purchase expense,2369.85,18,KA,KA,true,true,purchase
+2025-02-27,PINV-02-00336 QuickFix Maintenance loan expense,14318.11,18,TS,KA,false,false,loan
+2024-05-28,PINV-05-00337 TruEdge Consulting utilities expense,13310.54,5,DL,KA,true,true,utilities
+2024-12-14,PINV-12-00338 Crystal Print House purchase expense,77698.9,0,GJ,KA,false,true,purchase
+2024-05-09,PINV-05-00339 Apex Packaging Works purchase expense,14226.22,5,KA,KA,true,true,purchase
+2024-10-11,PINV-10-00340 Pioneer Chemicals food expense,61058.92,18,TN,KA,false,false,food
+2024-08-04,PINV-08-00341 Himalaya Foods Supply office expense expense,86703.62,18,GJ,KA,true,true,office_expense
+2024-05-17,PINV-05-00342 Crystal Print House purchase expense,11129.59,0,TN,KA,false,true,purchase
+2024-11-02,PINV-11-00343 Insight Marketing LLP loan expense,43566.29,5,KA,KA,false,false,loan
+2024-09-11,PINV-09-00344 Pioneer Chemicals purchase expense,63585.75,12,KA,KA,false,true,purchase
+2024-06-10,PINV-06-00345 Royal Insurance Brokers loan expense,91163.85,18,MH,KA,true,false,loan
+2025-01-29,PINV-01-00346 LightSpeed Internet loan expense,11152.35,18,TS,KA,true,false,loan
+2024-04-24,PINV-04-00347 TruEdge Consulting travel expense,34991.18,5,DL,KA,true,true,travel
+2024-11-09,PINV-11-00348 LightSpeed Internet loan expense,47157.36,18,TN,KA,true,false,loan
+2024-05-23,PINV-05-00349 Apex Packaging Works travel expense,43103.37,0,TN,KA,false,true,travel
+2024-08-13,PINV-08-00350 Pioneer Chemicals utilities expense,24147.47,18,KA,KA,true,true,utilities
+2024-07-20,PINV-07-00351 Delta Office Systems utilities expense,22768.59,12,MH,KA,true,true,utilities
+2024-11-13,PINV-11-00352 Jai Stationers tax payment expense,51179.85,18,MH,KA,true,false,tax_payment
+2024-10-14,PINV-10-00353 Bharat Transport Co purchase expense,24098.7,5,TS,KA,true,true,purchase
+2024-12-27,PINV-12-00354 Mohan Industrial Gases rent expense,19802.14,18,KA,KA,true,false,rent
+2024-11-16,PINV-11-00355 Nexa Facility Services travel expense,38517.78,0,TS,KA,false,true,travel
+2024-07-15,PINV-07-00356 Eco Power Utilities travel expense,71159.16,0,DL,KA,false,true,travel
+2024-07-16,PINV-07-00357 Royal Insurance Brokers rent expense,42706.89,18,MH,KA,true,false,rent
+2024-12-27,PINV-12-00358 Nexa Facility Services food expense,61476.31,18,KA,KA,true,false,food
+2024-08-13,PINV-08-00359 QuickFix Maintenance marketing expense,40315.42,18,MH,KA,true,true,marketing
+2024-04-30,PINV-04-00360 Kuber Warehousing loan expense,27096.99,18,GJ,KA,true,false,loan
+2025-02-04,PINV-02-00361 Eco Power Utilities travel expense,63396.67,18,DL,KA,false,true,travel
+2025-01-31,PINV-01-00362 Omkar Repairs travel expense,2173.18,12,TS,KA,true,true,travel
+2024-09-12,PINV-09-00363 Nexa Facility Services travel expense,43116.06,18,TN,KA,false,true,travel
+2025-03-30,PINV-03-00364 Kuber Warehousing software expense,76098.87,5,KA,KA,true,true,software
+2024-08-02,PINV-08-00365 QuickFix Maintenance purchase expense,41160.61,18,TS,KA,false,true,purchase
+2024-06-06,PINV-06-00366 Omkar Repairs food expense,63395.6,5,TN,KA,true,false,food
+2024-05-23,PINV-05-00367 Delta Office Systems loan expense,83502.8,18,GJ,KA,true,false,loan
+2024-06-01,PINV-06-00368 Pioneer Chemicals purchase expense,69842.73,5,GJ,KA,true,true,purchase
+2024-10-08,PINV-10-00369 Delta Office Systems purchase expense,41379.8,18,KA,KA,true,true,purchase
+2024-10-09,PINV-10-00370 FirstFleet Logistics rent expense,95885.22,18,MH,KA,true,false,rent
+2024-07-05,PINV-07-00371 Apex Packaging Works marketing expense,84572.77,18,GJ,KA,false,true,marketing
+2024-04-08,PINV-04-00372 Delta Office Systems rent expense,19648.7,18,KA,KA,true,false,rent
+2024-05-02,PINV-05-00373 Nexa Facility Services utilities expense,38958.35,18,KA,KA,false,true,utilities
+2024-07-20,PINV-07-00374 Crystal Print House software expense,79315.4,5,DL,KA,true,true,software
+2025-03-17,PINV-03-00375 Apex Packaging Works rent expense,19954.19,12,MH,KA,true,true,rent
+2024-08-08,PINV-08-00376 Insight Marketing LLP software expense,10680.5,5,MH,KA,false,true,software
+2025-01-14,PINV-01-00377 Insight Marketing LLP loan expense,25312.9,18,GJ,KA,true,false,loan
+2024-04-17,PINV-04-00378 Mohan Industrial Gases loan expense,6300.54,12,GJ,KA,false,false,loan
+2025-01-07,PINV-01-00379 Kuber Warehousing purchase expense,74408.22,18,TN,KA,true,true,purchase
+2025-03-25,PINV-03-00380 FirstFleet Logistics rent expense,54904.15,18,KA,KA,true,true,rent
+2024-10-16,PINV-10-00381 Himalaya Foods Supply software expense,82899.99,0,TN,KA,false,true,software
+2024-05-01,PINV-05-00382 Eco Power Utilities tax payment expense,46167.19,18,TN,KA,true,true,tax_payment
+2024-06-25,PINV-06-00383 Royal Insurance Brokers office expense expense,20622.87,12,GJ,KA,true,true,office_expense
+2025-02-15,PINV-02-00384 SmartCloud Software software expense,1247.81,18,TN,KA,false,true,software
+2024-09-02,PINV-09-00385 Apex Packaging Works software expense,37349.25,18,KA,KA,true,true,software
+2024-06-26,PINV-06-00386 Bharat Transport Co utilities expense,92623.24,18,MH,KA,true,true,utilities
+2025-01-30,PINV-01-00387 Bharat Transport Co purchase expense,90818.84,18,DL,KA,true,true,purchase
+2024-07-31,PINV-07-00388 TruEdge Consulting purchase expense,55069.27,12,MH,KA,true,true,purchase
+2024-06-28,PINV-06-00389 FirstFleet Logistics software expense,19411.45,5,MH,KA,true,true,software
+2024-08-04,PINV-08-00390 LightSpeed Internet purchase expense,34189.34,5,DL,KA,true,true,purchase
+2024-09-24,PINV-09-00391 Bharat Transport Co purchase expense,23787.72,18,DL,KA,true,true,purchase
+2025-03-16,PINV-03-00392 Bharat Transport Co purchase expense,51282.57,18,GJ,KA,true,true,purchase
+2024-08-24,PINV-08-00393 Global Tech Tools office expense expense,21781.55,18,DL,KA,false,true,office_expense
+2024-08-05,PINV-08-00394 Mohan Industrial Gases marketing expense,12283.61,18,KA,KA,false,true,marketing
+2024-09-25,PINV-09-00395 SmartCloud Software food expense,65207.01,18,DL,KA,true,true,food
+2024-08-17,PINV-08-00396 Crystal Print House purchase expense,45353.23,18,GJ,KA,true,true,purchase
+2024-10-19,PINV-10-00397 Kuber Warehousing marketing expense,52719.24,18,KA,KA,false,true,marketing
+2024-06-13,PINV-06-00398 Himalaya Foods Supply rent expense,8857.41,18,DL,KA,true,false,rent
+2024-06-21,PINV-06-00399 Crystal Print House marketing expense,51085.94,12,TS,KA,false,true,marketing
+2024-05-18,PINV-05-00400 SmartCloud Software purchase expense,53334.84,18,GJ,KA,false,true,purchase
+2024-06-07,PINV-06-00401 FirstFleet Logistics software expense,20396.9,0,MH,KA,false,true,software
+2024-10-23,PINV-10-00402 Eco Power Utilities rent expense,28517.09,18,GJ,KA,true,false,rent
+2025-02-17,PINV-02-00403 Mohan Industrial Gases purchase expense,77098.18,0,GJ,KA,false,true,purchase
+2024-11-04,PINV-11-00404 Delta Office Systems travel expense,4031.45,18,MH,KA,true,true,travel
+2025-03-04,PINV-03-00405 Royal Insurance Brokers marketing expense,14242.5,12,MH,KA,true,true,marketing
+2025-03-28,PINV-03-00406 Delta Office Systems purchase expense,86462.16,18,DL,KA,true,true,purchase
+2024-05-19,PINV-05-00407 Insight Marketing LLP purchase expense,11340.74,18,DL,KA,true,true,purchase
+2024-07-31,PINV-07-00408 Bharat Transport Co utilities expense,92124.8,18,MH,KA,true,true,utilities
+2024-08-12,PINV-08-00409 Omkar Repairs office expense expense,59225.14,0,MH,KA,false,true,office_expense
+2024-06-18,PINV-06-00410 Crystal Print House utilities expense,73292.0,5,TS,KA,true,true,utilities
+2024-09-12,PINV-09-00411 Royal Insurance Brokers loan expense,62872.93,18,GJ,KA,false,false,loan
+2024-12-04,PINV-12-00412 Pioneer Chemicals purchase expense,39209.84,18,MH,KA,true,true,purchase
+2024-07-30,PINV-07-00413 FirstFleet Logistics utilities expense,43935.96,18,GJ,KA,true,true,utilities
+2024-04-30,PINV-04-00414 FirstFleet Logistics software expense,56969.92,18,DL,KA,false,true,software
+2024-04-30,PINV-04-00415 QuickFix Maintenance purchase expense,78979.42,18,GJ,KA,true,true,purchase
+2024-07-08,PINV-07-00416 Royal Insurance Brokers purchase expense,70582.46,18,TN,KA,true,true,purchase
+2024-06-09,PINV-06-00417 Mohan Industrial Gases loan expense,43763.31,0,GJ,KA,false,false,loan
+2024-06-26,PINV-06-00418 LightSpeed Internet purchase expense,66575.69,5,TS,KA,false,true,purchase
+2024-10-09,PINV-10-00419 Crystal Print House loan expense,53476.23,12,KA,KA,true,true,loan
+2024-05-25,PINV-05-00420 Royal Insurance Brokers purchase expense,67044.15,18,MH,KA,true,true,purchase
+2024-09-01,PINV-09-00421 Omkar Repairs purchase expense,59656.93,18,MH,KA,true,true,purchase
+2025-02-25,PINV-02-00422 Apex Packaging Works purchase expense,79822.99,18,DL,KA,true,true,purchase
+2024-05-15,PINV-05-00423 Jai Stationers utilities expense,2267.02,5,TS,KA,true,true,utilities
+2025-03-02,PINV-03-00424 Nexa Facility Services software expense,45259.59,18,TN,KA,true,true,software
+2024-04-01,PINV-04-00425 Insight Marketing LLP marketing expense,83295.04,18,GJ,KA,true,true,marketing
+2024-10-02,PINV-10-00426 Nexa Facility Services purchase expense,71252.93,0,KA,KA,false,true,purchase
+2024-07-28,PINV-07-00427 TruEdge Consulting purchase expense,9762.03,18,DL,KA,true,true,purchase
+2024-07-12,PINV-07-00428 Royal Insurance Brokers office expense expense,26162.23,0,KA,KA,false,true,office_expense
+2025-01-29,PINV-01-00429 Himalaya Foods Supply software expense,5119.9,0,GJ,KA,false,true,software
+2024-06-13,PINV-06-00430 Omkar Repairs utilities expense,34717.84,0,TS,KA,false,true,utilities
+2024-11-01,PINV-11-00431 Bharat Transport Co travel expense,14251.05,18,TS,KA,true,true,travel
+2024-12-26,PINV-12-00432 LightSpeed Internet purchase expense,23988.17,18,DL,KA,true,true,purchase
+2024-11-03,PINV-11-00433 Crystal Print House travel expense,15913.69,18,KA,KA,true,true,travel
+2024-07-15,PINV-07-00434 Global Tech Tools loan expense,55076.2,0,TS,KA,false,false,loan
+2024-05-18,PINV-05-00435 Nexa Facility Services purchase expense,72159.21,18,DL,KA,true,true,purchase
+2024-08-26,PINV-08-00436 Delta Office Systems marketing expense,16981.8,5,TN,KA,true,true,marketing
+2024-12-24,PINV-12-00437 LightSpeed Internet travel expense,92249.5,18,TS,KA,true,true,travel
+2024-07-16,PINV-07-00438 Insight Marketing LLP office expense expense,82878.02,5,TN,KA,false,true,office_expense
+2024-05-06,PINV-05-00439 Pioneer Chemicals purchase expense,49360.45,12,KA,KA,true,true,purchase
+2024-12-10,PINV-12-00440 TruEdge Consulting office expense expense,27637.62,5,MH,KA,true,true,office_expense
+2024-08-25,PINV-08-00441 Royal Insurance Brokers purchase expense,73753.49,12,TN,KA,true,true,purchase
+2024-06-26,PINV-06-00442 Himalaya Foods Supply purchase expense,34565.98,18,TN,KA,true,true,purchase
+2025-01-19,PINV-01-00443 Insight Marketing LLP travel expense,2482.0,18,DL,KA,true,true,travel
+2024-12-31,PINV-12-00444 LightSpeed Internet food expense,72774.53,12,DL,KA,true,false,food
+2025-03-19,PINV-03-00445 Omkar Repairs purchase expense,73991.14,18,TS,KA,true,true,purchase
+2024-04-07,PINV-04-00446 Apex Packaging Works office expense expense,78198.19,5,DL,KA,true,true,office_expense
+2024-12-03,PINV-12-00447 Insight Marketing LLP purchase expense,27485.44,12,GJ,KA,true,true,purchase
+2025-02-03,PINV-02-00448 Apex Packaging Works tax payment expense,66648.85,0,TS,KA,false,false,tax_payment
+2024-11-05,PINV-11-00449 Bharat Transport Co purchase expense,64216.34,18,DL,KA,true,true,purchase
+2024-07-23,PINV-07-00450 Omkar Repairs utilities expense,27316.1,18,KA,KA,true,true,utilities
+2024-10-20,PINV-10-00451 Mohan Industrial Gases purchase expense,71863.62,18,DL,KA,false,true,purchase
+2024-10-30,PINV-10-00452 Insight Marketing LLP marketing expense,12209.11,18,MH,KA,false,true,marketing
+2024-10-24,PINV-10-00453 Royal Insurance Brokers rent expense,78757.97,18,TS,KA,true,false,rent
+2024-05-15,PINV-05-00454 QuickFix Maintenance software expense,61629.31,18,KA,KA,true,true,software
+2024-06-16,PINV-06-00455 Omkar Repairs travel expense,58458.69,18,GJ,KA,true,true,travel
+2024-09-05,PINV-09-00456 Kuber Warehousing purchase expense,84602.92,18,KA,KA,true,true,purchase
+2024-08-27,PINV-08-00457 Himalaya Foods Supply software expense,43778.37,18,KA,KA,true,true,software
+2024-07-26,PINV-07-00458 Himalaya Foods Supply travel expense,59969.19,18,KA,KA,true,true,travel
+2024-10-20,PINV-10-00459 Pioneer Chemicals office expense expense,3616.48,18,TS,KA,true,true,office_expense
+2024-06-01,PINV-06-00460 Royal Insurance Brokers rent expense,17398.25,5,GJ,KA,true,true,rent
+2025-02-23,PINV-02-00461 Insight Marketing LLP loan expense,77665.19,18,TN,KA,true,false,loan
+2024-09-16,PINV-09-00462 Global Tech Tools utilities expense,51295.2,12,TN,KA,false,true,utilities
+2024-11-28,PINV-11-00463 Global Tech Tools utilities expense,61070.09,5,GJ,KA,true,true,utilities
+2025-03-22,PINV-03-00464 TruEdge Consulting marketing expense,49036.35,18,TS,KA,true,true,marketing
+2024-09-09,PINV-09-00465 Kuber Warehousing marketing expense,64385.39,18,MH,KA,true,true,marketing
+2024-05-31,PINV-05-00466 Omkar Repairs purchase expense,56893.33,18,KA,KA,true,true,purchase
+2025-01-05,PINV-01-00467 Mohan Industrial Gases office expense expense,41675.13,18,KA,KA,true,true,office_expense
+2024-05-06,PINV-05-00468 Mohan Industrial Gases loan expense,81828.78,18,MH,KA,false,false,loan
+2025-01-23,PINV-01-00469 SmartCloud Software purchase expense,84409.88,18,GJ,KA,true,true,purchase
+2024-12-31,PINV-12-00470 FirstFleet Logistics utilities expense,42816.71,18,MH,KA,true,true,utilities
+2024-07-29,PINV-07-00471 Omkar Repairs purchase expense,92592.48,18,DL,KA,true,true,purchase
+2025-02-07,PINV-02-00472 Insight Marketing LLP purchase expense,17013.47,18,TS,KA,true,true,purchase
+2025-01-28,PINV-01-00473 Royal Insurance Brokers office expense expense,97578.33,18,MH,KA,true,true,office_expense
+2024-09-15,PINV-09-00474 Jai Stationers office expense expense,69876.26,18,DL,KA,true,true,office_expense
+2025-01-15,PINV-01-00475 TruEdge Consulting rent expense,99695.22,18,DL,KA,true,false,rent
+2025-01-01,PINV-01-00476 Omkar Repairs purchase expense,94846.55,12,DL,KA,true,true,purchase
+2024-07-28,PINV-07-00477 Royal Insurance Brokers marketing expense,24491.04,18,KA,KA,false,true,marketing
+2025-03-24,PINV-03-00478 Eco Power Utilities loan expense,82701.22,18,KA,KA,true,false,loan
+2024-10-30,PINV-10-00479 Pioneer Chemicals utilities expense,39621.28,18,TS,KA,true,true,utilities
+2024-08-17,PINV-08-00480 Himalaya Foods Supply office expense expense,61899.88,12,KA,KA,true,true,office_expense
+2024-05-23,PINV-05-00481 Mohan Industrial Gases office expense expense,65927.02,12,TS,KA,false,true,office_expense
+2024-06-12,PINV-06-00482 QuickFix Maintenance purchase expense,79928.62,0,KA,KA,false,true,purchase
+2024-11-30,PINV-11-00483 Bharat Transport Co rent expense,42182.54,18,KA,KA,true,false,rent
+2024-07-14,PINV-07-00484 Apex Packaging Works utilities expense,44573.32,18,KA,KA,false,true,utilities
+2024-11-19,PINV-11-00485 FirstFleet Logistics software expense,60809.52,18,MH,KA,true,true,software
+2025-02-28,PINV-02-00486 Jai Stationers tax payment expense,28539.66,18,KA,KA,false,false,tax_payment
+2024-11-21,PINV-11-00487 Eco Power Utilities utilities expense,82145.84,18,MH,KA,false,true,utilities
+2025-02-23,PINV-02-00488 Omkar Repairs office expense expense,36307.87,0,GJ,KA,false,true,office_expense
+2025-03-17,PINV-03-00489 Delta Office Systems food expense,39474.32,18,TN,KA,true,false,food
+2024-10-18,PINV-10-00490 Eco Power Utilities purchase expense,12384.69,0,GJ,KA,false,true,purchase
+2024-06-01,PINV-06-00491 Omkar Repairs purchase expense,15884.3,18,MH,KA,false,true,purchase
+2025-03-11,PINV-03-00492 Insight Marketing LLP purchase expense,71922.01,5,TS,KA,true,true,purchase
+2024-07-04,PINV-07-00493 Insight Marketing LLP purchase expense,82631.43,18,KA,KA,true,true,purchase
+2024-05-12,PINV-05-00494 FirstFleet Logistics purchase expense,69120.44,18,MH,KA,false,true,purchase
+2024-08-31,PINV-08-00495 FirstFleet Logistics office expense expense,39620.53,12,KA,KA,true,true,office_expense
+2024-06-19,PINV-06-00496 Himalaya Foods Supply travel expense,16505.2,5,GJ,KA,false,true,travel
+2024-11-18,PINV-11-00497 Mohan Industrial Gases tax payment expense,7230.26,18,TN,KA,true,false,tax_payment
+2024-04-01,PINV-04-00498 Eco Power Utilities marketing expense,36580.6,12,TS,KA,true,true,marketing
+2024-09-05,PINV-09-00499 Bharat Transport Co software expense,68493.01,5,KA,KA,true,true,software
+2025-03-25,PINV-03-00500 Royal Insurance Brokers tax payment expense,78435.21,18,MH,KA,true,false,tax_payment
+2024-10-22,PINV-10-00501 Insight Marketing LLP marketing expense,55484.22,18,TS,KA,true,true,marketing
+2025-01-17,PINV-01-00502 Omkar Repairs rent expense,32158.96,5,MH,KA,false,false,rent
+2024-07-11,PINV-07-00503 Eco Power Utilities purchase expense,34990.85,0,GJ,KA,false,true,purchase
+2024-12-27,PINV-12-00504 Nexa Facility Services purchase expense,32443.42,0,TN,KA,false,true,purchase
+2025-03-08,PINV-03-00505 FirstFleet Logistics purchase expense,22700.76,0,TN,KA,false,true,purchase
+2024-07-04,PINV-07-00506 FirstFleet Logistics rent expense,14153.33,18,TN,KA,true,false,rent
+2025-01-17,PINV-01-00507 SmartCloud Software software expense,31594.78,5,GJ,KA,true,true,software
+2025-02-02,PINV-02-00508 Eco Power Utilities utilities expense,79645.66,18,MH,KA,true,true,utilities
+2024-07-20,PINV-07-00509 Kuber Warehousing loan expense,86966.61,18,TS,KA,true,false,loan
+2024-12-10,PINV-12-00510 Omkar Repairs office expense expense,74644.5,12,KA,KA,true,true,office_expense
+2024-08-05,PINV-08-00511 Insight Marketing LLP utilities expense,80602.77,0,GJ,KA,false,true,utilities
+2024-08-05,PINV-08-00512 Delta Office Systems purchase expense,63717.79,18,GJ,KA,false,true,purchase
+2024-05-14,PINV-05-00513 Eco Power Utilities rent expense,3657.93,18,KA,KA,false,false,rent
+2025-03-01,PINV-03-00514 Omkar Repairs rent expense,52899.55,0,DL,KA,false,false,rent
+2025-02-28,PINV-02-00515 Himalaya Foods Supply marketing expense,73709.02,18,MH,KA,true,true,marketing
+2024-09-01,PINV-09-00516 Delta Office Systems purchase expense,58265.58,18,TS,KA,true,true,purchase
+2025-01-04,PINV-01-00517 Pioneer Chemicals purchase expense,54827.82,18,TS,KA,true,true,purchase
+2024-10-14,PINV-10-00518 Jai Stationers purchase expense,94349.32,18,KA,KA,true,true,purchase
+2024-09-16,PINV-09-00519 TruEdge Consulting rent expense,6915.06,18,MH,KA,true,false,rent
+2024-04-16,PINV-04-00520 SmartCloud Software rent expense,37075.38,18,DL,KA,false,false,rent
+2025-01-12,PINV-01-00521 TruEdge Consulting software expense,48830.67,18,GJ,KA,false,true,software
+2024-04-18,PINV-04-00522 LightSpeed Internet software expense,1561.5,0,DL,KA,false,true,software
+2024-08-04,PINV-08-00523 Apex Packaging Works travel expense,11354.24,18,GJ,KA,true,true,travel
+2024-09-18,PINV-09-00524 Pioneer Chemicals purchase expense,91929.66,18,DL,KA,true,true,purchase
+2024-04-04,PINV-04-00525 Jai Stationers purchase expense,49943.57,18,MH,KA,true,true,purchase
+2024-09-10,PINV-09-00526 Himalaya Foods Supply rent expense,49094.09,18,KA,KA,true,true,rent
+2024-04-07,PINV-04-00527 Bharat Transport Co utilities expense,64935.48,18,DL,KA,true,true,utilities
+2024-05-02,PINV-05-00528 Himalaya Foods Supply software expense,76745.35,18,KA,KA,true,true,software
+2024-06-15,PINV-06-00529 Kuber Warehousing tax payment expense,59147.31,18,GJ,KA,true,false,tax_payment
+2024-12-04,PINV-12-00530 Global Tech Tools purchase expense,26195.02,0,DL,KA,false,true,purchase
+2024-09-06,PINV-09-00531 Insight Marketing LLP marketing expense,58496.08,12,TN,KA,true,true,marketing
+2024-11-07,PINV-11-00532 Apex Packaging Works travel expense,42550.04,18,MH,KA,true,true,travel
+2024-09-09,PINV-09-00533 Crystal Print House rent expense,69826.74,18,GJ,KA,true,false,rent
+2024-05-07,PINV-05-00534 Pioneer Chemicals office expense expense,58859.53,18,DL,KA,false,true,office_expense
+2024-05-16,PINV-05-00535 Pioneer Chemicals food expense,17876.1,18,DL,KA,true,false,food
+2024-09-28,PINV-09-00536 Mohan Industrial Gases purchase expense,58128.62,12,DL,KA,true,true,purchase
+2024-12-17,PINV-12-00537 Apex Packaging Works software expense,9233.15,18,KA,KA,true,true,software
+2024-09-12,PINV-09-00538 Omkar Repairs purchase expense,62640.48,18,MH,KA,true,true,purchase
+2025-02-03,PINV-02-00539 Delta Office Systems rent expense,42420.96,0,KA,KA,false,false,rent
+2025-01-26,PINV-01-00540 Himalaya Foods Supply marketing expense,72298.47,18,DL,KA,true,true,marketing
+2024-05-31,PINV-05-00541 Royal Insurance Brokers purchase expense,64983.49,0,TS,KA,false,true,purchase
+2025-01-05,PINV-01-00542 Eco Power Utilities purchase expense,3802.43,18,TN,KA,true,true,purchase
+2024-10-19,PINV-10-00543 FirstFleet Logistics loan expense,5362.02,18,GJ,KA,true,true,loan
+2025-01-09,PINV-01-00544 Mohan Industrial Gases office expense expense,92581.59,12,TS,KA,true,true,office_expense
+2024-11-14,PINV-11-00545 Royal Insurance Brokers utilities expense,29566.03,5,DL,KA,true,true,utilities
+2024-05-17,PINV-05-00546 Mohan Industrial Gases purchase expense,51506.24,18,TS,KA,false,true,purchase
+2024-07-31,PINV-07-00547 Kuber Warehousing food expense,5850.38,0,DL,KA,false,true,food
+2024-08-13,PINV-08-00548 Apex Packaging Works utilities expense,6698.56,18,TN,KA,true,true,utilities
+2024-12-06,PINV-12-00549 Bharat Transport Co utilities expense,47993.01,18,KA,KA,false,true,utilities
+2025-01-31,PINV-01-00550 FirstFleet Logistics purchase expense,13033.33,18,KA,KA,true,true,purchase
+2025-01-02,PINV-01-00551 Jai Stationers marketing expense,17934.2,0,MH,KA,false,true,marketing
+2024-10-17,PINV-10-00552 Mohan Industrial Gases purchase expense,27217.95,12,KA,KA,true,true,purchase
+2024-09-23,PINV-09-00553 FirstFleet Logistics tax payment expense,59169.7,5,KA,KA,true,false,tax_payment
+2024-08-30,PINV-08-00554 Omkar Repairs loan expense,17131.85,18,TN,KA,true,false,loan
+2025-03-14,PINV-03-00555 Apex Packaging Works travel expense,37346.34,18,TN,KA,true,true,travel
+2025-03-24,PINV-03-00556 Bharat Transport Co marketing expense,68549.49,18,TS,KA,true,true,marketing
+2024-07-10,PINV-07-00557 Crystal Print House travel expense,33915.65,0,GJ,KA,false,true,travel
+2025-01-19,PINV-01-00558 Kuber Warehousing food expense,36498.62,18,TN,KA,false,true,food
+2024-06-07,PINV-06-00559 Nexa Facility Services purchase expense,72575.46,12,KA,KA,true,true,purchase
+2024-10-04,PINV-10-00560 Himalaya Foods Supply rent expense,33409.98,0,MH,KA,false,false,rent
+2024-10-09,PINV-10-00561 Pioneer Chemicals tax payment expense,1697.58,18,KA,KA,false,false,tax_payment
+2024-09-17,PINV-09-00562 Bharat Transport Co software expense,34368.86,0,KA,KA,false,true,software
+2024-10-07,PINV-10-00563 Bharat Transport Co purchase expense,64807.67,18,TN,KA,true,true,purchase
+2024-08-15,PINV-08-00564 Apex Packaging Works office expense expense,2498.68,18,KA,KA,true,true,office_expense
+2025-01-29,PINV-01-00565 Delta Office Systems rent expense,63277.36,0,MH,KA,false,false,rent
+2024-04-12,PINV-04-00566 TruEdge Consulting purchase expense,17962.6,5,DL,KA,false,true,purchase
+2025-01-17,PINV-01-00567 Omkar Repairs food expense,81822.53,12,TN,KA,true,true,food
+2024-04-22,PINV-04-00568 Bharat Transport Co office expense expense,4803.23,18,TN,KA,false,true,office_expense
+2024-09-26,PINV-09-00569 Pioneer Chemicals rent expense,26907.26,18,MH,KA,true,false,rent
+2024-04-23,PINV-04-00570 Kuber Warehousing purchase expense,61238.34,18,DL,KA,true,true,purchase
+2024-07-25,PINV-07-00571 QuickFix Maintenance purchase expense,63774.4,18,GJ,KA,true,true,purchase
+2025-01-30,PINV-01-00572 Mohan Industrial Gases software expense,18912.08,12,DL,KA,false,true,software
+2024-09-17,PINV-09-00573 Mohan Industrial Gases rent expense,15267.84,5,KA,KA,false,false,rent
+2024-12-09,PINV-12-00574 TruEdge Consulting utilities expense,39581.05,12,TN,KA,true,true,utilities
+2024-05-23,PINV-05-00575 Nexa Facility Services marketing expense,41050.46,12,DL,KA,true,true,marketing
+2024-11-16,PINV-11-00576 Eco Power Utilities loan expense,41573.29,18,KA,KA,true,false,loan
+2024-10-05,PINV-10-00577 QuickFix Maintenance software expense,81220.02,0,KA,KA,false,true,software
+2024-11-12,PINV-11-00578 Himalaya Foods Supply office expense expense,10331.99,18,KA,KA,true,true,office_expense
+2024-09-09,PINV-09-00579 Nexa Facility Services purchase expense,57985.72,18,MH,KA,true,true,purchase
+2024-08-09,PINV-08-00580 Jai Stationers purchase expense,29979.69,5,DL,KA,true,true,purchase
+2024-04-29,PINV-04-00581 Mohan Industrial Gases rent expense,37544.94,18,TS,KA,true,true,rent
+2024-11-26,PINV-11-00582 SmartCloud Software purchase expense,11516.47,18,KA,KA,false,true,purchase
+2025-02-24,PINV-02-00583 QuickFix Maintenance office expense expense,44403.57,18,DL,KA,true,true,office_expense
+2024-10-25,PINV-10-00584 SmartCloud Software purchase expense,84422.96,12,MH,KA,true,true,purchase
+2024-09-13,PINV-09-00585 TruEdge Consulting utilities expense,56748.14,18,KA,KA,true,true,utilities
+2024-10-09,PINV-10-00586 Omkar Repairs purchase expense,22631.66,5,TN,KA,true,true,purchase
+2024-11-29,PINV-11-00587 Crystal Print House utilities expense,1786.11,5,GJ,KA,true,true,utilities
+2024-07-05,PINV-07-00588 FirstFleet Logistics purchase expense,47227.28,12,MH,KA,true,true,purchase
+2025-03-20,PINV-03-00589 TruEdge Consulting food expense,61323.06,5,TN,KA,true,true,food
+2024-08-27,PINV-08-00590 Insight Marketing LLP purchase expense,92543.48,18,MH,KA,true,true,purchase
+2024-10-20,PINV-10-00591 Omkar Repairs software expense,65961.62,18,TN,KA,true,true,software
+2024-11-29,PINV-11-00592 Himalaya Foods Supply office expense expense,23549.64,18,DL,KA,true,true,office_expense
+2025-02-28,PINV-02-00593 Eco Power Utilities purchase expense,17305.93,5,DL,KA,true,true,purchase
+2025-03-19,PINV-03-00594 Apex Packaging Works purchase expense,20302.48,18,GJ,KA,false,true,purchase
+2024-08-21,PINV-08-00595 Jai Stationers purchase expense,50328.38,18,GJ,KA,true,true,purchase
+2024-12-25,PINV-12-00596 Eco Power Utilities marketing expense,57569.57,0,DL,KA,false,true,marketing
+2024-05-14,PINV-05-00597 Kuber Warehousing marketing expense,13958.22,18,TN,KA,true,true,marketing
+2024-09-13,PINV-09-00598 Nexa Facility Services utilities expense,8282.51,18,MH,KA,true,true,utilities
+2024-06-03,PINV-06-00599 Apex Packaging Works purchase expense,67284.88,18,MH,KA,false,true,purchase
+2025-03-11,PINV-03-00600 Eco Power Utilities purchase expense,99597.45,18,MH,KA,true,true,purchase
+2024-06-05,PINV-06-00601 Pioneer Chemicals travel expense,21563.82,18,TS,KA,true,true,travel
+2024-12-16,PINV-12-00602 Bharat Transport Co rent expense,30956.38,18,TN,KA,true,true,rent
+2024-04-02,PINV-04-00603 Global Tech Tools utilities expense,32914.29,0,GJ,KA,false,true,utilities
+2024-09-08,PINV-09-00604 FirstFleet Logistics office expense expense,14792.24,18,TS,KA,true,true,office_expense
+2024-04-20,PINV-04-00605 Pioneer Chemicals loan expense,5695.51,12,TS,KA,false,false,loan
+2025-02-26,PINV-02-00606 Nexa Facility Services travel expense,51484.88,18,TN,KA,true,true,travel
+2024-06-10,PINV-06-00607 LightSpeed Internet utilities expense,78794.32,0,KA,KA,false,true,utilities
+2024-04-21,PINV-04-00608 Himalaya Foods Supply food expense,43800.29,5,TN,KA,false,false,food
+2024-08-13,PINV-08-00609 Nexa Facility Services food expense,43374.28,12,GJ,KA,true,false,food
+2024-07-16,PINV-07-00610 Delta Office Systems utilities expense,52916.69,5,TS,KA,true,true,utilities
+2024-12-05,PINV-12-00611 SmartCloud Software tax payment expense,84687.56,18,GJ,KA,true,false,tax_payment
+2025-03-28,PINV-03-00612 QuickFix Maintenance travel expense,62745.92,18,DL,KA,true,true,travel
+2024-04-08,PINV-04-00613 Jai Stationers office expense expense,18591.61,18,TN,KA,false,true,office_expense
+2024-08-30,PINV-08-00614 Global Tech Tools purchase expense,97863.47,18,TN,KA,true,true,purchase
+2024-05-22,PINV-05-00615 Eco Power Utilities purchase expense,50283.66,18,GJ,KA,false,true,purchase
+2025-02-28,PINV-02-00616 Crystal Print House office expense expense,34002.66,18,DL,KA,true,true,office_expense
+2024-07-26,PINV-07-00617 Insight Marketing LLP purchase expense,19457.63,18,TS,KA,true,true,purchase
+2025-03-24,PINV-03-00618 FirstFleet Logistics purchase expense,53312.98,5,DL,KA,true,true,purchase
+2024-12-11,PINV-12-00619 Jai Stationers purchase expense,64402.63,18,TS,KA,true,true,purchase
+2024-11-23,PINV-11-00620 QuickFix Maintenance food expense,44222.23,0,MH,KA,false,false,food
+2024-07-14,PINV-07-00621 Omkar Repairs utilities expense,49184.77,18,GJ,KA,true,true,utilities
+2024-08-27,PINV-08-00622 Crystal Print House software expense,59652.88,0,MH,KA,false,true,software
+2025-03-24,PINV-03-00623 Insight Marketing LLP utilities expense,30058.99,12,GJ,KA,true,true,utilities
+2025-02-01,PINV-02-00624 Royal Insurance Brokers rent expense,40120.68,18,TN,KA,true,false,rent
+2025-03-18,PINV-03-00625 Omkar Repairs office expense expense,80204.77,18,TS,KA,true,true,office_expense
+2025-01-03,PINV-01-00626 Himalaya Foods Supply rent expense,86266.39,18,KA,KA,true,false,rent
+2024-04-26,PINV-04-00627 Royal Insurance Brokers purchase expense,42668.51,18,MH,KA,true,true,purchase
+2024-04-04,PINV-04-00628 Delta Office Systems software expense,31251.77,12,GJ,KA,true,true,software
+2024-10-26,PINV-10-00629 Insight Marketing LLP purchase expense,53106.48,18,DL,KA,true,true,purchase
+2024-10-01,PINV-10-00630 Pioneer Chemicals software expense,18438.67,18,DL,KA,true,true,software
+2024-04-03,PINV-04-00631 Apex Packaging Works purchase expense,29489.08,18,TN,KA,false,true,purchase
+2024-12-28,PINV-12-00632 Eco Power Utilities purchase expense,7174.2,0,DL,KA,false,true,purchase
+2024-09-14,PINV-09-00633 Delta Office Systems purchase expense,86611.97,18,GJ,KA,true,true,purchase
+2025-01-27,PINV-01-00634 TruEdge Consulting travel expense,13243.76,12,MH,KA,false,true,travel
+2024-07-13,PINV-07-00635 QuickFix Maintenance software expense,43520.87,18,MH,KA,true,true,software
+2024-09-10,PINV-09-00636 Pioneer Chemicals marketing expense,39130.84,18,TN,KA,false,true,marketing
+2024-07-09,PINV-07-00637 Bharat Transport Co marketing expense,89250.45,12,MH,KA,true,true,marketing
+2024-12-19,PINV-12-00638 Nexa Facility Services purchase expense,59330.93,0,GJ,KA,false,true,purchase
+2025-02-08,PINV-02-00639 Royal Insurance Brokers purchase expense,78234.93,18,KA,KA,true,true,purchase
+2024-07-18,PINV-07-00640 Insight Marketing LLP office expense expense,65739.24,0,GJ,KA,false,true,office_expense
+2024-11-30,PINV-11-00641 TruEdge Consulting utilities expense,82626.37,18,TN,KA,true,true,utilities
+2024-06-09,PINV-06-00642 Insight Marketing LLP purchase expense,24905.22,5,TN,KA,true,true,purchase
+2025-02-07,PINV-02-00643 Insight Marketing LLP utilities expense,87163.39,12,DL,KA,true,true,utilities
+2024-10-11,PINV-10-00644 Pioneer Chemicals purchase expense,98685.2,18,TN,KA,true,true,purchase
+2025-02-22,PINV-02-00645 Himalaya Foods Supply utilities expense,89251.8,18,TS,KA,true,true,utilities
+2025-01-06,PINV-01-00646 Bharat Transport Co purchase expense,1523.76,18,DL,KA,true,true,purchase
+2024-08-17,PINV-08-00647 Eco Power Utilities office expense expense,5796.07,18,KA,KA,true,true,office_expense
+2024-09-29,PINV-09-00648 QuickFix Maintenance office expense expense,34257.7,18,KA,KA,true,true,office_expense
+2024-11-26,PINV-11-00649 Global Tech Tools marketing expense,21265.2,5,TN,KA,true,true,marketing
+2025-03-07,PINV-03-00650 Omkar Repairs travel expense,46929.92,18,KA,KA,true,true,travel
+2025-03-03,PINV-03-00651 Jai Stationers purchase expense,63028.82,18,TS,KA,false,true,purchase
+2024-12-24,PINV-12-00652 FirstFleet Logistics purchase expense,76035.31,18,GJ,KA,true,true,purchase
+2024-09-11,PINV-09-00653 QuickFix Maintenance marketing expense,81114.62,18,GJ,KA,true,true,marketing
+2024-11-02,PINV-11-00654 FirstFleet Logistics purchase expense,15304.82,18,KA,KA,false,true,purchase
+2025-02-24,PINV-02-00655 LightSpeed Internet food expense,59789.12,12,TN,KA,true,false,food
+2024-08-28,PINV-08-00656 QuickFix Maintenance purchase expense,45266.36,18,TN,KA,true,true,purchase
+2024-10-24,PINV-10-00657 FirstFleet Logistics marketing expense,82201.62,5,KA,KA,false,true,marketing
+2024-10-08,PINV-10-00658 Crystal Print House rent expense,89771.08,18,GJ,KA,true,false,rent
+2024-06-16,PINV-06-00659 Jai Stationers loan expense,70194.94,18,TN,KA,false,false,loan
+2025-02-13,PINV-02-00660 Royal Insurance Brokers office expense expense,36430.23,0,MH,KA,false,true,office_expense
+2024-11-22,PINV-11-00661 Eco Power Utilities purchase expense,45944.45,18,GJ,KA,true,true,purchase
+2024-04-14,PINV-04-00662 Eco Power Utilities marketing expense,61032.46,5,KA,KA,true,true,marketing
+2025-03-29,PINV-03-00663 Nexa Facility Services purchase expense,76377.48,12,TS,KA,true,true,purchase
+2024-11-16,PINV-11-00664 Bharat Transport Co office expense expense,69071.28,18,GJ,KA,false,true,office_expense
+2024-09-13,PINV-09-00665 Insight Marketing LLP purchase expense,43018.4,18,MH,KA,true,true,purchase
+2025-01-29,PINV-01-00666 QuickFix Maintenance purchase expense,86940.26,18,TS,KA,true,true,purchase
+2024-04-21,PINV-04-00667 Omkar Repairs food expense,7972.89,18,GJ,KA,true,false,food
+2024-04-30,PINV-04-00668 Royal Insurance Brokers utilities expense,94033.01,12,TS,KA,true,true,utilities
+2024-10-17,PINV-10-00669 FirstFleet Logistics software expense,51404.63,18,TN,KA,true,true,software
+2024-10-28,PINV-10-00670 Global Tech Tools utilities expense,96293.7,18,TN,KA,true,true,utilities
+2024-05-11,PINV-05-00671 Eco Power Utilities purchase expense,11553.11,12,TS,KA,true,true,purchase
+2025-03-08,PINV-03-00672 TruEdge Consulting purchase expense,74414.91,18,GJ,KA,true,true,purchase
+2024-05-22,PINV-05-00673 Eco Power Utilities rent expense,54815.38,18,KA,KA,true,true,rent
+2024-12-18,PINV-12-00674 Eco Power Utilities tax payment expense,70546.17,0,TS,KA,false,false,tax_payment
+2025-01-31,PINV-01-00675 Bharat Transport Co marketing expense,50318.23,0,MH,KA,false,true,marketing
+2025-01-27,PINV-01-00676 Royal Insurance Brokers purchase expense,89765.45,18,TS,KA,true,true,purchase
+2024-12-18,PINV-12-00677 Nexa Facility Services office expense expense,46321.34,18,TS,KA,true,true,office_expense
+2024-09-09,PINV-09-00678 Bharat Transport Co travel expense,49307.47,12,GJ,KA,true,true,travel
+2024-07-25,PINV-07-00679 Global Tech Tools purchase expense,2728.16,18,MH,KA,true,true,purchase
+2024-05-22,PINV-05-00680 FirstFleet Logistics tax payment expense,88419.33,18,TS,KA,true,false,tax_payment
+2024-04-22,PINV-04-00681 Kuber Warehousing travel expense,36764.7,18,GJ,KA,true,true,travel
+2024-12-01,PINV-12-00682 TruEdge Consulting office expense expense,23431.9,18,DL,KA,true,true,office_expense
+2024-08-13,PINV-08-00683 Bharat Transport Co purchase expense,54555.76,18,KA,KA,true,true,purchase
+2024-09-07,PINV-09-00684 Crystal Print House purchase expense,5507.84,18,KA,KA,false,true,purchase
+2024-06-18,PINV-06-00685 Himalaya Foods Supply rent expense,85549.65,18,TN,KA,true,false,rent
+2024-05-29,PINV-05-00686 Kuber Warehousing office expense expense,89042.47,12,KA,KA,true,true,office_expense
+2024-04-20,PINV-04-00687 SmartCloud Software office expense expense,45946.85,18,KA,KA,true,true,office_expense
+2024-06-12,PINV-06-00688 Himalaya Foods Supply office expense expense,74361.88,12,TN,KA,true,true,office_expense
+2024-12-19,PINV-12-00689 Jai Stationers purchase expense,58225.35,18,MH,KA,true,true,purchase
+2024-11-03,PINV-11-00690 Nexa Facility Services rent expense,7981.27,18,DL,KA,true,false,rent
+2024-12-02,PINV-12-00691 Global Tech Tools loan expense,22014.79,18,TN,KA,true,false,loan
+2024-10-05,PINV-10-00692 Omkar Repairs food expense,81331.96,5,MH,KA,true,false,food
+2024-05-24,PINV-05-00693 QuickFix Maintenance software expense,74890.69,18,MH,KA,true,true,software
+2025-01-15,PINV-01-00694 Crystal Print House purchase expense,67533.2,12,MH,KA,true,true,purchase
+2024-07-26,PINV-07-00695 Himalaya Foods Supply purchase expense,72810.15,0,KA,KA,false,true,purchase
+2025-01-07,PINV-01-00696 LightSpeed Internet office expense expense,24567.63,12,TN,KA,true,true,office_expense
+2024-04-13,PINV-04-00697 Omkar Repairs marketing expense,67796.63,12,TS,KA,false,true,marketing
+2024-08-09,PINV-08-00698 Mohan Industrial Gases purchase expense,63464.28,0,GJ,KA,false,true,purchase
+2024-08-24,PINV-08-00699 Crystal Print House rent expense,63272.64,18,TN,KA,false,false,rent
+2024-05-03,PINV-05-00700 Omkar Repairs purchase expense,14738.89,0,GJ,KA,false,true,purchase
+2025-03-07,PINV-03-00701 Delta Office Systems software expense,55295.45,18,KA,KA,false,true,software
+2024-07-26,PINV-07-00702 Jai Stationers tax payment expense,33597.41,18,DL,KA,false,false,tax_payment
+2025-01-13,PINV-01-00703 Global Tech Tools food expense,29874.97,18,TS,KA,true,false,food
+2024-06-04,PINV-06-00704 Royal Insurance Brokers software expense,84741.96,18,KA,KA,false,true,software
+2024-06-17,PINV-06-00705 Nexa Facility Services rent expense,97258.77,18,TS,KA,true,false,rent
+2025-01-25,PINV-01-00706 Mohan Industrial Gases food expense,50343.48,5,TN,KA,true,false,food
+2024-06-03,PINV-06-00707 TruEdge Consulting food expense,35881.71,18,DL,KA,false,false,food
+2024-10-19,PINV-10-00708 Himalaya Foods Supply purchase expense,92559.3,18,MH,KA,true,true,purchase
+2024-06-08,PINV-06-00709 Himalaya Foods Supply purchase expense,4519.97,18,MH,KA,false,true,purchase
+2024-11-11,PINV-11-00710 Nexa Facility Services utilities expense,49693.36,18,KA,KA,true,true,utilities
+2024-05-19,PINV-05-00711 Pioneer Chemicals marketing expense,33790.41,18,DL,KA,true,true,marketing
+2024-10-24,PINV-10-00712 Delta Office Systems purchase expense,14960.34,0,DL,KA,false,true,purchase
+2024-05-03,PINV-05-00713 Omkar Repairs purchase expense,31409.61,12,MH,KA,false,true,purchase
+2024-10-10,PINV-10-00714 Bharat Transport Co purchase expense,47297.42,12,MH,KA,true,true,purchase
+2024-05-05,PINV-05-00715 SmartCloud Software utilities expense,74102.08,18,GJ,KA,true,true,utilities
+2025-02-19,PINV-02-00716 Kuber Warehousing software expense,64638.35,18,TN,KA,true,true,software
+2024-10-10,PINV-10-00717 Insight Marketing LLP tax payment expense,5565.76,12,GJ,KA,true,true,tax_payment
+2024-09-13,PINV-09-00718 Apex Packaging Works rent expense,34494.93,18,MH,KA,true,false,rent
+2024-08-17,PINV-08-00719 Jai Stationers rent expense,52901.59,12,GJ,KA,true,false,rent
+2024-07-27,PINV-07-00720 SmartCloud Software purchase expense,25266.85,18,DL,KA,true,true,purchase
+2024-10-02,PINV-10-00721 Insight Marketing LLP software expense,9691.8,18,DL,KA,true,true,software
+2025-01-23,PINV-01-00722 Global Tech Tools purchase expense,23047.86,0,TN,KA,false,true,purchase
+2024-12-26,PINV-12-00723 QuickFix Maintenance travel expense,22543.19,18,TS,KA,true,true,travel
+2024-04-05,PINV-04-00724 Jai Stationers purchase expense,24231.74,12,TN,KA,true,true,purchase
+2024-11-04,PINV-11-00725 Delta Office Systems utilities expense,45474.6,0,KA,KA,false,true,utilities
+2024-05-01,PINV-05-00726 Delta Office Systems food expense,96841.95,18,KA,KA,true,false,food
+2024-09-14,PINV-09-00727 Crystal Print House rent expense,41996.24,12,KA,KA,true,false,rent
+2024-04-08,PINV-04-00728 Pioneer Chemicals loan expense,39421.82,0,TS,KA,false,false,loan
+2024-12-25,PINV-12-00729 Kuber Warehousing travel expense,64970.63,0,TN,KA,false,true,travel
+2025-02-23,PINV-02-00730 Royal Insurance Brokers office expense expense,73580.14,0,TS,KA,false,true,office_expense
+2024-07-11,PINV-07-00731 Himalaya Foods Supply rent expense,38229.3,18,MH,KA,true,false,rent
+2024-04-07,PINV-04-00732 Mohan Industrial Gases purchase expense,5744.46,5,TN,KA,false,true,purchase
+2024-09-19,PINV-09-00733 Kuber Warehousing marketing expense,28555.75,0,MH,KA,false,true,marketing
+2024-08-26,PINV-08-00734 Delta Office Systems purchase expense,4116.37,18,KA,KA,true,true,purchase
+2024-05-23,PINV-05-00735 Kuber Warehousing purchase expense,56608.61,12,KA,KA,true,true,purchase
+2024-10-23,PINV-10-00736 Nexa Facility Services marketing expense,66389.19,5,MH,KA,true,true,marketing
+2024-06-09,PINV-06-00737 Insight Marketing LLP purchase expense,20650.58,18,MH,KA,false,true,purchase
+2024-07-04,PINV-07-00738 FirstFleet Logistics purchase expense,62821.09,12,TS,KA,true,true,purchase
+2025-02-09,PINV-02-00739 Bharat Transport Co marketing expense,18608.16,0,MH,KA,false,true,marketing
+2024-07-24,PINV-07-00740 SmartCloud Software purchase expense,16597.48,5,TN,KA,true,true,purchase
+2024-05-30,PINV-05-00741 Global Tech Tools purchase expense,22498.86,18,TN,KA,false,true,purchase
+2025-03-14,PINV-03-00742 Jai Stationers purchase expense,17597.14,5,DL,KA,true,true,purchase
+2025-02-07,PINV-02-00743 Omkar Repairs travel expense,23298.8,0,TN,KA,false,true,travel
+2024-07-08,PINV-07-00744 Insight Marketing LLP purchase expense,69098.1,0,MH,KA,false,true,purchase
+2024-11-10,PINV-11-00745 Omkar Repairs office expense expense,77031.52,18,DL,KA,false,true,office_expense
+2025-03-05,PINV-03-00746 SmartCloud Software utilities expense,18952.78,18,MH,KA,true,true,utilities
+2024-09-30,PINV-09-00747 Mohan Industrial Gases tax payment expense,58884.39,0,TN,KA,false,true,tax_payment
+2024-10-07,PINV-10-00748 Kuber Warehousing utilities expense,42088.14,0,MH,KA,false,true,utilities
+2024-10-07,PINV-10-00749 Himalaya Foods Supply marketing expense,62683.39,18,DL,KA,true,true,marketing
+2024-05-24,PINV-05-00750 Insight Marketing LLP travel expense,23088.95,18,GJ,KA,true,true,travel
+2025-03-24,PINV-03-00751 LightSpeed Internet purchase expense,66350.7,18,TN,KA,false,true,purchase
+2024-11-09,PINV-11-00752 Kuber Warehousing office expense expense,54015.33,12,TS,KA,true,true,office_expense
+2024-10-26,PINV-10-00753 Eco Power Utilities loan expense,49517.97,18,MH,KA,false,false,loan
+2024-08-27,PINV-08-00754 Global Tech Tools marketing expense,99299.91,18,GJ,KA,true,true,marketing
+2024-06-17,PINV-06-00755 Jai Stationers purchase expense,16906.6,18,TS,KA,true,true,purchase
+2025-03-24,PINV-03-00756 Nexa Facility Services rent expense,55510.72,18,TS,KA,true,false,rent
+2024-08-25,PINV-08-00757 Nexa Facility Services utilities expense,43853.64,18,KA,KA,true,true,utilities
+2024-10-29,PINV-10-00758 Delta Office Systems software expense,30689.13,18,TS,KA,true,true,software
+2024-07-31,PINV-07-00759 TruEdge Consulting office expense expense,55444.14,18,TN,KA,true,true,office_expense
+2024-05-20,PINV-05-00760 LightSpeed Internet marketing expense,50867.2,18,GJ,KA,true,true,marketing
+2025-03-02,PINV-03-00761 Global Tech Tools food expense,21717.85,0,MH,KA,false,false,food
+2024-10-12,PINV-10-00762 Bharat Transport Co travel expense,74300.29,5,KA,KA,true,true,travel
+2024-08-19,PINV-08-00763 Royal Insurance Brokers office expense expense,81557.99,18,KA,KA,false,true,office_expense
+2025-01-10,PINV-01-00764 Eco Power Utilities software expense,20866.65,12,KA,KA,true,true,software
+2024-08-25,PINV-08-00765 Mohan Industrial Gases loan expense,30868.62,18,DL,KA,true,false,loan
+2025-02-23,PINV-02-00766 Insight Marketing LLP tax payment expense,99459.0,18,TS,KA,true,false,tax_payment
+2024-08-30,PINV-08-00767 LightSpeed Internet loan expense,73054.97,5,TS,KA,true,false,loan
+2025-01-25,PINV-01-00768 SmartCloud Software office expense expense,19236.4,12,DL,KA,false,true,office_expense
+2024-12-15,PINV-12-00769 Crystal Print House rent expense,55002.21,0,DL,KA,false,false,rent
+2025-01-16,PINV-01-00770 Omkar Repairs purchase expense,99269.08,18,TS,KA,true,true,purchase
+2025-01-07,PINV-01-00771 Himalaya Foods Supply purchase expense,11021.4,5,TN,KA,true,true,purchase
+2024-05-26,PINV-05-00772 FirstFleet Logistics software expense,4139.25,18,TS,KA,true,true,software
+2024-08-05,PINV-08-00773 SmartCloud Software office expense expense,4766.92,18,MH,KA,true,true,office_expense
+2024-07-25,PINV-07-00774 Himalaya Foods Supply purchase expense,46041.8,12,TN,KA,true,true,purchase
+2025-03-03,PINV-03-00775 Global Tech Tools rent expense,75918.78,12,GJ,KA,true,true,rent
+2025-03-20,PINV-03-00776 Insight Marketing LLP purchase expense,7163.11,0,GJ,KA,false,true,purchase
+2024-07-20,PINV-07-00777 Bharat Transport Co purchase expense,52439.57,12,KA,KA,true,true,purchase
+2024-08-23,PINV-08-00778 SmartCloud Software office expense expense,66451.46,18,KA,KA,true,true,office_expense
+2024-09-07,PINV-09-00779 FirstFleet Logistics marketing expense,45583.57,0,TN,KA,false,true,marketing
+2024-10-31,PINV-10-00780 Delta Office Systems software expense,3963.76,18,GJ,KA,false,true,software
+2025-02-03,PINV-02-00781 Bharat Transport Co purchase expense,81209.99,0,DL,KA,false,true,purchase
+2024-12-13,PINV-12-00782 Kuber Warehousing purchase expense,15979.56,12,DL,KA,true,true,purchase
+2024-07-11,PINV-07-00783 Crystal Print House travel expense,57332.36,18,TN,KA,true,true,travel
+2025-01-28,PINV-01-00784 Delta Office Systems purchase expense,7226.49,18,TN,KA,true,true,purchase
+2024-05-21,PINV-05-00785 Crystal Print House loan expense,74684.64,0,TS,KA,false,false,loan
+2024-09-06,PINV-09-00786 Apex Packaging Works rent expense,40077.37,12,GJ,KA,false,false,rent
+2025-01-10,PINV-01-00787 Crystal Print House purchase expense,71624.07,0,TS,KA,false,true,purchase
+2024-09-01,PINV-09-00788 Kuber Warehousing purchase expense,70357.96,18,GJ,KA,true,true,purchase
+2024-07-19,PINV-07-00789 Nexa Facility Services travel expense,49954.15,18,TN,KA,true,true,travel
+2024-07-06,PINV-07-00790 TruEdge Consulting purchase expense,96738.56,18,TS,KA,true,true,purchase
+2024-12-12,PINV-12-00791 Jai Stationers office expense expense,83816.19,0,GJ,KA,false,true,office_expense
+2024-08-25,PINV-08-00792 FirstFleet Logistics purchase expense,30391.82,5,KA,KA,false,true,purchase
+2025-03-30,PINV-03-00793 Himalaya Foods Supply purchase expense,32456.91,12,TS,KA,true,true,purchase
+2024-11-08,PINV-11-00794 FirstFleet Logistics software expense,26460.44,18,MH,KA,true,true,software
+2024-09-13,PINV-09-00795 FirstFleet Logistics loan expense,32256.72,18,DL,KA,true,false,loan
+2024-08-23,PINV-08-00796 Pioneer Chemicals food expense,60495.77,0,GJ,KA,false,false,food
+2024-08-20,PINV-08-00797 QuickFix Maintenance utilities expense,43532.56,18,GJ,KA,true,true,utilities
+2025-01-17,PINV-01-00798 TruEdge Consulting purchase expense,32142.67,0,TS,KA,false,true,purchase
+2025-03-25,PINV-03-00799 Kuber Warehousing travel expense,63608.82,12,DL,KA,true,true,travel
+2024-10-04,PINV-10-00800 QuickFix Maintenance purchase expense,84205.83,0,TS,KA,false,true,purchase
+2024-05-15,PINV-05-00801 Omkar Repairs purchase expense,76609.53,18,DL,KA,true,true,purchase
+2024-04-14,PINV-04-00802 Insight Marketing LLP software expense,3090.14,0,DL,KA,false,true,software
+2025-03-01,PINV-03-00803 Insight Marketing LLP purchase expense,88091.05,5,TS,KA,true,true,purchase
+2024-11-02,PINV-11-00804 FirstFleet Logistics purchase expense,52039.79,18,KA,KA,true,true,purchase
+2024-04-03,PINV-04-00805 Apex Packaging Works rent expense,42141.38,18,DL,KA,true,false,rent
+2024-05-22,PINV-05-00806 Pioneer Chemicals purchase expense,40729.5,0,GJ,KA,false,true,purchase
+2024-05-27,PINV-05-00807 Delta Office Systems software expense,17369.72,18,GJ,KA,true,true,software
+2024-06-15,PINV-06-00808 FirstFleet Logistics purchase expense,2418.91,5,DL,KA,true,true,purchase
+2024-06-19,PINV-06-00809 QuickFix Maintenance purchase expense,59861.91,18,KA,KA,true,true,purchase
+2024-08-18,PINV-08-00810 Crystal Print House purchase expense,27914.6,18,KA,KA,true,true,purchase
+2024-07-26,PINV-07-00811 LightSpeed Internet marketing expense,10875.65,0,TS,KA,false,true,marketing
+2024-04-16,PINV-04-00812 Kuber Warehousing purchase expense,80280.31,18,MH,KA,false,true,purchase
+2025-02-24,PINV-02-00813 QuickFix Maintenance office expense expense,1841.56,18,DL,KA,false,true,office_expense
+2024-05-31,PINV-05-00814 LightSpeed Internet rent expense,5463.8,18,KA,KA,true,false,rent
+2024-06-05,PINV-06-00815 Royal Insurance Brokers purchase expense,76197.23,0,DL,KA,false,true,purchase
+2025-03-31,PINV-03-00816 Kuber Warehousing purchase expense,29098.39,0,GJ,KA,false,true,purchase
+2024-05-19,PINV-05-00817 Insight Marketing LLP purchase expense,80510.09,18,TS,KA,true,true,purchase
+2024-06-05,PINV-06-00818 Royal Insurance Brokers purchase expense,43932.92,0,GJ,KA,false,true,purchase
+2024-07-24,PINV-07-00819 Apex Packaging Works software expense,42909.09,18,TS,KA,false,true,software
+2025-03-30,PINV-03-00820 Apex Packaging Works office expense expense,50385.8,5,TS,KA,true,true,office_expense
+2024-06-14,PINV-06-00821 Delta Office Systems purchase expense,73145.0,18,DL,KA,true,true,purchase
+2024-08-01,PINV-08-00822 Mohan Industrial Gases office expense expense,69440.12,0,DL,KA,false,true,office_expense
+2024-12-09,PINV-12-00823 LightSpeed Internet office expense expense,73440.03,12,DL,KA,true,true,office_expense
+2024-07-05,PINV-07-00824 SmartCloud Software marketing expense,36320.74,0,GJ,KA,false,true,marketing
+2025-02-21,PINV-02-00825 Bharat Transport Co office expense expense,15725.2,12,GJ,KA,true,true,office_expense
+2024-11-06,PINV-11-00826 Apex Packaging Works software expense,39833.16,18,MH,KA,true,true,software
+2024-07-29,PINV-07-00827 Omkar Repairs loan expense,85221.22,12,TN,KA,true,false,loan
+2024-10-30,PINV-10-00828 Crystal Print House rent expense,56804.76,18,KA,KA,true,true,rent
+2024-06-11,PINV-06-00829 LightSpeed Internet purchase expense,24693.57,0,TN,KA,false,true,purchase
+2025-02-10,PINV-02-00830 TruEdge Consulting purchase expense,40749.06,18,TN,KA,true,true,purchase
+2024-12-12,PINV-12-00831 FirstFleet Logistics purchase expense,2320.82,18,MH,KA,true,true,purchase
+2024-08-02,PINV-08-00832 Eco Power Utilities marketing expense,27787.36,5,KA,KA,true,true,marketing
+2024-08-19,PINV-08-00833 Crystal Print House travel expense,10469.2,0,MH,KA,false,true,travel
+2024-10-21,PINV-10-00834 TruEdge Consulting purchase expense,32596.63,18,GJ,KA,true,true,purchase
+2024-04-15,PINV-04-00835 Mohan Industrial Gases purchase expense,81412.44,18,DL,KA,true,true,purchase
+2024-06-24,PINV-06-00836 LightSpeed Internet travel expense,68386.59,5,MH,KA,true,true,travel
+2025-02-12,PINV-02-00837 Kuber Warehousing office expense expense,18358.51,12,KA,KA,true,true,office_expense
+2024-09-12,PINV-09-00838 Royal Insurance Brokers rent expense,33620.11,0,MH,KA,false,false,rent
+2025-02-04,PINV-02-00839 Nexa Facility Services software expense,69661.64,18,TN,KA,true,true,software
+2024-06-20,PINV-06-00840 Delta Office Systems utilities expense,51500.01,18,KA,KA,false,true,utilities
+2024-09-02,PINV-09-00841 Crystal Print House software expense,65650.47,18,DL,KA,false,true,software
+2025-03-17,PINV-03-00842 Himalaya Foods Supply office expense expense,39234.16,18,KA,KA,true,true,office_expense
+2024-10-20,PINV-10-00843 Himalaya Foods Supply rent expense,64177.73,18,MH,KA,false,false,rent
+2025-01-26,PINV-01-00844 FirstFleet Logistics utilities expense,66583.69,12,KA,KA,false,true,utilities
+2024-07-04,PINV-07-00845 Eco Power Utilities purchase expense,50226.24,0,MH,KA,false,true,purchase
+2025-02-24,PINV-02-00846 Himalaya Foods Supply purchase expense,49810.72,18,GJ,KA,true,true,purchase
+2024-05-02,PINV-05-00847 Apex Packaging Works purchase expense,60591.84,0,TN,KA,false,true,purchase
+2024-05-21,PINV-05-00848 Mohan Industrial Gases purchase expense,38653.04,18,DL,KA,true,true,purchase
+2025-03-25,PINV-03-00849 Pioneer Chemicals purchase expense,36410.79,18,KA,KA,true,true,purchase
+2024-11-17,PINV-11-00850 SmartCloud Software rent expense,15519.48,18,DL,KA,true,false,rent
+2024-07-21,PINV-07-00851 Eco Power Utilities food expense,33468.93,0,GJ,KA,false,false,food
+2024-05-09,PINV-05-00852 Jai Stationers purchase expense,62702.24,12,TN,KA,false,true,purchase
+2024-04-07,PINV-04-00853 Delta Office Systems office expense expense,36296.71,18,TS,KA,true,true,office_expense
+2024-05-24,PINV-05-00854 Crystal Print House office expense expense,43729.27,18,TN,KA,true,true,office_expense
+2024-09-22,PINV-09-00855 Bharat Transport Co software expense,65502.98,18,KA,KA,true,true,software
+2024-06-04,PINV-06-00856 Apex Packaging Works loan expense,8874.7,5,GJ,KA,true,false,loan
+2024-04-29,PINV-04-00857 Nexa Facility Services office expense expense,63213.32,18,MH,KA,true,true,office_expense
+2024-05-06,PINV-05-00858 Delta Office Systems software expense,68632.66,18,TN,KA,true,true,software
+2025-02-17,PINV-02-00859 Pioneer Chemicals office expense expense,22912.09,5,TS,KA,true,true,office_expense
+2024-12-05,PINV-12-00860 Delta Office Systems utilities expense,8497.31,18,TS,KA,true,true,utilities
+2024-12-21,PINV-12-00861 Jai Stationers office expense expense,22055.23,12,KA,KA,true,true,office_expense
+2024-08-25,PINV-08-00862 Eco Power Utilities office expense expense,4555.55,5,MH,KA,false,true,office_expense
+2024-11-19,PINV-11-00863 Kuber Warehousing loan expense,67458.53,5,MH,KA,true,false,loan
+2025-03-26,PINV-03-00864 Crystal Print House purchase expense,33684.86,12,GJ,KA,true,true,purchase
+2024-10-12,PINV-10-00865 Mohan Industrial Gases office expense expense,41319.06,0,TS,KA,false,true,office_expense
+2024-08-11,PINV-08-00866 Delta Office Systems utilities expense,80666.32,18,DL,KA,true,true,utilities
+2025-01-17,PINV-01-00867 Crystal Print House marketing expense,21082.79,12,KA,KA,true,true,marketing
+2024-05-19,PINV-05-00868 Delta Office Systems loan expense,4415.53,18,TS,KA,true,false,loan
+2024-11-06,PINV-11-00869 Mohan Industrial Gases purchase expense,73753.93,18,DL,KA,false,true,purchase
+2024-05-03,PINV-05-00870 Eco Power Utilities utilities expense,32655.7,18,MH,KA,true,true,utilities
+2024-12-07,PINV-12-00871 LightSpeed Internet office expense expense,71864.67,12,TN,KA,true,true,office_expense
+2024-08-12,PINV-08-00872 QuickFix Maintenance travel expense,41313.56,12,GJ,KA,true,true,travel
+2024-08-26,PINV-08-00873 LightSpeed Internet tax payment expense,35289.51,0,TN,KA,false,false,tax_payment
+2025-01-22,PINV-01-00874 Eco Power Utilities rent expense,33301.9,18,MH,KA,false,true,rent
+2025-03-11,PINV-03-00875 Bharat Transport Co marketing expense,64108.14,18,TS,KA,false,true,marketing
+2024-12-09,PINV-12-00876 FirstFleet Logistics office expense expense,29379.55,5,TN,KA,true,true,office_expense
+2025-01-25,PINV-01-00877 Global Tech Tools purchase expense,87096.29,18,GJ,KA,true,true,purchase
+2024-05-27,PINV-05-00878 Jai Stationers travel expense,38126.49,18,MH,KA,true,true,travel
+2024-07-10,PINV-07-00879 Jai Stationers marketing expense,98714.49,18,TS,KA,true,true,marketing
+2025-03-09,PINV-03-00880 Apex Packaging Works purchase expense,47591.23,12,MH,KA,true,true,purchase
+2024-10-09,PINV-10-00881 Delta Office Systems marketing expense,62860.91,12,MH,KA,true,true,marketing
+2024-07-27,PINV-07-00882 TruEdge Consulting utilities expense,39143.26,0,MH,KA,false,true,utilities
+2024-08-03,PINV-08-00883 Global Tech Tools travel expense,16847.84,18,GJ,KA,true,true,travel
+2025-03-24,PINV-03-00884 Insight Marketing LLP purchase expense,40446.26,18,TS,KA,true,true,purchase
+2024-11-14,PINV-11-00885 Apex Packaging Works software expense,23141.77,18,GJ,KA,true,true,software
+2024-11-05,PINV-11-00886 Global Tech Tools purchase expense,12791.07,0,MH,KA,false,true,purchase
+2024-04-14,PINV-04-00887 Bharat Transport Co marketing expense,52637.16,18,DL,KA,true,true,marketing
+2024-06-04,PINV-06-00888 Mohan Industrial Gases tax payment expense,87413.22,18,MH,KA,true,true,tax_payment
+2024-11-03,PINV-11-00889 Omkar Repairs office expense expense,90225.32,12,TS,KA,true,true,office_expense
+2025-01-02,PINV-01-00890 TruEdge Consulting software expense,64517.58,18,TN,KA,true,true,software
+2024-04-05,PINV-04-00891 Kuber Warehousing office expense expense,78074.31,12,GJ,KA,false,true,office_expense
+2024-06-08,PINV-06-00892 Apex Packaging Works utilities expense,40698.43,12,KA,KA,true,true,utilities
+2024-05-29,PINV-05-00893 Global Tech Tools purchase expense,76923.6,18,GJ,KA,true,true,purchase
+2024-07-20,PINV-07-00894 LightSpeed Internet purchase expense,89422.66,18,KA,KA,true,true,purchase
+2024-09-17,PINV-09-00895 Jai Stationers software expense,79245.93,18,TS,KA,true,true,software
+2025-03-29,PINV-03-00896 Bharat Transport Co utilities expense,80948.99,0,GJ,KA,false,true,utilities
+2025-02-22,PINV-02-00897 Bharat Transport Co purchase expense,7472.76,18,MH,KA,true,true,purchase
+2024-05-03,PINV-05-00898 LightSpeed Internet software expense,35029.68,18,DL,KA,true,true,software
+2024-07-07,PINV-07-00899 QuickFix Maintenance office expense expense,44361.32,0,DL,KA,false,true,office_expense
+2024-11-21,PINV-11-00900 Kuber Warehousing software expense,4724.86,0,KA,KA,false,true,software
+2024-10-24,PINV-10-00901 QuickFix Maintenance rent expense,43333.17,12,GJ,KA,true,true,rent
+2024-08-13,PINV-08-00902 Bharat Transport Co purchase expense,4317.51,18,TS,KA,false,true,purchase
+2024-05-23,PINV-05-00903 Mohan Industrial Gases marketing expense,56667.88,18,TN,KA,true,true,marketing
+2025-03-26,PINV-03-00904 Delta Office Systems travel expense,44437.19,0,GJ,KA,false,true,travel
+2024-11-03,PINV-11-00905 Delta Office Systems purchase expense,83153.69,18,DL,KA,true,true,purchase
+2025-01-22,PINV-01-00906 QuickFix Maintenance purchase expense,37672.3,5,KA,KA,true,true,purchase
+2024-09-12,PINV-09-00907 Apex Packaging Works purchase expense,21922.5,18,DL,KA,true,true,purchase
+2025-02-24,PINV-02-00908 Royal Insurance Brokers purchase expense,32048.9,12,GJ,KA,true,true,purchase
+2024-10-07,PINV-10-00909 Himalaya Foods Supply software expense,23034.46,5,GJ,KA,true,true,software
+2024-06-23,PINV-06-00910 Jai Stationers purchase expense,15460.13,18,TS,KA,true,true,purchase
+2024-12-03,PINV-12-00911 Kuber Warehousing utilities expense,28875.02,0,TN,KA,false,true,utilities
+2024-11-06,PINV-11-00912 Royal Insurance Brokers utilities expense,1560.38,18,MH,KA,false,true,utilities
+2024-04-04,PINV-04-00913 Eco Power Utilities loan expense,14406.07,12,TN,KA,false,false,loan
+2024-11-07,PINV-11-00914 SmartCloud Software utilities expense,26635.99,18,DL,KA,true,true,utilities
+2025-03-30,PINV-03-00915 Bharat Transport Co purchase expense,44596.58,0,TN,KA,false,true,purchase
+2024-05-25,PINV-05-00916 Himalaya Foods Supply purchase expense,69763.86,18,KA,KA,false,true,purchase
+2024-12-31,PINV-12-00917 SmartCloud Software rent expense,61708.65,0,MH,KA,false,false,rent
+2025-01-10,PINV-01-00918 FirstFleet Logistics rent expense,40514.16,18,KA,KA,false,true,rent
+2024-06-01,PINV-06-00919 QuickFix Maintenance purchase expense,66413.81,12,GJ,KA,true,true,purchase
+2024-10-17,PINV-10-00920 Global Tech Tools purchase expense,1922.37,18,MH,KA,false,true,purchase
+2024-05-08,PINV-05-00921 Bharat Transport Co tax payment expense,28970.82,18,TN,KA,true,false,tax_payment
+2024-07-20,PINV-07-00922 Bharat Transport Co software expense,85345.41,18,TN,KA,true,true,software
+2024-11-27,PINV-11-00923 Delta Office Systems loan expense,66874.33,18,TS,KA,false,true,loan
+2025-01-22,PINV-01-00924 SmartCloud Software office expense expense,31767.27,0,DL,KA,false,true,office_expense
+2024-10-22,PINV-10-00925 Mohan Industrial Gases loan expense,5439.78,18,GJ,KA,true,false,loan
+2024-07-30,PINV-07-00926 Global Tech Tools purchase expense,2983.23,12,MH,KA,true,true,purchase
+2024-06-22,PINV-06-00927 Jai Stationers rent expense,38978.26,18,TN,KA,true,false,rent
+2025-02-14,PINV-02-00928 Global Tech Tools rent expense,74977.02,5,MH,KA,true,false,rent
+2025-02-14,PINV-02-00929 Apex Packaging Works travel expense,28047.34,12,TN,KA,true,true,travel
+2024-04-26,PINV-04-00930 Delta Office Systems purchase expense,59435.58,18,DL,KA,true,true,purchase
+2024-04-20,PINV-04-00931 Delta Office Systems purchase expense,79132.23,12,KA,KA,true,true,purchase
+2024-04-16,PINV-04-00932 QuickFix Maintenance purchase expense,56842.96,18,TS,KA,true,true,purchase
+2024-08-12,PINV-08-00933 Omkar Repairs marketing expense,73562.73,18,MH,KA,false,true,marketing
+2024-07-22,PINV-07-00934 Kuber Warehousing purchase expense,21886.57,18,KA,KA,true,true,purchase
+2025-02-02,PINV-02-00935 FirstFleet Logistics purchase expense,48088.62,18,DL,KA,true,true,purchase
+2024-10-14,PINV-10-00936 Himalaya Foods Supply rent expense,78641.86,18,DL,KA,false,false,rent
+2025-03-14,PINV-03-00937 Himalaya Foods Supply tax payment expense,18602.61,0,TS,KA,false,true,tax_payment
+2024-06-11,PINV-06-00938 Nexa Facility Services travel expense,44645.92,0,GJ,KA,false,true,travel
+2024-09-18,PINV-09-00939 Insight Marketing LLP marketing expense,17874.87,18,TS,KA,true,true,marketing
+2024-06-05,PINV-06-00940 Jai Stationers purchase expense,69567.46,18,TS,KA,true,true,purchase
+2024-06-12,PINV-06-00941 Apex Packaging Works utilities expense,9955.69,18,TN,KA,true,true,utilities
+2024-04-09,PINV-04-00942 Kuber Warehousing purchase expense,65364.84,0,MH,KA,false,true,purchase
+2024-12-10,PINV-12-00943 Delta Office Systems software expense,62343.26,18,TS,KA,false,true,software
+2024-07-11,PINV-07-00944 Himalaya Foods Supply purchase expense,66229.98,18,GJ,KA,true,true,purchase
+2025-03-31,PINV-03-00945 Global Tech Tools tax payment expense,6078.2,0,GJ,KA,false,false,tax_payment
+2025-01-30,PINV-01-00946 SmartCloud Software purchase expense,52938.63,18,DL,KA,true,true,purchase
+2024-12-29,PINV-12-00947 Bharat Transport Co purchase expense,95193.17,18,DL,KA,true,true,purchase
+2024-05-04,PINV-05-00948 Kuber Warehousing utilities expense,76172.12,18,KA,KA,true,true,utilities
+2025-02-13,PINV-02-00949 Himalaya Foods Supply purchase expense,22050.99,12,TN,KA,true,true,purchase
+2024-05-16,PINV-05-00950 Himalaya Foods Supply loan expense,51443.36,12,KA,KA,true,false,loan
+2024-06-11,PINV-06-00951 Eco Power Utilities office expense expense,6796.15,18,GJ,KA,false,true,office_expense
+2024-09-03,PINV-09-00952 Omkar Repairs marketing expense,65650.88,18,DL,KA,false,true,marketing
+2024-07-22,PINV-07-00953 Crystal Print House rent expense,8597.61,18,MH,KA,false,false,rent
+2025-03-12,PINV-03-00954 Himalaya Foods Supply purchase expense,50580.6,18,TN,KA,true,true,purchase
+2025-02-11,PINV-02-00955 QuickFix Maintenance purchase expense,47935.22,0,TS,KA,false,true,purchase
+2024-09-05,PINV-09-00956 Eco Power Utilities office expense expense,48323.68,18,DL,KA,true,true,office_expense
+2025-02-26,PINV-02-00957 Apex Packaging Works loan expense,69270.28,0,KA,KA,false,false,loan
+2024-12-17,PINV-12-00958 Pioneer Chemicals travel expense,13802.73,18,MH,KA,true,true,travel
+2024-10-27,PINV-10-00959 Himalaya Foods Supply travel expense,67154.22,18,KA,KA,true,true,travel
+2025-03-02,PINV-03-00960 Mohan Industrial Gases marketing expense,14730.77,18,MH,KA,false,true,marketing
+2025-01-29,PINV-01-00961 FirstFleet Logistics purchase expense,38394.9,18,GJ,KA,false,true,purchase
+2024-04-06,PINV-04-00962 SmartCloud Software food expense,57888.72,5,DL,KA,true,false,food
+2024-06-26,PINV-06-00963 FirstFleet Logistics utilities expense,68259.44,18,GJ,KA,true,true,utilities
+2024-04-01,PINV-04-00964 Omkar Repairs purchase expense,81356.15,18,KA,KA,true,true,purchase
+2024-06-09,PINV-06-00965 Kuber Warehousing software expense,47382.54,18,GJ,KA,true,true,software
+2024-12-10,PINV-12-00966 Mohan Industrial Gases purchase expense,20002.33,18,TS,KA,true,true,purchase
+2024-12-29,PINV-12-00967 Apex Packaging Works purchase expense,78166.61,18,DL,KA,false,true,purchase
+2024-06-03,PINV-06-00968 Omkar Repairs purchase expense,39736.67,18,GJ,KA,true,true,purchase
+2024-07-06,PINV-07-00969 SmartCloud Software purchase expense,50661.38,18,DL,KA,false,true,purchase
+2024-10-20,PINV-10-00970 LightSpeed Internet tax payment expense,45063.52,18,DL,KA,true,true,tax_payment
+2024-12-26,PINV-12-00971 Nexa Facility Services purchase expense,37119.15,18,TS,KA,true,true,purchase
+2025-02-03,PINV-02-00972 FirstFleet Logistics purchase expense,64563.02,18,TN,KA,true,true,purchase
+2025-01-13,PINV-01-00973 Pioneer Chemicals software expense,6339.38,18,KA,KA,true,true,software
+2024-06-12,PINV-06-00974 SmartCloud Software purchase expense,62465.04,0,TS,KA,false,true,purchase
+2024-04-07,PINV-04-00975 Crystal Print House office expense expense,60056.94,12,MH,KA,true,true,office_expense
+2025-01-18,PINV-01-00976 Apex Packaging Works software expense,30079.96,18,MH,KA,false,true,software
+2024-07-26,PINV-07-00977 Global Tech Tools software expense,11736.64,5,TN,KA,true,true,software
+2024-06-26,PINV-06-00978 Bharat Transport Co purchase expense,64596.81,18,MH,KA,true,true,purchase
+2024-08-12,PINV-08-00979 FirstFleet Logistics marketing expense,43290.86,18,GJ,KA,true,true,marketing
+2024-11-18,PINV-11-00980 LightSpeed Internet purchase expense,74073.69,18,KA,KA,true,true,purchase
+2025-03-24,PINV-03-00981 Kuber Warehousing utilities expense,10515.47,18,DL,KA,true,true,utilities
+2024-09-04,PINV-09-00982 Mohan Industrial Gases rent expense,37753.75,18,TN,KA,true,false,rent
+2024-08-09,PINV-08-00983 Bharat Transport Co food expense,50160.55,18,DL,KA,true,false,food
+2024-10-08,PINV-10-00984 Himalaya Foods Supply purchase expense,29171.49,18,GJ,KA,true,true,purchase
+2024-12-31,PINV-12-00985 Nexa Facility Services software expense,21057.0,18,DL,KA,true,true,software
+2024-12-16,PINV-12-00986 Global Tech Tools loan expense,86075.5,18,TS,KA,true,true,loan
+2025-01-06,PINV-01-00987 Nexa Facility Services office expense expense,83699.85,18,TN,KA,true,true,office_expense
+2024-09-01,PINV-09-00988 QuickFix Maintenance purchase expense,73324.71,5,TN,KA,false,true,purchase
+2024-10-04,PINV-10-00989 QuickFix Maintenance travel expense,90519.59,18,MH,KA,true,true,travel
+2025-02-28,PINV-02-00990 Nexa Facility Services loan expense,19505.53,18,MH,KA,false,false,loan
+2024-11-07,PINV-11-00991 TruEdge Consulting food expense,4548.03,18,DL,KA,true,false,food
+2024-09-11,PINV-09-00992 Bharat Transport Co software expense,60339.07,18,TN,KA,true,true,software
+2024-11-24,PINV-11-00993 FirstFleet Logistics food expense,39570.82,0,GJ,KA,false,true,food
+2024-07-10,PINV-07-00994 SmartCloud Software purchase expense,23890.01,18,MH,KA,true,true,purchase
+2025-01-28,PINV-01-00995 Kuber Warehousing purchase expense,35566.54,18,TS,KA,true,true,purchase
+2024-04-03,PINV-04-00996 Himalaya Foods Supply utilities expense,36539.31,0,DL,KA,false,true,utilities
+2024-05-27,PINV-05-00997 LightSpeed Internet purchase expense,59625.52,0,DL,KA,false,true,purchase
+2024-04-12,PINV-04-00998 FirstFleet Logistics rent expense,18774.35,0,TN,KA,false,false,rent
+2025-01-31,PINV-01-00999 Insight Marketing LLP loan expense,58564.98,18,GJ,KA,false,false,loan
+2024-09-17,PINV-09-01000 Global Tech Tools purchase expense,90970.06,18,MH,KA,true,true,purchase
+2025-03-03,PINV-03-01001 LightSpeed Internet utilities expense,82898.98,12,MH,KA,true,true,utilities
+2024-11-22,PINV-11-01002 Insight Marketing LLP purchase expense,57818.97,18,TS,KA,false,true,purchase
+2024-09-24,PINV-09-01003 Delta Office Systems food expense,50453.58,18,TS,KA,true,false,food
+2024-09-27,PINV-09-01004 LightSpeed Internet purchase expense,27080.76,18,KA,KA,true,true,purchase
+2025-02-04,PINV-02-01005 Crystal Print House utilities expense,8701.6,12,DL,KA,true,true,utilities
+2024-09-24,PINV-09-01006 LightSpeed Internet purchase expense,69511.26,18,TN,KA,true,true,purchase
+2024-06-09,PINV-06-01007 Pioneer Chemicals purchase expense,42525.36,18,TN,KA,true,true,purchase
+2024-08-07,PINV-08-01008 Mohan Industrial Gases purchase expense,85057.63,18,TN,KA,true,true,purchase
+2024-10-09,PINV-10-01009 Nexa Facility Services food expense,75298.52,18,KA,KA,true,false,food
+2024-06-28,PINV-06-01010 Nexa Facility Services purchase expense,11132.67,12,TS,KA,false,true,purchase
+2024-11-13,PINV-11-01011 Mohan Industrial Gases purchase expense,93665.8,18,MH,KA,true,true,purchase
+2024-05-13,PINV-05-01012 TruEdge Consulting tax payment expense,70780.86,5,DL,KA,true,false,tax_payment
+2024-05-08,PINV-05-01013 Nexa Facility Services food expense,32145.65,18,GJ,KA,true,false,food
+2025-01-28,PINV-01-01014 Royal Insurance Brokers purchase expense,91833.51,18,TN,KA,true,true,purchase
+2024-11-12,PINV-11-01015 Himalaya Foods Supply office expense expense,15717.8,0,DL,KA,false,true,office_expense
+2024-07-27,PINV-07-01016 QuickFix Maintenance marketing expense,5220.89,18,KA,KA,true,true,marketing
+2025-03-03,PINV-03-01017 Jai Stationers office expense expense,32147.12,0,TN,KA,false,true,office_expense
+2024-08-31,PINV-08-01018 LightSpeed Internet purchase expense,47539.48,18,MH,KA,false,true,purchase
+2024-05-25,PINV-05-01019 Himalaya Foods Supply purchase expense,77270.77,18,TN,KA,true,true,purchase
+2024-07-04,PINV-07-01020 TruEdge Consulting office expense expense,28957.53,0,TS,KA,false,true,office_expense
+2024-08-25,PINV-08-01021 Insight Marketing LLP purchase expense,72500.35,0,DL,KA,false,true,purchase
+2024-08-06,PINV-08-01022 Nexa Facility Services marketing expense,87255.23,12,KA,KA,true,true,marketing
+2025-03-18,PINV-03-01023 FirstFleet Logistics office expense expense,49240.67,18,KA,KA,true,true,office_expense
+2024-09-12,PINV-09-01024 Apex Packaging Works software expense,12757.23,18,TN,KA,true,true,software
+2025-02-04,PINV-02-01025 Eco Power Utilities software expense,35010.06,18,TN,KA,true,true,software
+2024-07-19,PINV-07-01026 FirstFleet Logistics utilities expense,15383.82,18,TS,KA,true,true,utilities
+2024-04-28,PINV-04-01027 QuickFix Maintenance utilities expense,16804.31,18,GJ,KA,true,true,utilities
+2024-08-05,PINV-08-01028 Mohan Industrial Gases utilities expense,28205.64,0,TN,KA,false,true,utilities
+2024-11-09,PINV-11-01029 Pioneer Chemicals purchase expense,12672.97,0,TN,KA,false,true,purchase
+2024-12-06,PINV-12-01030 Apex Packaging Works travel expense,81163.15,12,TS,KA,true,true,travel
+2024-05-12,PINV-05-01031 LightSpeed Internet marketing expense,24174.95,0,MH,KA,false,true,marketing
+2024-04-04,PINV-04-01032 Eco Power Utilities loan expense,77077.97,12,GJ,KA,true,false,loan
+2024-04-18,PINV-04-01033 Global Tech Tools food expense,33838.83,12,GJ,KA,true,false,food
+2024-10-22,PINV-10-01034 Omkar Repairs loan expense,55550.5,0,TS,KA,false,false,loan
+2024-07-15,PINV-07-01035 Insight Marketing LLP software expense,68599.77,18,KA,KA,true,true,software
+2024-12-31,PINV-12-01036 Eco Power Utilities purchase expense,51351.29,18,MH,KA,true,true,purchase
+2025-01-07,PINV-01-01037 Eco Power Utilities travel expense,74218.92,0,MH,KA,false,true,travel
+2024-08-04,PINV-08-01038 Insight Marketing LLP software expense,27220.27,0,KA,KA,false,true,software
+2024-07-30,PINV-07-01039 Royal Insurance Brokers office expense expense,71308.33,5,GJ,KA,true,true,office_expense
+2024-07-10,PINV-07-01040 Crystal Print House marketing expense,53129.55,18,TS,KA,true,true,marketing
+2024-10-28,PINV-10-01041 Himalaya Foods Supply software expense,46240.07,0,TS,KA,false,true,software
+2024-05-15,PINV-05-01042 Pioneer Chemicals rent expense,60769.41,18,TS,KA,true,false,rent
+2024-09-04,PINV-09-01043 Pioneer Chemicals travel expense,5020.85,5,KA,KA,true,true,travel
+2024-08-10,PINV-08-01044 Delta Office Systems loan expense,91729.2,18,DL,KA,true,false,loan
+2025-01-13,PINV-01-01045 LightSpeed Internet marketing expense,56022.86,0,GJ,KA,false,true,marketing
+2024-09-12,PINV-09-01046 Delta Office Systems purchase expense,53734.17,18,KA,KA,true,true,purchase
+2025-01-25,PINV-01-01047 Crystal Print House office expense expense,31470.03,18,DL,KA,true,true,office_expense
+2024-11-02,PINV-11-01048 TruEdge Consulting travel expense,35443.68,18,KA,KA,true,true,travel
+2025-02-02,PINV-02-01049 FirstFleet Logistics travel expense,24785.0,18,TS,KA,true,true,travel
+2024-05-30,PINV-05-01050 QuickFix Maintenance utilities expense,85117.09,18,DL,KA,true,true,utilities
+2024-10-23,PINV-10-01051 Delta Office Systems purchase expense,70685.38,18,TN,KA,false,true,purchase
+2025-01-04,PINV-01-01052 Himalaya Foods Supply rent expense,47748.18,12,GJ,KA,true,false,rent
+2024-12-01,PINV-12-01053 Jai Stationers tax payment expense,62326.96,0,TS,KA,false,false,tax_payment
+2024-08-26,PINV-08-01054 Mohan Industrial Gases rent expense,67189.06,12,TN,KA,false,false,rent
+2024-07-14,PINV-07-01055 Global Tech Tools purchase expense,10455.71,18,TN,KA,false,true,purchase
+2024-05-20,PINV-05-01056 Jai Stationers purchase expense,38457.28,18,MH,KA,true,true,purchase
+2024-05-28,PINV-05-01057 TruEdge Consulting software expense,36521.55,18,TN,KA,false,true,software
+2024-08-13,PINV-08-01058 Pioneer Chemicals purchase expense,30739.11,12,GJ,KA,true,true,purchase
+2024-10-16,PINV-10-01059 SmartCloud Software utilities expense,3576.37,18,GJ,KA,true,true,utilities
+2024-07-28,PINV-07-01060 Apex Packaging Works purchase expense,49515.29,18,TS,KA,true,true,purchase
+2024-07-26,PINV-07-01061 Mohan Industrial Gases food expense,9203.9,18,TS,KA,true,true,food
+2024-06-14,PINV-06-01062 TruEdge Consulting purchase expense,49132.9,18,DL,KA,true,true,purchase
+2025-02-01,PINV-02-01063 Himalaya Foods Supply purchase expense,23341.84,0,TS,KA,false,true,purchase
+2024-06-14,PINV-06-01064 SmartCloud Software purchase expense,18259.79,18,DL,KA,true,true,purchase
+2024-12-02,PINV-12-01065 Delta Office Systems utilities expense,46156.48,0,GJ,KA,false,true,utilities
+2024-10-23,PINV-10-01066 Bharat Transport Co marketing expense,68374.82,18,TS,KA,true,true,marketing
+2024-12-23,PINV-12-01067 Insight Marketing LLP tax payment expense,29584.04,18,KA,KA,true,false,tax_payment
+2024-09-09,PINV-09-01068 FirstFleet Logistics rent expense,42289.87,0,TN,KA,false,false,rent
+2024-09-19,PINV-09-01069 Nexa Facility Services software expense,56088.17,18,KA,KA,true,true,software
+2024-04-05,PINV-04-01070 Nexa Facility Services purchase expense,68306.09,5,TS,KA,false,true,purchase
+2024-09-08,PINV-09-01071 Nexa Facility Services marketing expense,35384.92,0,MH,KA,false,true,marketing
+2025-01-31,PINV-01-01072 Omkar Repairs rent expense,30731.04,12,TN,KA,false,false,rent
+2024-05-23,PINV-05-01073 Nexa Facility Services office expense expense,19461.58,18,GJ,KA,false,true,office_expense
+2024-05-07,PINV-05-01074 Crystal Print House utilities expense,53385.05,18,GJ,KA,true,true,utilities
+2025-02-26,PINV-02-01075 SmartCloud Software marketing expense,45647.63,0,TS,KA,false,true,marketing
+2024-04-25,PINV-04-01076 Delta Office Systems loan expense,2698.33,18,DL,KA,true,true,loan
+2024-07-06,PINV-07-01077 FirstFleet Logistics purchase expense,87813.09,5,KA,KA,true,true,purchase
+2024-08-02,PINV-08-01078 Crystal Print House travel expense,33990.66,18,KA,KA,true,true,travel
+2024-09-06,PINV-09-01079 TruEdge Consulting tax payment expense,60438.15,5,DL,KA,true,false,tax_payment
+2024-12-21,PINV-12-01080 Kuber Warehousing utilities expense,36488.01,12,MH,KA,false,true,utilities
+2025-03-15,PINV-03-01081 TruEdge Consulting marketing expense,83575.26,18,DL,KA,true,true,marketing
+2024-07-21,PINV-07-01082 TruEdge Consulting office expense expense,28196.73,0,DL,KA,false,true,office_expense
+2024-05-25,PINV-05-01083 Omkar Repairs tax payment expense,51496.67,0,KA,KA,false,false,tax_payment
+2025-02-17,PINV-02-01084 Insight Marketing LLP tax payment expense,76454.94,18,TS,KA,false,false,tax_payment
+2024-07-03,PINV-07-01085 Global Tech Tools software expense,59542.69,0,GJ,KA,false,true,software
+2025-02-01,PINV-02-01086 Insight Marketing LLP software expense,18622.79,0,DL,KA,false,true,software
+2024-09-10,PINV-09-01087 Himalaya Foods Supply purchase expense,74174.46,12,KA,KA,true,true,purchase
+2024-11-27,PINV-11-01088 TruEdge Consulting software expense,29497.16,18,KA,KA,false,true,software
+2025-02-28,PINV-02-01089 SmartCloud Software travel expense,31565.97,18,GJ,KA,false,true,travel
+2024-11-24,PINV-11-01090 Eco Power Utilities office expense expense,3890.86,18,GJ,KA,false,true,office_expense
+2025-02-04,PINV-02-01091 FirstFleet Logistics food expense,54501.09,18,KA,KA,false,false,food
+2024-11-01,PINV-11-01092 Mohan Industrial Gases utilities expense,18479.2,0,TN,KA,false,true,utilities
+2024-07-08,PINV-07-01093 Nexa Facility Services travel expense,14872.67,18,MH,KA,true,true,travel
+2025-03-28,PINV-03-01094 Jai Stationers rent expense,19240.8,18,MH,KA,true,false,rent
+2024-08-17,PINV-08-01095 Delta Office Systems office expense expense,79723.49,18,KA,KA,true,true,office_expense
+2024-10-28,PINV-10-01096 Himalaya Foods Supply purchase expense,27401.85,5,KA,KA,false,true,purchase
+2025-01-04,PINV-01-01097 Delta Office Systems office expense expense,26540.16,12,GJ,KA,true,true,office_expense
+2024-08-17,PINV-08-01098 Eco Power Utilities office expense expense,16974.6,18,DL,KA,true,true,office_expense
+2024-04-04,PINV-04-01099 TruEdge Consulting purchase expense,59990.04,18,KA,KA,false,true,purchase
+2025-03-09,PINV-03-01100 QuickFix Maintenance travel expense,29387.22,0,KA,KA,false,true,travel
+2025-02-08,PINV-02-01101 SmartCloud Software purchase expense,34339.36,12,GJ,KA,true,true,purchase
+2025-03-28,PINV-03-01102 Crystal Print House marketing expense,28009.21,18,MH,KA,false,true,marketing
+2024-09-01,PINV-09-01103 Kuber Warehousing rent expense,63078.99,18,TN,KA,true,true,rent
+2024-05-09,PINV-05-01104 Crystal Print House purchase expense,34989.28,5,MH,KA,true,true,purchase
+2025-01-21,PINV-01-01105 SmartCloud Software rent expense,81380.7,0,TN,KA,false,false,rent
+2024-11-08,PINV-11-01106 SmartCloud Software office expense expense,60741.3,18,GJ,KA,true,true,office_expense
+2024-09-25,PINV-09-01107 Himalaya Foods Supply purchase expense,54718.14,12,KA,KA,true,true,purchase
+2025-02-15,PINV-02-01108 Royal Insurance Brokers loan expense,57916.45,5,DL,KA,false,false,loan
+2024-06-04,PINV-06-01109 Insight Marketing LLP office expense expense,30493.44,18,TS,KA,true,true,office_expense
+2024-06-30,PINV-06-01110 QuickFix Maintenance food expense,17232.23,12,GJ,KA,false,false,food
+2025-02-04,PINV-02-01111 Himalaya Foods Supply rent expense,45704.08,12,GJ,KA,true,true,rent
+2024-10-13,PINV-10-01112 Nexa Facility Services marketing expense,4843.19,12,DL,KA,true,true,marketing
+2024-08-26,PINV-08-01113 FirstFleet Logistics purchase expense,15998.67,18,MH,KA,false,true,purchase
+2025-01-09,PINV-01-01114 Kuber Warehousing software expense,18312.16,18,KA,KA,false,true,software
+2025-01-21,PINV-01-01115 LightSpeed Internet purchase expense,48081.27,18,GJ,KA,false,true,purchase
+2025-02-13,PINV-02-01116 LightSpeed Internet office expense expense,78393.48,18,KA,KA,false,true,office_expense
+2024-08-06,PINV-08-01117 SmartCloud Software travel expense,87803.49,18,DL,KA,true,true,travel
+2024-07-17,PINV-07-01118 Kuber Warehousing office expense expense,47923.53,18,DL,KA,true,true,office_expense
+2024-11-21,PINV-11-01119 Delta Office Systems tax payment expense,1863.97,18,DL,KA,true,false,tax_payment
+2024-08-19,PINV-08-01120 Eco Power Utilities utilities expense,22405.76,18,DL,KA,true,true,utilities
+2025-02-07,PINV-02-01121 Mohan Industrial Gases office expense expense,44295.89,18,GJ,KA,true,true,office_expense
+2025-02-07,PINV-02-01122 SmartCloud Software purchase expense,59926.72,0,TS,KA,false,true,purchase
+2024-04-12,PINV-04-01123 Nexa Facility Services utilities expense,23060.26,0,KA,KA,false,true,utilities
+2024-05-12,PINV-05-01124 Apex Packaging Works rent expense,45077.64,5,TN,KA,false,true,rent
+2024-05-23,PINV-05-01125 Kuber Warehousing software expense,42831.72,18,KA,KA,true,true,software
+2025-03-01,PINV-03-01126 Kuber Warehousing purchase expense,43182.38,18,KA,KA,true,true,purchase
+2024-10-14,PINV-10-01127 Pioneer Chemicals office expense expense,84577.23,12,MH,KA,true,true,office_expense
+2024-08-24,PINV-08-01128 Global Tech Tools rent expense,75580.2,12,DL,KA,false,false,rent
+2024-04-10,PINV-04-01129 Insight Marketing LLP purchase expense,55310.75,18,TN,KA,false,true,purchase
+2025-03-29,PINV-03-01130 SmartCloud Software loan expense,31454.27,5,TS,KA,true,true,loan
+2024-08-14,PINV-08-01131 FirstFleet Logistics loan expense,48052.55,18,DL,KA,true,false,loan
+2024-11-15,PINV-11-01132 Delta Office Systems purchase expense,12098.45,0,TS,KA,false,true,purchase
+2024-08-02,PINV-08-01133 Royal Insurance Brokers purchase expense,49918.83,18,TN,KA,true,true,purchase
+2024-09-02,PINV-09-01134 QuickFix Maintenance rent expense,35664.6,0,DL,KA,false,false,rent
+2025-01-19,PINV-01-01135 Himalaya Foods Supply loan expense,56720.6,18,DL,KA,true,false,loan
+2024-12-19,PINV-12-01136 LightSpeed Internet purchase expense,9779.62,18,MH,KA,true,true,purchase
+2024-11-11,PINV-11-01137 Royal Insurance Brokers utilities expense,8244.16,18,TS,KA,false,true,utilities
+2024-07-16,PINV-07-01138 Apex Packaging Works loan expense,51225.36,18,TS,KA,true,true,loan
+2024-12-07,PINV-12-01139 Omkar Repairs software expense,40992.27,12,TN,KA,false,true,software
+2024-09-15,PINV-09-01140 Nexa Facility Services purchase expense,75317.74,18,DL,KA,true,true,purchase
+2025-03-15,PINV-03-01141 Jai Stationers purchase expense,34968.58,18,TN,KA,false,true,purchase
+2024-08-04,PINV-08-01142 Himalaya Foods Supply purchase expense,81899.73,0,DL,KA,false,true,purchase
+2024-11-12,PINV-11-01143 Nexa Facility Services purchase expense,74865.51,18,MH,KA,true,true,purchase
+2024-06-03,PINV-06-01144 Omkar Repairs purchase expense,39830.47,18,MH,KA,false,true,purchase
+2025-03-12,PINV-03-01145 Nexa Facility Services marketing expense,89869.07,12,DL,KA,true,true,marketing
+2025-03-23,PINV-03-01146 Bharat Transport Co utilities expense,47647.66,18,TN,KA,false,true,utilities
+2024-12-10,PINV-12-01147 Insight Marketing LLP loan expense,86326.72,18,TS,KA,true,false,loan
+2024-08-01,PINV-08-01148 Jai Stationers tax payment expense,15095.35,18,TS,KA,true,false,tax_payment
+2024-11-22,PINV-11-01149 Insight Marketing LLP marketing expense,81841.0,18,TN,KA,false,true,marketing
+2024-10-17,PINV-10-01150 Omkar Repairs software expense,3296.86,18,KA,KA,false,true,software
+2024-12-02,PINV-12-01151 Nexa Facility Services travel expense,51209.56,0,DL,KA,false,true,travel
+2024-05-16,PINV-05-01152 Crystal Print House purchase expense,21953.93,18,KA,KA,true,true,purchase
+2025-02-13,PINV-02-01153 SmartCloud Software purchase expense,61337.16,0,DL,KA,false,true,purchase
+2024-04-18,PINV-04-01154 Nexa Facility Services software expense,48857.72,12,DL,KA,true,true,software
+2024-08-13,PINV-08-01155 Kuber Warehousing purchase expense,80571.67,18,TN,KA,true,true,purchase
+2024-10-05,PINV-10-01156 Himalaya Foods Supply software expense,18883.06,5,TN,KA,true,true,software
+2024-11-07,PINV-11-01157 Bharat Transport Co office expense expense,67777.73,18,KA,KA,true,true,office_expense
+2024-08-12,PINV-08-01158 Omkar Repairs purchase expense,74279.91,18,TS,KA,true,true,purchase
+2024-08-04,PINV-08-01159 Jai Stationers utilities expense,37179.68,18,KA,KA,true,true,utilities
+2025-02-02,PINV-02-01160 TruEdge Consulting utilities expense,40880.82,18,KA,KA,true,true,utilities
+2024-05-15,PINV-05-01161 Royal Insurance Brokers purchase expense,51093.58,18,TN,KA,true,true,purchase
+2024-08-20,PINV-08-01162 Mohan Industrial Gases travel expense,30102.67,12,KA,KA,true,true,travel
+2024-12-18,PINV-12-01163 Nexa Facility Services utilities expense,29169.19,18,GJ,KA,true,true,utilities
+2024-10-28,PINV-10-01164 Mohan Industrial Gases office expense expense,83874.76,18,MH,KA,true,true,office_expense
+2025-03-29,PINV-03-01165 TruEdge Consulting purchase expense,13842.54,12,GJ,KA,true,true,purchase
+2025-01-26,PINV-01-01166 LightSpeed Internet purchase expense,8120.28,18,TS,KA,true,true,purchase
+2024-07-29,PINV-07-01167 Himalaya Foods Supply purchase expense,63237.66,5,DL,KA,true,true,purchase
+2024-04-09,PINV-04-01168 Kuber Warehousing purchase expense,25342.88,18,MH,KA,true,true,purchase
+2024-06-19,PINV-06-01169 Crystal Print House purchase expense,21643.31,12,TN,KA,true,true,purchase
+2024-10-10,PINV-10-01170 Bharat Transport Co purchase expense,82774.86,12,GJ,KA,true,true,purchase
+2024-05-17,PINV-05-01171 Insight Marketing LLP travel expense,34995.44,18,DL,KA,true,true,travel
+2024-09-02,PINV-09-01172 Eco Power Utilities purchase expense,25977.03,12,TS,KA,true,true,purchase
+2025-03-11,PINV-03-01173 FirstFleet Logistics marketing expense,45655.21,5,DL,KA,true,true,marketing
+2024-05-13,PINV-05-01174 Royal Insurance Brokers marketing expense,76051.88,18,DL,KA,true,true,marketing
+2024-12-11,PINV-12-01175 Pioneer Chemicals purchase expense,82433.58,5,KA,KA,false,true,purchase
+2024-12-15,PINV-12-01176 Global Tech Tools purchase expense,36435.64,12,TN,KA,true,true,purchase
+2024-09-10,PINV-09-01177 Royal Insurance Brokers tax payment expense,80882.59,12,DL,KA,false,false,tax_payment
+2025-02-21,PINV-02-01178 FirstFleet Logistics food expense,60975.56,18,GJ,KA,true,false,food
+2024-04-30,PINV-04-01179 SmartCloud Software utilities expense,57967.51,18,MH,KA,false,true,utilities
+2025-01-09,PINV-01-01180 Mohan Industrial Gases purchase expense,71550.37,18,KA,KA,false,true,purchase
+2024-10-10,PINV-10-01181 Omkar Repairs software expense,22689.13,18,KA,KA,true,true,software
+2025-01-26,PINV-01-01182 Himalaya Foods Supply purchase expense,57971.68,18,TS,KA,true,true,purchase
+2024-04-22,PINV-04-01183 Bharat Transport Co rent expense,7846.49,18,DL,KA,true,false,rent
+2024-06-05,PINV-06-01184 TruEdge Consulting rent expense,81746.91,5,DL,KA,true,false,rent
+2025-01-20,PINV-01-01185 Omkar Repairs food expense,68407.72,5,KA,KA,true,false,food
+2024-06-28,PINV-06-01186 Crystal Print House utilities expense,80855.99,5,KA,KA,true,true,utilities
+2024-08-30,PINV-08-01187 Mohan Industrial Gases purchase expense,30502.61,5,DL,KA,true,true,purchase
+2024-07-10,PINV-07-01188 Bharat Transport Co rent expense,5003.58,12,KA,KA,true,false,rent
+2024-11-17,PINV-11-01189 Omkar Repairs utilities expense,11285.44,18,TS,KA,true,true,utilities
+2024-10-26,PINV-10-01190 LightSpeed Internet office expense expense,73430.47,12,TN,KA,true,true,office_expense
+2025-03-29,PINV-03-01191 Nexa Facility Services purchase expense,28479.94,18,KA,KA,false,true,purchase
+2025-01-11,PINV-01-01192 FirstFleet Logistics office expense expense,35273.89,0,GJ,KA,false,true,office_expense
+2024-08-15,PINV-08-01193 Kuber Warehousing purchase expense,58555.73,18,TS,KA,false,true,purchase
+2024-05-23,PINV-05-01194 Apex Packaging Works software expense,59422.11,0,TS,KA,false,true,software
+2024-10-12,PINV-10-01195 TruEdge Consulting purchase expense,64364.7,0,TS,KA,false,true,purchase
+2024-12-26,PINV-12-01196 Eco Power Utilities purchase expense,76434.6,12,GJ,KA,true,true,purchase
+2024-06-12,PINV-06-01197 Nexa Facility Services tax payment expense,16440.93,18,DL,KA,true,true,tax_payment
+2025-02-21,PINV-02-01198 Mohan Industrial Gases purchase expense,84049.22,18,TN,KA,true,true,purchase
+2024-06-14,PINV-06-01199 Apex Packaging Works utilities expense,42812.51,18,TS,KA,false,true,utilities
+2024-05-15,PINV-05-01200 Apex Packaging Works purchase expense,12860.96,18,TS,KA,false,true,purchase
+2025-02-19,PINV-02-01201 LightSpeed Internet utilities expense,55927.61,18,TS,KA,true,true,utilities
+2024-07-13,PINV-07-01202 FirstFleet Logistics purchase expense,55283.55,0,DL,KA,false,true,purchase
+2025-01-12,PINV-01-01203 Kuber Warehousing office expense expense,26541.3,18,TN,KA,true,true,office_expense
+2024-06-02,PINV-06-01204 Eco Power Utilities office expense expense,29245.94,0,KA,KA,false,true,office_expense
+2024-09-17,PINV-09-01205 QuickFix Maintenance marketing expense,3133.1,18,TS,KA,false,true,marketing
+2024-12-21,PINV-12-01206 Mohan Industrial Gases purchase expense,28377.92,12,MH,KA,true,true,purchase
+2024-08-13,PINV-08-01207 Apex Packaging Works software expense,29541.71,12,TN,KA,true,true,software
+2024-10-22,PINV-10-01208 TruEdge Consulting rent expense,49768.12,0,GJ,KA,false,false,rent
+2025-01-25,PINV-01-01209 QuickFix Maintenance purchase expense,65899.16,12,KA,KA,true,true,purchase
+2024-10-17,PINV-10-01210 Kuber Warehousing office expense expense,76922.4,12,GJ,KA,true,true,office_expense
+2024-12-08,PINV-12-01211 QuickFix Maintenance utilities expense,73404.07,18,TN,KA,true,true,utilities
+2025-03-23,PINV-03-01212 TruEdge Consulting office expense expense,19386.26,5,KA,KA,true,true,office_expense
+2024-10-31,PINV-10-01213 Eco Power Utilities marketing expense,50774.25,0,KA,KA,false,true,marketing
+2024-07-09,PINV-07-01214 Royal Insurance Brokers software expense,49077.53,18,TS,KA,true,true,software
+2024-11-15,PINV-11-01215 Crystal Print House loan expense,22608.73,18,TS,KA,true,false,loan
+2024-08-10,PINV-08-01216 QuickFix Maintenance utilities expense,33321.13,18,MH,KA,true,true,utilities
+2025-01-17,PINV-01-01217 Jai Stationers purchase expense,75923.67,18,GJ,KA,true,true,purchase
+2024-04-25,PINV-04-01218 LightSpeed Internet purchase expense,56869.58,18,KA,KA,true,true,purchase
+2024-10-27,PINV-10-01219 Pioneer Chemicals purchase expense,48496.67,0,MH,KA,false,true,purchase
+2025-03-03,PINV-03-01220 Mohan Industrial Gases utilities expense,26715.22,18,GJ,KA,true,true,utilities
+2024-10-24,PINV-10-01221 QuickFix Maintenance food expense,80491.06,18,GJ,KA,true,false,food
+2024-06-25,PINV-06-01222 LightSpeed Internet loan expense,54298.78,18,GJ,KA,true,true,loan
+2024-06-24,PINV-06-01223 Royal Insurance Brokers marketing expense,12370.67,18,MH,KA,true,true,marketing
+2024-10-09,PINV-10-01224 Global Tech Tools purchase expense,52266.03,18,TS,KA,true,true,purchase
+2024-08-31,PINV-08-01225 Nexa Facility Services utilities expense,50384.25,18,TN,KA,true,true,utilities
+2024-08-21,PINV-08-01226 Kuber Warehousing tax payment expense,86924.07,5,GJ,KA,true,false,tax_payment
+2024-11-30,PINV-11-01227 Kuber Warehousing purchase expense,57237.33,5,TN,KA,true,true,purchase
+2024-09-13,PINV-09-01228 LightSpeed Internet office expense expense,60716.76,18,GJ,KA,true,true,office_expense
+2025-03-25,PINV-03-01229 TruEdge Consulting utilities expense,46640.99,18,TS,KA,true,true,utilities
+2024-05-03,PINV-05-01230 Jai Stationers rent expense,75557.63,12,DL,KA,false,false,rent
+2024-06-01,PINV-06-01231 Delta Office Systems loan expense,43382.45,18,TN,KA,true,false,loan
+2024-09-30,PINV-09-01232 Kuber Warehousing purchase expense,61536.3,12,KA,KA,true,true,purchase
+2025-02-08,PINV-02-01233 Mohan Industrial Gases travel expense,24909.14,18,KA,KA,true,true,travel
+2025-01-15,PINV-01-01234 Global Tech Tools software expense,16592.84,18,TN,KA,false,true,software
+2024-07-08,PINV-07-01235 Bharat Transport Co purchase expense,58334.34,18,MH,KA,true,true,purchase
+2024-06-28,PINV-06-01236 Insight Marketing LLP purchase expense,64831.4,18,MH,KA,false,true,purchase
+2024-09-04,PINV-09-01237 TruEdge Consulting purchase expense,53274.26,12,GJ,KA,true,true,purchase
+2024-08-09,PINV-08-01238 Nexa Facility Services office expense expense,8139.7,0,GJ,KA,false,true,office_expense
+2024-04-18,PINV-04-01239 Insight Marketing LLP purchase expense,81329.96,5,KA,KA,true,true,purchase
+2024-09-18,PINV-09-01240 Himalaya Foods Supply travel expense,71173.38,5,TN,KA,true,true,travel
+2024-12-05,PINV-12-01241 Delta Office Systems rent expense,24041.0,12,GJ,KA,false,false,rent
+2024-06-18,PINV-06-01242 Mohan Industrial Gases purchase expense,49330.81,18,TS,KA,true,true,purchase
+2024-10-24,PINV-10-01243 Eco Power Utilities utilities expense,29085.12,0,TS,KA,false,true,utilities
+2024-09-01,PINV-09-01244 TruEdge Consulting utilities expense,59095.24,0,DL,KA,false,true,utilities
+2024-10-27,PINV-10-01245 Omkar Repairs food expense,16601.01,18,MH,KA,true,false,food
+2024-05-14,PINV-05-01246 LightSpeed Internet rent expense,85446.78,18,GJ,KA,true,false,rent
+2024-08-04,PINV-08-01247 Apex Packaging Works office expense expense,87914.96,18,KA,KA,true,true,office_expense
+2024-06-21,PINV-06-01248 Mohan Industrial Gases purchase expense,89793.24,12,TN,KA,true,true,purchase
+2025-02-23,PINV-02-01249 QuickFix Maintenance purchase expense,1665.95,18,KA,KA,true,true,purchase
+2024-12-03,PINV-12-01250 Kuber Warehousing purchase expense,57045.82,18,KA,KA,true,true,purchase
+2025-02-05,PINV-02-01251 QuickFix Maintenance purchase expense,38035.25,18,TS,KA,true,true,purchase
+2025-03-19,PINV-03-01252 Insight Marketing LLP purchase expense,61143.45,18,MH,KA,true,true,purchase
+2025-03-11,PINV-03-01253 Delta Office Systems travel expense,52166.8,12,TS,KA,true,true,travel
+2024-08-04,PINV-08-01254 QuickFix Maintenance loan expense,54876.13,12,DL,KA,true,false,loan
+2024-10-12,PINV-10-01255 Kuber Warehousing utilities expense,2770.58,0,TS,KA,false,true,utilities
+2025-02-08,PINV-02-01256 Insight Marketing LLP office expense expense,64567.97,18,TN,KA,true,true,office_expense
+2024-12-31,PINV-12-01257 Pioneer Chemicals office expense expense,73253.2,0,MH,KA,false,true,office_expense
+2024-06-12,PINV-06-01258 Apex Packaging Works tax payment expense,52526.79,12,TS,KA,false,false,tax_payment
+2024-08-02,PINV-08-01259 Jai Stationers marketing expense,35126.72,12,KA,KA,true,true,marketing
+2024-04-27,PINV-04-01260 Bharat Transport Co purchase expense,65042.81,18,MH,KA,true,true,purchase
+2024-08-26,PINV-08-01261 TruEdge Consulting rent expense,7213.2,5,GJ,KA,false,false,rent
+2024-12-04,PINV-12-01262 Eco Power Utilities purchase expense,47723.22,18,TN,KA,true,true,purchase
+2024-08-09,PINV-08-01263 Delta Office Systems purchase expense,92046.8,12,DL,KA,true,true,purchase
+2024-05-19,PINV-05-01264 Mohan Industrial Gases utilities expense,38407.77,18,TS,KA,true,true,utilities
+2024-09-08,PINV-09-01265 Eco Power Utilities purchase expense,31931.01,0,GJ,KA,false,true,purchase
+2024-04-10,PINV-04-01266 SmartCloud Software loan expense,49472.08,18,DL,KA,true,true,loan
+2024-12-13,PINV-12-01267 Delta Office Systems office expense expense,14221.18,18,GJ,KA,false,true,office_expense
+2024-08-13,PINV-08-01268 Delta Office Systems loan expense,24983.63,18,TS,KA,true,false,loan
+2024-09-02,PINV-09-01269 Omkar Repairs purchase expense,9727.65,0,GJ,KA,false,true,purchase
+2024-11-14,PINV-11-01270 Delta Office Systems purchase expense,67613.0,18,TS,KA,true,true,purchase
+2024-08-04,PINV-08-01271 Jai Stationers purchase expense,31316.14,12,KA,KA,true,true,purchase
+2024-12-22,PINV-12-01272 Global Tech Tools utilities expense,68346.36,12,KA,KA,true,true,utilities
+2024-11-23,PINV-11-01273 Apex Packaging Works purchase expense,11380.83,18,DL,KA,true,true,purchase
+2025-02-10,PINV-02-01274 Apex Packaging Works office expense expense,9987.28,0,TN,KA,false,true,office_expense
+2024-11-22,PINV-11-01275 SmartCloud Software loan expense,4482.88,12,MH,KA,true,false,loan
+2024-12-27,PINV-12-01276 Kuber Warehousing purchase expense,76943.92,0,TS,KA,false,true,purchase
+2024-10-04,PINV-10-01277 SmartCloud Software tax payment expense,47262.95,5,TN,KA,false,false,tax_payment
+2024-10-23,PINV-10-01278 Himalaya Foods Supply software expense,37102.96,5,DL,KA,false,true,software
+2025-03-11,PINV-03-01279 LightSpeed Internet food expense,5912.79,18,GJ,KA,true,false,food
+2025-01-01,PINV-01-01280 Global Tech Tools purchase expense,19102.29,0,KA,KA,false,true,purchase
+2024-07-09,PINV-07-01281 TruEdge Consulting purchase expense,5767.28,12,DL,KA,true,true,purchase
+2024-06-24,PINV-06-01282 Pioneer Chemicals office expense expense,23834.09,18,TS,KA,true,true,office_expense
+2024-07-25,PINV-07-01283 Kuber Warehousing travel expense,57559.98,18,KA,KA,true,true,travel
+2025-03-22,PINV-03-01284 Insight Marketing LLP utilities expense,60161.15,0,TS,KA,false,true,utilities
+2024-04-06,PINV-04-01285 Bharat Transport Co marketing expense,23993.92,18,TS,KA,true,true,marketing
+2024-11-10,PINV-11-01286 LightSpeed Internet utilities expense,73795.62,5,DL,KA,true,true,utilities
+2024-07-02,PINV-07-01287 Nexa Facility Services purchase expense,69059.41,18,TS,KA,false,true,purchase
+2024-05-05,PINV-05-01288 Eco Power Utilities marketing expense,53141.23,18,GJ,KA,true,true,marketing
+2024-05-24,PINV-05-01289 Crystal Print House tax payment expense,81389.4,18,DL,KA,false,false,tax_payment
+2025-02-15,PINV-02-01290 FirstFleet Logistics purchase expense,32843.78,5,GJ,KA,false,true,purchase
+2024-12-07,PINV-12-01291 Royal Insurance Brokers utilities expense,71835.18,18,DL,KA,false,true,utilities
+2024-10-19,PINV-10-01292 Kuber Warehousing travel expense,60390.26,12,DL,KA,true,true,travel
+2025-03-25,PINV-03-01293 Global Tech Tools purchase expense,32764.76,18,KA,KA,true,true,purchase
+2024-05-27,PINV-05-01294 QuickFix Maintenance purchase expense,45808.71,18,TS,KA,false,true,purchase
+2024-09-23,PINV-09-01295 Crystal Print House purchase expense,16919.22,18,TS,KA,false,true,purchase
+2024-09-21,PINV-09-01296 Eco Power Utilities purchase expense,65499.55,18,TS,KA,true,true,purchase
+2025-01-29,PINV-01-01297 Global Tech Tools travel expense,43821.36,18,KA,KA,true,true,travel
+2024-12-31,PINV-12-01298 Insight Marketing LLP marketing expense,27142.73,18,MH,KA,true,true,marketing
+2024-04-15,PINV-04-01299 Crystal Print House purchase expense,21027.29,18,KA,KA,true,true,purchase
+2024-05-20,PINV-05-01300 Delta Office Systems purchase expense,19479.11,5,MH,KA,true,true,purchase
+2024-04-01,PINV-04-01301 QuickFix Maintenance utilities expense,92402.56,18,TN,KA,true,true,utilities
+2024-04-24,PINV-04-01302 SmartCloud Software purchase expense,67175.06,18,GJ,KA,true,true,purchase
+2024-07-31,PINV-07-01303 Omkar Repairs software expense,38317.19,18,TS,KA,true,true,software
+2024-12-04,PINV-12-01304 Crystal Print House office expense expense,9514.27,5,DL,KA,true,true,office_expense
+2025-01-05,PINV-01-01305 QuickFix Maintenance marketing expense,5973.52,12,GJ,KA,true,true,marketing
+2024-10-17,PINV-10-01306 SmartCloud Software purchase expense,74037.42,5,DL,KA,true,true,purchase
+2025-03-02,PINV-03-01307 Kuber Warehousing loan expense,41645.74,12,KA,KA,true,false,loan
+2024-10-23,PINV-10-01308 Bharat Transport Co purchase expense,75849.1,18,KA,KA,true,true,purchase
+2024-10-16,PINV-10-01309 Insight Marketing LLP loan expense,96864.39,18,TS,KA,true,false,loan
+2024-04-08,PINV-04-01310 Himalaya Foods Supply purchase expense,63477.02,12,GJ,KA,true,true,purchase
+2024-11-17,PINV-11-01311 Bharat Transport Co purchase expense,73550.94,0,KA,KA,false,true,purchase
+2024-07-06,PINV-07-01312 Mohan Industrial Gases rent expense,33987.58,0,MH,KA,false,false,rent
+2024-05-31,PINV-05-01313 Kuber Warehousing rent expense,22063.54,0,DL,KA,false,false,rent
+2024-06-27,PINV-06-01314 Mohan Industrial Gases loan expense,10676.24,0,KA,KA,false,true,loan
+2025-01-07,PINV-01-01315 QuickFix Maintenance travel expense,52281.84,18,GJ,KA,true,true,travel
+2024-07-28,PINV-07-01316 Global Tech Tools loan expense,23005.06,12,TS,KA,true,false,loan
+2025-02-13,PINV-02-01317 Crystal Print House purchase expense,21254.44,12,KA,KA,false,true,purchase
+2024-12-02,PINV-12-01318 Jai Stationers purchase expense,55208.91,12,TS,KA,true,true,purchase
+2024-09-24,PINV-09-01319 Delta Office Systems purchase expense,8430.08,5,KA,KA,true,true,purchase
+2024-06-17,PINV-06-01320 Royal Insurance Brokers purchase expense,28889.12,0,TS,KA,false,true,purchase
+2025-01-24,PINV-01-01321 Pioneer Chemicals utilities expense,19681.84,0,GJ,KA,false,true,utilities
+2024-11-19,PINV-11-01322 Delta Office Systems utilities expense,86161.6,18,MH,KA,true,true,utilities
+2024-04-17,PINV-04-01323 LightSpeed Internet software expense,7050.8,18,KA,KA,true,true,software
+2024-06-06,PINV-06-01324 Insight Marketing LLP marketing expense,1891.9,18,TN,KA,true,true,marketing
+2024-08-08,PINV-08-01325 Royal Insurance Brokers tax payment expense,63831.26,18,TN,KA,true,false,tax_payment
+2024-10-15,PINV-10-01326 Royal Insurance Brokers purchase expense,39207.11,18,TN,KA,false,true,purchase
+2024-11-24,PINV-11-01327 Nexa Facility Services marketing expense,24648.52,0,TS,KA,false,true,marketing
+2025-01-26,PINV-01-01328 Omkar Repairs office expense expense,24473.56,18,TN,KA,true,true,office_expense
+2024-07-31,PINV-07-01329 Bharat Transport Co purchase expense,52306.88,5,TS,KA,true,true,purchase
+2024-11-18,PINV-11-01330 Kuber Warehousing marketing expense,90029.61,18,DL,KA,true,true,marketing
+2024-05-30,PINV-05-01331 Apex Packaging Works purchase expense,51400.15,12,DL,KA,true,true,purchase
+2025-03-25,PINV-03-01332 Omkar Repairs food expense,11560.78,5,KA,KA,true,false,food
+2024-09-22,PINV-09-01333 Jai Stationers purchase expense,51006.65,0,DL,KA,false,true,purchase
+2025-01-22,PINV-01-01334 Jai Stationers tax payment expense,13021.72,18,GJ,KA,true,false,tax_payment
+2024-11-29,PINV-11-01335 Mohan Industrial Gases purchase expense,30085.44,18,TN,KA,true,true,purchase
+2024-09-22,PINV-09-01336 Omkar Repairs purchase expense,46498.87,18,TS,KA,true,true,purchase
+2025-01-21,PINV-01-01337 Global Tech Tools purchase expense,89875.86,12,MH,KA,true,true,purchase
+2025-01-22,PINV-01-01338 Apex Packaging Works office expense expense,65661.75,12,DL,KA,true,true,office_expense
+2024-10-31,PINV-10-01339 Apex Packaging Works marketing expense,56731.5,12,TS,KA,true,true,marketing
+2024-10-26,PINV-10-01340 Crystal Print House purchase expense,35538.48,0,KA,KA,false,true,purchase
+2025-02-14,PINV-02-01341 Omkar Repairs marketing expense,44829.33,18,KA,KA,true,true,marketing
+2025-03-01,PINV-03-01342 Global Tech Tools utilities expense,41589.39,18,TN,KA,true,true,utilities
+2024-11-26,PINV-11-01343 SmartCloud Software purchase expense,76449.11,18,TS,KA,true,true,purchase
+2024-05-14,PINV-05-01344 Bharat Transport Co rent expense,99148.59,18,TN,KA,true,false,rent
+2024-06-28,PINV-06-01345 FirstFleet Logistics office expense expense,46421.76,0,MH,KA,false,true,office_expense
+2024-08-26,PINV-08-01346 Global Tech Tools purchase expense,84114.97,5,MH,KA,true,true,purchase
+2024-07-20,PINV-07-01347 TruEdge Consulting utilities expense,25890.42,5,TN,KA,true,true,utilities
+2025-03-29,PINV-03-01348 Apex Packaging Works tax payment expense,32863.48,18,MH,KA,false,false,tax_payment
+2025-03-15,PINV-03-01349 Apex Packaging Works software expense,13593.59,12,GJ,KA,true,true,software
+2024-10-18,PINV-10-01350 Kuber Warehousing loan expense,10349.57,18,TS,KA,true,false,loan
+2024-04-25,PINV-04-01351 Bharat Transport Co loan expense,27610.48,18,DL,KA,true,true,loan
+2024-08-26,PINV-08-01352 Royal Insurance Brokers travel expense,25683.02,18,GJ,KA,true,true,travel
+2025-02-18,PINV-02-01353 QuickFix Maintenance loan expense,31544.82,12,GJ,KA,false,true,loan
+2024-04-04,PINV-04-01354 Kuber Warehousing purchase expense,76580.96,18,MH,KA,true,true,purchase
+2024-10-04,PINV-10-01355 Kuber Warehousing tax payment expense,73237.82,18,TS,KA,false,false,tax_payment
+2024-11-15,PINV-11-01356 Royal Insurance Brokers software expense,5573.4,18,MH,KA,true,true,software
+2024-06-26,PINV-06-01357 Delta Office Systems purchase expense,41468.9,0,KA,KA,false,true,purchase
+2025-02-13,PINV-02-01358 Kuber Warehousing utilities expense,78505.81,18,GJ,KA,false,true,utilities
+2025-03-05,PINV-03-01359 Eco Power Utilities utilities expense,53279.02,18,GJ,KA,true,true,utilities
+2024-12-11,PINV-12-01360 Global Tech Tools tax payment expense,26295.05,18,DL,KA,true,false,tax_payment
+2024-10-27,PINV-10-01361 FirstFleet Logistics utilities expense,77936.79,0,DL,KA,false,true,utilities
+2024-09-01,PINV-09-01362 Delta Office Systems travel expense,68153.67,5,GJ,KA,true,true,travel
+2024-04-04,PINV-04-01363 Pioneer Chemicals purchase expense,67191.85,12,TN,KA,true,true,purchase
+2024-09-07,PINV-09-01364 Kuber Warehousing office expense expense,3125.58,5,TS,KA,true,true,office_expense
+2025-03-27,PINV-03-01365 Apex Packaging Works purchase expense,37098.52,18,DL,KA,true,true,purchase
+2024-05-05,PINV-05-01366 Mohan Industrial Gases purchase expense,12721.58,18,KA,KA,false,true,purchase
+2024-04-29,PINV-04-01367 Insight Marketing LLP software expense,40289.98,0,KA,KA,false,true,software
+2024-05-21,PINV-05-01368 LightSpeed Internet purchase expense,57893.82,18,MH,KA,true,true,purchase
+2024-04-27,PINV-04-01369 Himalaya Foods Supply marketing expense,41531.39,12,DL,KA,false,true,marketing
+2024-08-28,PINV-08-01370 Royal Insurance Brokers rent expense,21357.26,18,TN,KA,true,false,rent
+2024-06-12,PINV-06-01371 Himalaya Foods Supply office expense expense,48326.62,5,TN,KA,true,true,office_expense
+2024-04-26,PINV-04-01372 Crystal Print House marketing expense,93118.58,12,MH,KA,true,true,marketing
+2024-10-23,PINV-10-01373 Pioneer Chemicals purchase expense,53975.32,18,KA,KA,true,true,purchase
+2025-02-12,PINV-02-01374 Omkar Repairs purchase expense,69142.47,12,TN,KA,true,true,purchase
+2025-02-06,PINV-02-01375 Pioneer Chemicals office expense expense,12020.81,0,MH,KA,false,true,office_expense
+2024-04-24,PINV-04-01376 Delta Office Systems marketing expense,64949.15,5,MH,KA,true,true,marketing
+2024-07-26,PINV-07-01377 Eco Power Utilities rent expense,1786.9,18,MH,KA,true,false,rent
+2024-12-01,PINV-12-01378 SmartCloud Software software expense,81286.13,5,TS,KA,true,true,software
+2024-10-08,PINV-10-01379 Kuber Warehousing tax payment expense,71786.24,0,KA,KA,false,false,tax_payment
+2024-08-23,PINV-08-01380 TruEdge Consulting purchase expense,67197.37,0,TN,KA,false,true,purchase
+2024-09-02,PINV-09-01381 Delta Office Systems rent expense,91869.18,18,MH,KA,true,true,rent
+2025-01-24,PINV-01-01382 Nexa Facility Services purchase expense,51588.11,0,GJ,KA,false,true,purchase
+2024-07-31,PINV-07-01383 Crystal Print House purchase expense,81016.96,18,TN,KA,false,true,purchase
+2024-11-17,PINV-11-01384 Himalaya Foods Supply loan expense,71453.56,18,DL,KA,true,false,loan
+2024-08-31,PINV-08-01385 Global Tech Tools office expense expense,75224.04,5,GJ,KA,false,true,office_expense
+2024-11-23,PINV-11-01386 QuickFix Maintenance utilities expense,87149.38,18,KA,KA,true,true,utilities
+2024-09-20,PINV-09-01387 Mohan Industrial Gases loan expense,23447.4,18,KA,KA,true,false,loan
+2024-06-20,PINV-06-01388 TruEdge Consulting marketing expense,68749.57,0,GJ,KA,false,true,marketing
+2025-02-26,PINV-02-01389 Apex Packaging Works office expense expense,40661.45,0,KA,KA,false,true,office_expense
+2025-02-15,PINV-02-01390 Apex Packaging Works food expense,2353.79,18,TN,KA,true,false,food
+2024-07-26,PINV-07-01391 Pioneer Chemicals software expense,17092.34,12,TS,KA,true,true,software
+2024-06-10,PINV-06-01392 Eco Power Utilities software expense,92670.38,18,GJ,KA,true,true,software
+2024-07-28,PINV-07-01393 Bharat Transport Co office expense expense,81435.57,0,TS,KA,false,true,office_expense
+2024-05-01,PINV-05-01394 Delta Office Systems office expense expense,21456.71,0,KA,KA,false,true,office_expense
+2024-11-22,PINV-11-01395 FirstFleet Logistics tax payment expense,86888.36,12,DL,KA,true,true,tax_payment
+2024-11-02,PINV-11-01396 SmartCloud Software rent expense,2165.84,0,GJ,KA,false,false,rent
+2024-07-24,PINV-07-01397 Global Tech Tools rent expense,98821.92,18,MH,KA,true,true,rent
+2024-06-20,PINV-06-01398 SmartCloud Software utilities expense,71118.36,5,DL,KA,true,true,utilities
+2025-02-10,PINV-02-01399 Nexa Facility Services office expense expense,49008.82,18,KA,KA,true,true,office_expense
+2024-09-28,PINV-09-01400 Himalaya Foods Supply marketing expense,15346.34,0,MH,KA,false,true,marketing
+2024-09-02,PINV-09-01401 Omkar Repairs food expense,29808.11,5,GJ,KA,true,false,food
+2025-01-14,PINV-01-01402 Apex Packaging Works utilities expense,64321.55,18,TN,KA,true,true,utilities
+2024-10-26,PINV-10-01403 Crystal Print House marketing expense,31190.57,18,TN,KA,true,true,marketing
+2024-08-06,PINV-08-01404 Kuber Warehousing purchase expense,5599.29,18,MH,KA,false,true,purchase
+2025-02-23,PINV-02-01405 Himalaya Foods Supply purchase expense,60616.96,18,TS,KA,true,true,purchase
+2024-05-02,PINV-05-01406 Nexa Facility Services travel expense,73526.15,12,MH,KA,false,true,travel
+2025-02-13,PINV-02-01407 Global Tech Tools purchase expense,51816.29,5,DL,KA,true,true,purchase
+2024-09-11,PINV-09-01408 Global Tech Tools food expense,73697.59,18,MH,KA,false,false,food
+2024-12-19,PINV-12-01409 Pioneer Chemicals utilities expense,41442.71,5,GJ,KA,true,true,utilities
+2024-05-21,PINV-05-01410 Himalaya Foods Supply purchase expense,24400.94,18,TS,KA,true,true,purchase
+2025-03-14,PINV-03-01411 Global Tech Tools purchase expense,43253.88,18,MH,KA,true,true,purchase
+2024-06-18,PINV-06-01412 Jai Stationers loan expense,3555.73,18,TS,KA,true,false,loan
+2024-11-21,PINV-11-01413 FirstFleet Logistics purchase expense,4956.12,5,TN,KA,false,true,purchase
+2024-04-25,PINV-04-01414 Eco Power Utilities purchase expense,9231.19,0,TS,KA,false,true,purchase
+2024-05-16,PINV-05-01415 LightSpeed Internet rent expense,81985.02,12,DL,KA,true,false,rent
+2025-02-19,PINV-02-01416 Bharat Transport Co purchase expense,58244.99,5,DL,KA,true,true,purchase
+2024-09-22,PINV-09-01417 Mohan Industrial Gases purchase expense,53210.46,0,DL,KA,false,true,purchase
+2024-05-15,PINV-05-01418 Eco Power Utilities purchase expense,69301.03,18,GJ,KA,false,true,purchase
+2024-05-09,PINV-05-01419 SmartCloud Software purchase expense,83093.87,5,DL,KA,false,true,purchase
+2024-04-11,PINV-04-01420 LightSpeed Internet food expense,61848.46,5,KA,KA,true,false,food
+2025-02-10,PINV-02-01421 Pioneer Chemicals purchase expense,86290.26,18,TN,KA,true,true,purchase
+2024-06-02,PINV-06-01422 Mohan Industrial Gases travel expense,85624.15,5,MH,KA,true,true,travel
+2024-08-21,PINV-08-01423 Nexa Facility Services purchase expense,43993.8,18,MH,KA,true,true,purchase
+2024-05-09,PINV-05-01424 Royal Insurance Brokers office expense expense,72228.71,18,MH,KA,true,true,office_expense
+2024-04-05,PINV-04-01425 Apex Packaging Works travel expense,32333.16,18,KA,KA,true,true,travel
+2024-09-08,PINV-09-01426 TruEdge Consulting utilities expense,77243.07,12,TN,KA,true,true,utilities
+2025-01-30,PINV-01-01427 Omkar Repairs travel expense,17109.22,0,TN,KA,false,true,travel
+2024-04-13,PINV-04-01428 QuickFix Maintenance purchase expense,5167.86,18,DL,KA,true,true,purchase
+2024-10-31,PINV-10-01429 Delta Office Systems marketing expense,60736.09,18,GJ,KA,true,true,marketing
+2024-12-25,PINV-12-01430 QuickFix Maintenance utilities expense,21897.25,18,TN,KA,true,true,utilities
+2025-03-03,PINV-03-01431 Delta Office Systems software expense,47279.01,5,GJ,KA,true,true,software
+2024-11-29,PINV-11-01432 Royal Insurance Brokers food expense,69689.76,0,GJ,KA,false,false,food
+2024-04-24,PINV-04-01433 LightSpeed Internet office expense expense,33195.63,18,GJ,KA,false,true,office_expense
+2024-12-31,PINV-12-01434 FirstFleet Logistics software expense,4275.84,5,MH,KA,true,true,software
+2024-12-06,PINV-12-01435 FirstFleet Logistics tax payment expense,98669.99,18,DL,KA,true,false,tax_payment
+2024-11-16,PINV-11-01436 Eco Power Utilities office expense expense,36193.99,18,TN,KA,true,true,office_expense
+2024-12-21,PINV-12-01437 Himalaya Foods Supply food expense,4261.71,18,TN,KA,true,false,food
+2025-02-04,PINV-02-01438 Omkar Repairs rent expense,60589.67,18,KA,KA,true,false,rent
+2025-02-23,PINV-02-01439 Insight Marketing LLP software expense,52835.72,12,KA,KA,true,true,software
+2024-08-12,PINV-08-01440 Mohan Industrial Gases utilities expense,94744.63,18,GJ,KA,true,true,utilities
+2024-10-31,PINV-10-01441 Omkar Repairs software expense,34801.84,18,KA,KA,true,true,software
+2024-05-14,PINV-05-01442 Nexa Facility Services purchase expense,36133.61,18,DL,KA,true,true,purchase
+2024-10-23,PINV-10-01443 Global Tech Tools rent expense,67295.97,5,TS,KA,true,true,rent
+2024-11-11,PINV-11-01444 Global Tech Tools utilities expense,61515.82,0,GJ,KA,false,true,utilities
+2024-09-25,PINV-09-01445 Nexa Facility Services purchase expense,25170.55,18,TN,KA,true,true,purchase
+2024-12-03,PINV-12-01446 Himalaya Foods Supply purchase expense,34566.69,5,TN,KA,true,true,purchase
+2024-05-26,PINV-05-01447 SmartCloud Software loan expense,12068.89,18,MH,KA,true,false,loan
+2024-04-07,PINV-04-01448 Delta Office Systems purchase expense,15111.01,18,DL,KA,true,true,purchase
+2024-09-20,PINV-09-01449 Kuber Warehousing purchase expense,29868.11,0,KA,KA,false,true,purchase
+2024-12-16,PINV-12-01450 Bharat Transport Co office expense expense,55857.72,18,TN,KA,true,true,office_expense
+2024-10-23,PINV-10-01451 Omkar Repairs purchase expense,14775.69,18,TN,KA,true,true,purchase
+2024-07-19,PINV-07-01452 Apex Packaging Works purchase expense,29311.02,18,TS,KA,true,true,purchase
+2024-05-01,PINV-05-01453 Apex Packaging Works purchase expense,19921.06,0,DL,KA,false,true,purchase
+2025-02-11,PINV-02-01454 Himalaya Foods Supply rent expense,97695.22,18,GJ,KA,true,false,rent
+2025-01-15,PINV-01-01455 Nexa Facility Services purchase expense,72167.25,12,GJ,KA,true,true,purchase
+2024-12-11,PINV-12-01456 Global Tech Tools software expense,80369.66,18,DL,KA,true,true,software
+2024-06-19,PINV-06-01457 Omkar Repairs loan expense,6922.53,18,MH,KA,true,false,loan
+2024-07-24,PINV-07-01458 Jai Stationers purchase expense,40426.59,12,KA,KA,false,true,purchase
+2024-07-04,PINV-07-01459 LightSpeed Internet purchase expense,54265.83,12,DL,KA,true,true,purchase
+2024-05-23,PINV-05-01460 QuickFix Maintenance marketing expense,73440.4,5,KA,KA,false,true,marketing
+2024-09-20,PINV-09-01461 Crystal Print House software expense,60667.65,18,MH,KA,false,true,software
+2024-07-21,PINV-07-01462 SmartCloud Software purchase expense,30479.28,18,TS,KA,true,true,purchase
+2025-02-09,PINV-02-01463 Bharat Transport Co utilities expense,19524.0,12,MH,KA,true,true,utilities
+2024-11-29,PINV-11-01464 Mohan Industrial Gases office expense expense,69104.28,18,DL,KA,false,true,office_expense
+2024-09-03,PINV-09-01465 Jai Stationers purchase expense,68176.71,0,GJ,KA,false,true,purchase
+2024-06-16,PINV-06-01466 Insight Marketing LLP utilities expense,20341.69,18,TN,KA,true,true,utilities
+2024-07-30,PINV-07-01467 Omkar Repairs purchase expense,22589.6,12,KA,KA,true,true,purchase
+2024-12-29,PINV-12-01468 Bharat Transport Co food expense,37070.14,12,DL,KA,true,false,food
+2024-06-02,PINV-06-01469 TruEdge Consulting loan expense,41836.24,18,TN,KA,true,false,loan
+2024-05-18,PINV-05-01470 QuickFix Maintenance utilities expense,70822.66,18,GJ,KA,false,true,utilities
+2024-06-04,PINV-06-01471 Kuber Warehousing marketing expense,63080.37,12,DL,KA,true,true,marketing
+2024-12-05,PINV-12-01472 Nexa Facility Services utilities expense,22321.89,18,KA,KA,true,true,utilities
+2024-07-22,PINV-07-01473 Insight Marketing LLP purchase expense,64520.83,0,KA,KA,false,true,purchase
+2025-01-13,PINV-01-01474 Delta Office Systems purchase expense,35215.15,18,TS,KA,true,true,purchase
+2024-07-28,PINV-07-01475 FirstFleet Logistics purchase expense,74430.66,0,DL,KA,false,true,purchase
+2024-09-07,PINV-09-01476 Omkar Repairs purchase expense,1471.98,12,KA,KA,true,true,purchase
+2024-10-15,PINV-10-01477 Omkar Repairs purchase expense,51187.14,18,KA,KA,true,true,purchase
+2024-04-12,PINV-04-01478 Global Tech Tools purchase expense,30839.01,18,DL,KA,false,true,purchase
+2024-09-09,PINV-09-01479 Pioneer Chemicals purchase expense,46677.64,18,TN,KA,true,true,purchase
+2025-02-02,PINV-02-01480 Insight Marketing LLP loan expense,27890.12,18,TN,KA,true,true,loan
+2024-08-14,PINV-08-01481 Insight Marketing LLP office expense expense,92498.76,18,KA,KA,true,true,office_expense
+2025-02-04,PINV-02-01482 Himalaya Foods Supply purchase expense,20370.03,0,GJ,KA,false,true,purchase
+2024-08-26,PINV-08-01483 Crystal Print House purchase expense,96687.94,18,TN,KA,true,true,purchase
+2024-04-09,PINV-04-01484 Himalaya Foods Supply purchase expense,46004.8,18,KA,KA,true,true,purchase
+2025-03-26,PINV-03-01485 Royal Insurance Brokers purchase expense,95153.24,18,TS,KA,true,true,purchase
+2024-04-19,PINV-04-01486 Crystal Print House purchase expense,41567.49,18,TN,KA,true,true,purchase
+2024-05-19,PINV-05-01487 FirstFleet Logistics purchase expense,37806.81,12,KA,KA,true,true,purchase
+2024-08-22,PINV-08-01488 Omkar Repairs purchase expense,47286.23,18,GJ,KA,true,true,purchase
+2024-10-11,PINV-10-01489 SmartCloud Software tax payment expense,51724.78,18,TS,KA,true,false,tax_payment
+2024-08-05,PINV-08-01490 Mohan Industrial Gases tax payment expense,5688.1,0,KA,KA,false,false,tax_payment
+2024-05-07,PINV-05-01491 Omkar Repairs utilities expense,86616.69,18,DL,KA,true,true,utilities
+2025-01-19,PINV-01-01492 Jai Stationers office expense expense,69570.18,18,TN,KA,false,true,office_expense
+2024-12-27,PINV-12-01493 Delta Office Systems purchase expense,45157.31,18,TN,KA,true,true,purchase
+2024-04-27,PINV-04-01494 Bharat Transport Co purchase expense,78456.36,0,DL,KA,false,true,purchase
+2024-05-15,PINV-05-01495 LightSpeed Internet purchase expense,45690.21,18,MH,KA,true,true,purchase
+2025-03-07,PINV-03-01496 QuickFix Maintenance purchase expense,41677.32,18,DL,KA,true,true,purchase
+2024-10-09,PINV-10-01497 FirstFleet Logistics purchase expense,48884.76,18,MH,KA,true,true,purchase
+2024-07-29,PINV-07-01498 LightSpeed Internet purchase expense,79703.88,0,GJ,KA,false,true,purchase
+2025-03-22,PINV-03-01499 SmartCloud Software utilities expense,39282.33,12,TS,KA,true,true,utilities
+2024-10-15,PINV-10-01500 Delta Office Systems rent expense,65452.73,18,TN,KA,true,false,rent
+2024-07-20,PINV-07-01501 SmartCloud Software marketing expense,70088.03,18,GJ,KA,true,true,marketing
+2024-12-10,PINV-12-01502 Eco Power Utilities rent expense,66922.39,5,GJ,KA,true,false,rent
+2024-10-10,PINV-10-01503 Kuber Warehousing rent expense,53301.32,5,TN,KA,false,false,rent
+2025-01-09,PINV-01-01504 Omkar Repairs office expense expense,7756.59,12,MH,KA,false,true,office_expense
+2024-08-19,PINV-08-01505 SmartCloud Software purchase expense,65315.89,0,TN,KA,false,true,purchase
+2024-11-12,PINV-11-01506 Bharat Transport Co travel expense,53829.69,12,MH,KA,true,true,travel
+2024-09-11,PINV-09-01507 Omkar Repairs office expense expense,61292.86,0,DL,KA,false,true,office_expense
+2024-04-13,PINV-04-01508 Mohan Industrial Gases food expense,52515.39,18,DL,KA,false,false,food
+2024-10-19,PINV-10-01509 Jai Stationers software expense,54330.29,18,KA,KA,true,true,software
+2024-05-23,PINV-05-01510 Jai Stationers office expense expense,33816.1,18,MH,KA,true,true,office_expense
+2025-02-01,PINV-02-01511 Himalaya Foods Supply purchase expense,59492.14,0,TS,KA,false,true,purchase
+2025-01-02,PINV-01-01512 Mohan Industrial Gases software expense,96827.07,18,MH,KA,true,true,software
+2025-02-04,PINV-02-01513 Bharat Transport Co purchase expense,15750.58,18,KA,KA,false,true,purchase
+2024-04-25,PINV-04-01514 Crystal Print House loan expense,12400.62,18,DL,KA,true,false,loan
+2024-11-04,PINV-11-01515 Crystal Print House software expense,46870.32,18,DL,KA,true,true,software
+2025-02-14,PINV-02-01516 QuickFix Maintenance purchase expense,86002.93,18,TS,KA,true,true,purchase
+2025-01-10,PINV-01-01517 QuickFix Maintenance purchase expense,53909.14,18,TN,KA,true,true,purchase
+2025-01-19,PINV-01-01518 TruEdge Consulting purchase expense,80819.37,18,GJ,KA,false,true,purchase
+2024-10-25,PINV-10-01519 Pioneer Chemicals purchase expense,22977.78,18,TS,KA,true,true,purchase
+2024-08-13,PINV-08-01520 QuickFix Maintenance purchase expense,94756.12,18,TS,KA,true,true,purchase
+2024-08-04,PINV-08-01521 Nexa Facility Services marketing expense,97276.83,18,KA,KA,true,true,marketing
+2025-02-05,PINV-02-01522 Eco Power Utilities purchase expense,84272.19,0,MH,KA,false,true,purchase
+2024-04-11,PINV-04-01523 Nexa Facility Services purchase expense,62142.3,0,DL,KA,false,true,purchase
+2024-06-02,PINV-06-01524 Pioneer Chemicals software expense,63453.69,18,KA,KA,true,true,software
+2024-06-19,PINV-06-01525 Global Tech Tools software expense,69673.44,18,MH,KA,true,true,software
+2024-11-03,PINV-11-01526 QuickFix Maintenance purchase expense,61684.73,18,TN,KA,true,true,purchase
+2024-11-09,PINV-11-01527 Insight Marketing LLP purchase expense,21086.63,5,KA,KA,true,true,purchase
+2025-01-18,PINV-01-01528 Himalaya Foods Supply office expense expense,12924.62,18,MH,KA,false,true,office_expense
+2025-02-20,PINV-02-01529 Mohan Industrial Gases tax payment expense,15848.65,18,GJ,KA,false,false,tax_payment
+2024-08-12,PINV-08-01530 TruEdge Consulting marketing expense,85038.21,18,MH,KA,true,true,marketing
+2024-09-08,PINV-09-01531 FirstFleet Logistics marketing expense,26855.2,18,GJ,KA,true,true,marketing
+2024-08-21,PINV-08-01532 Himalaya Foods Supply tax payment expense,43857.47,18,GJ,KA,true,false,tax_payment
+2024-05-28,PINV-05-01533 Delta Office Systems purchase expense,23423.9,18,DL,KA,true,true,purchase
+2024-04-13,PINV-04-01534 TruEdge Consulting food expense,48289.62,0,DL,KA,false,true,food
+2025-03-26,PINV-03-01535 LightSpeed Internet office expense expense,70066.41,18,TN,KA,true,true,office_expense
+2025-03-24,PINV-03-01536 FirstFleet Logistics loan expense,93286.29,18,GJ,KA,true,true,loan
+2024-05-21,PINV-05-01537 Eco Power Utilities purchase expense,81189.59,18,TN,KA,false,true,purchase
+2024-06-26,PINV-06-01538 Delta Office Systems software expense,96999.82,18,KA,KA,true,true,software
+2024-07-20,PINV-07-01539 Eco Power Utilities purchase expense,7272.17,18,MH,KA,false,true,purchase
+2025-02-13,PINV-02-01540 Kuber Warehousing software expense,57559.76,18,MH,KA,true,true,software
+2024-11-20,PINV-11-01541 SmartCloud Software purchase expense,83051.3,18,DL,KA,false,true,purchase
+2024-09-25,PINV-09-01542 Crystal Print House utilities expense,15857.89,18,DL,KA,true,true,utilities
+2025-03-16,PINV-03-01543 Crystal Print House purchase expense,22831.45,18,TN,KA,true,true,purchase
+2024-04-07,PINV-04-01544 Global Tech Tools food expense,96473.26,18,TN,KA,true,false,food
+2024-05-24,PINV-05-01545 Delta Office Systems purchase expense,25641.41,18,MH,KA,false,true,purchase
+2024-07-16,PINV-07-01546 Apex Packaging Works loan expense,31493.18,18,GJ,KA,false,false,loan
+2025-03-25,PINV-03-01547 Eco Power Utilities utilities expense,23499.13,5,MH,KA,true,true,utilities
+2024-12-18,PINV-12-01548 Omkar Repairs purchase expense,73644.66,18,KA,KA,false,true,purchase
+2024-11-28,PINV-11-01549 QuickFix Maintenance utilities expense,54553.51,0,TN,KA,false,true,utilities
+2024-09-28,PINV-09-01550 Jai Stationers utilities expense,1423.69,0,KA,KA,false,true,utilities
+2025-02-10,PINV-02-01551 Omkar Repairs marketing expense,15034.97,18,TS,KA,true,true,marketing
+2024-05-06,PINV-05-01552 Nexa Facility Services office expense expense,55204.21,5,MH,KA,true,true,office_expense
+2025-02-17,PINV-02-01553 Mohan Industrial Gases purchase expense,65613.15,5,DL,KA,true,true,purchase
+2024-05-17,PINV-05-01554 Apex Packaging Works purchase expense,8924.19,12,GJ,KA,true,true,purchase
+2024-09-03,PINV-09-01555 Royal Insurance Brokers loan expense,11995.23,18,KA,KA,false,false,loan
+2024-04-07,PINV-04-01556 Global Tech Tools software expense,14729.78,18,KA,KA,true,true,software
+2024-06-18,PINV-06-01557 QuickFix Maintenance purchase expense,20243.58,18,MH,KA,true,true,purchase
+2025-02-22,PINV-02-01558 Insight Marketing LLP purchase expense,81203.38,18,TN,KA,true,true,purchase
+2025-01-19,PINV-01-01559 Eco Power Utilities marketing expense,86898.13,18,TN,KA,true,true,marketing
+2025-03-30,PINV-03-01560 Mohan Industrial Gases purchase expense,90396.97,18,TN,KA,true,true,purchase
+2025-01-11,PINV-01-01561 Pioneer Chemicals food expense,22043.51,12,DL,KA,false,false,food
+2024-08-08,PINV-08-01562 Crystal Print House rent expense,42255.28,12,KA,KA,true,false,rent
+2025-03-18,PINV-03-01563 Royal Insurance Brokers purchase expense,34175.07,18,DL,KA,true,true,purchase
+2025-03-02,PINV-03-01564 Delta Office Systems utilities expense,55790.51,12,TS,KA,true,true,utilities
+2024-06-27,PINV-06-01565 QuickFix Maintenance purchase expense,9235.8,0,DL,KA,false,true,purchase
+2024-04-10,PINV-04-01566 TruEdge Consulting rent expense,58090.94,18,TS,KA,true,false,rent
+2024-07-09,PINV-07-01567 Delta Office Systems purchase expense,30421.35,5,MH,KA,true,true,purchase
+2025-03-23,PINV-03-01568 FirstFleet Logistics purchase expense,56066.66,18,GJ,KA,true,true,purchase
+2025-01-06,PINV-01-01569 Global Tech Tools rent expense,64302.37,18,TS,KA,true,true,rent
+2024-04-30,PINV-04-01570 Jai Stationers utilities expense,94210.68,18,TS,KA,true,true,utilities
+2024-07-11,PINV-07-01571 TruEdge Consulting software expense,8485.54,18,MH,KA,false,true,software
+2024-09-14,PINV-09-01572 Kuber Warehousing utilities expense,19371.06,18,GJ,KA,true,true,utilities
+2025-01-08,PINV-01-01573 Royal Insurance Brokers purchase expense,8109.82,0,GJ,KA,false,true,purchase
+2025-01-26,PINV-01-01574 Apex Packaging Works rent expense,77330.28,0,GJ,KA,false,true,rent
+2024-04-04,PINV-04-01575 SmartCloud Software travel expense,37382.03,18,DL,KA,false,true,travel
+2024-06-07,PINV-06-01576 FirstFleet Logistics office expense expense,37802.96,18,TS,KA,true,true,office_expense
+2024-08-30,PINV-08-01577 LightSpeed Internet office expense expense,28517.54,5,GJ,KA,false,true,office_expense
+2024-10-26,PINV-10-01578 Omkar Repairs purchase expense,52088.97,18,KA,KA,false,true,purchase
+2025-03-15,PINV-03-01579 Global Tech Tools loan expense,80274.11,18,DL,KA,true,false,loan
+2024-11-26,PINV-11-01580 Nexa Facility Services rent expense,26148.28,18,KA,KA,true,false,rent
+2024-10-17,PINV-10-01581 Apex Packaging Works utilities expense,72335.16,18,GJ,KA,false,true,utilities
+2024-11-24,PINV-11-01582 Bharat Transport Co loan expense,30415.24,0,KA,KA,false,false,loan
+2024-07-15,PINV-07-01583 Global Tech Tools software expense,78234.26,18,GJ,KA,true,true,software
+2024-07-10,PINV-07-01584 Insight Marketing LLP travel expense,8372.29,18,TS,KA,true,true,travel
+2025-01-21,PINV-01-01585 QuickFix Maintenance utilities expense,1789.32,18,TN,KA,false,true,utilities
+2024-08-22,PINV-08-01586 Mohan Industrial Gases marketing expense,75351.67,18,GJ,KA,true,true,marketing
+2025-02-04,PINV-02-01587 Pioneer Chemicals utilities expense,60192.06,18,TS,KA,true,true,utilities
+2024-09-16,PINV-09-01588 Mohan Industrial Gases rent expense,86090.45,18,TN,KA,true,false,rent
+2025-01-02,PINV-01-01589 QuickFix Maintenance office expense expense,15806.96,18,TS,KA,true,true,office_expense
+2025-01-13,PINV-01-01590 TruEdge Consulting utilities expense,11790.26,18,DL,KA,true,true,utilities
+2024-07-30,PINV-07-01591 SmartCloud Software travel expense,5486.33,18,GJ,KA,false,true,travel
+2024-04-05,PINV-04-01592 Apex Packaging Works travel expense,29555.14,18,GJ,KA,true,true,travel
+2025-03-01,PINV-03-01593 Jai Stationers loan expense,65540.66,12,DL,KA,true,false,loan
+2024-08-20,PINV-08-01594 Delta Office Systems marketing expense,34970.73,0,MH,KA,false,true,marketing
+2024-11-05,PINV-11-01595 Eco Power Utilities software expense,35368.79,18,DL,KA,true,true,software
+2024-11-18,PINV-11-01596 LightSpeed Internet rent expense,33965.73,0,MH,KA,false,false,rent
+2024-09-22,PINV-09-01597 SmartCloud Software office expense expense,92478.43,18,TS,KA,true,true,office_expense
+2025-02-21,PINV-02-01598 SmartCloud Software food expense,51980.29,18,DL,KA,false,true,food
+2024-12-16,PINV-12-01599 Kuber Warehousing travel expense,92580.41,18,TN,KA,true,true,travel
+2025-03-07,PINV-03-01600 Royal Insurance Brokers purchase expense,27130.24,18,DL,KA,false,true,purchase
+2025-03-13,PINV-03-01601 Bharat Transport Co utilities expense,18841.23,18,TS,KA,false,true,utilities
+2025-03-10,PINV-03-01602 Delta Office Systems tax payment expense,47465.46,18,TS,KA,true,true,tax_payment
+2025-02-21,PINV-02-01603 Global Tech Tools purchase expense,53693.84,0,GJ,KA,false,true,purchase
+2024-07-21,PINV-07-01604 Mohan Industrial Gases utilities expense,17739.71,0,DL,KA,false,true,utilities
+2024-08-23,PINV-08-01605 Apex Packaging Works purchase expense,52438.75,5,MH,KA,true,true,purchase
+2025-01-09,PINV-01-01606 Kuber Warehousing office expense expense,16894.65,0,MH,KA,false,true,office_expense
+2025-03-16,PINV-03-01607 Mohan Industrial Gases purchase expense,22192.19,5,TS,KA,true,true,purchase
+2024-09-17,PINV-09-01608 Delta Office Systems purchase expense,27371.24,18,MH,KA,true,true,purchase
+2024-06-11,PINV-06-01609 Eco Power Utilities purchase expense,8816.14,18,GJ,KA,true,true,purchase
+2024-09-16,PINV-09-01610 Bharat Transport Co utilities expense,32461.95,18,TN,KA,true,true,utilities
+2024-04-22,PINV-04-01611 Eco Power Utilities purchase expense,47917.54,18,TN,KA,true,true,purchase
+2024-09-06,PINV-09-01612 Insight Marketing LLP rent expense,48429.75,18,KA,KA,false,false,rent
+2024-06-21,PINV-06-01613 Delta Office Systems utilities expense,59568.51,5,TS,KA,true,true,utilities
+2024-06-15,PINV-06-01614 Pioneer Chemicals office expense expense,2826.99,18,KA,KA,true,true,office_expense
+2024-11-11,PINV-11-01615 Mohan Industrial Gases purchase expense,74047.64,5,GJ,KA,false,true,purchase
+2025-02-27,PINV-02-01616 Himalaya Foods Supply office expense expense,37476.79,18,TN,KA,true,true,office_expense
+2025-01-11,PINV-01-01617 LightSpeed Internet purchase expense,22708.94,0,DL,KA,false,true,purchase
+2025-01-23,PINV-01-01618 Kuber Warehousing purchase expense,22403.73,18,KA,KA,true,true,purchase
+2024-12-12,PINV-12-01619 Pioneer Chemicals utilities expense,80721.96,18,MH,KA,true,true,utilities
+2024-07-28,PINV-07-01620 Eco Power Utilities utilities expense,20370.7,18,KA,KA,true,true,utilities
+2024-08-13,PINV-08-01621 Nexa Facility Services purchase expense,59380.74,18,TN,KA,false,true,purchase
+2025-01-15,PINV-01-01622 Mohan Industrial Gases food expense,71185.24,18,GJ,KA,false,false,food
+2024-04-09,PINV-04-01623 FirstFleet Logistics rent expense,6721.44,5,TS,KA,true,true,rent
+2024-04-12,PINV-04-01624 Mohan Industrial Gases purchase expense,5087.19,18,TN,KA,true,true,purchase
+2024-04-13,PINV-04-01625 Crystal Print House rent expense,18487.68,18,MH,KA,true,false,rent
+2024-08-08,PINV-08-01626 Jai Stationers office expense expense,51407.31,18,KA,KA,false,true,office_expense
+2024-10-13,PINV-10-01627 FirstFleet Logistics food expense,20563.64,18,MH,KA,true,false,food
+2025-01-27,PINV-01-01628 Crystal Print House food expense,78284.67,5,KA,KA,false,false,food
+2024-04-02,PINV-04-01629 Kuber Warehousing purchase expense,14575.77,18,KA,KA,false,true,purchase
+2024-04-29,PINV-04-01630 Royal Insurance Brokers purchase expense,20739.95,0,TS,KA,false,true,purchase
+2024-08-22,PINV-08-01631 FirstFleet Logistics travel expense,25172.83,0,TN,KA,false,true,travel
+2025-01-03,PINV-01-01632 Royal Insurance Brokers marketing expense,75837.65,18,KA,KA,false,true,marketing
+2024-10-22,PINV-10-01633 Global Tech Tools purchase expense,52692.61,18,TS,KA,true,true,purchase
+2024-04-14,PINV-04-01634 Crystal Print House rent expense,87141.78,5,DL,KA,true,true,rent
+2024-10-30,PINV-10-01635 Nexa Facility Services software expense,12710.28,18,TN,KA,false,true,software
+2024-10-27,PINV-10-01636 Apex Packaging Works marketing expense,69904.09,18,TN,KA,true,true,marketing
+2024-08-14,PINV-08-01637 Omkar Repairs purchase expense,78029.17,18,MH,KA,false,true,purchase
+2024-10-03,PINV-10-01638 Omkar Repairs purchase expense,70128.2,18,GJ,KA,true,true,purchase
+2024-12-31,PINV-12-01639 Insight Marketing LLP purchase expense,59598.37,0,TN,KA,false,true,purchase
+2024-09-10,PINV-09-01640 Pioneer Chemicals travel expense,6642.79,18,MH,KA,true,true,travel
+2025-02-09,PINV-02-01641 QuickFix Maintenance utilities expense,92515.82,18,MH,KA,true,true,utilities
+2024-10-22,PINV-10-01642 QuickFix Maintenance purchase expense,44160.03,18,TN,KA,false,true,purchase
+2025-03-18,PINV-03-01643 Crystal Print House food expense,26844.76,18,MH,KA,true,false,food
+2024-12-09,PINV-12-01644 Crystal Print House office expense expense,4706.4,18,TS,KA,true,true,office_expense
+2024-10-21,PINV-10-01645 Royal Insurance Brokers utilities expense,7423.89,18,TS,KA,false,true,utilities
+2024-10-23,PINV-10-01646 Mohan Industrial Gases purchase expense,74101.4,18,TS,KA,false,true,purchase
+2024-05-03,PINV-05-01647 Eco Power Utilities travel expense,76416.11,18,DL,KA,false,true,travel
+2024-06-08,PINV-06-01648 Royal Insurance Brokers office expense expense,34087.37,5,KA,KA,true,true,office_expense
+2024-10-22,PINV-10-01649 Apex Packaging Works purchase expense,98035.96,18,DL,KA,true,true,purchase
+2025-01-10,PINV-01-01650 Apex Packaging Works utilities expense,60065.42,0,TS,KA,false,true,utilities
+2024-12-20,PINV-12-01651 Mohan Industrial Gases utilities expense,37708.31,18,TN,KA,true,true,utilities
+2025-02-27,PINV-02-01652 Delta Office Systems food expense,70503.46,0,TN,KA,false,false,food
+2025-01-06,PINV-01-01653 SmartCloud Software software expense,38923.4,18,TS,KA,true,true,software
+2024-08-29,PINV-08-01654 Nexa Facility Services purchase expense,82858.54,0,GJ,KA,false,true,purchase
+2024-04-01,PINV-04-01655 Bharat Transport Co office expense expense,10094.13,0,DL,KA,false,true,office_expense
+2024-04-15,PINV-04-01656 FirstFleet Logistics purchase expense,30363.71,0,TN,KA,false,true,purchase
+2024-06-23,PINV-06-01657 Himalaya Foods Supply food expense,4656.64,18,GJ,KA,true,false,food
+2024-11-27,PINV-11-01658 LightSpeed Internet marketing expense,48224.82,18,TS,KA,true,true,marketing
+2025-03-21,PINV-03-01659 Kuber Warehousing office expense expense,43170.85,18,TS,KA,true,true,office_expense
+2024-11-18,PINV-11-01660 Jai Stationers purchase expense,35684.12,18,TS,KA,true,true,purchase
+2025-03-15,PINV-03-01661 TruEdge Consulting loan expense,62204.56,12,DL,KA,true,false,loan
+2024-05-28,PINV-05-01662 LightSpeed Internet loan expense,25646.2,5,DL,KA,false,false,loan
+2024-05-18,PINV-05-01663 Global Tech Tools purchase expense,98648.54,18,TN,KA,true,true,purchase
+2024-11-03,PINV-11-01664 Mohan Industrial Gases food expense,69322.32,18,TS,KA,true,false,food
+2025-03-13,PINV-03-01665 Mohan Industrial Gases loan expense,45630.3,0,TN,KA,false,false,loan
+2024-09-02,PINV-09-01666 TruEdge Consulting office expense expense,52931.1,18,TN,KA,true,true,office_expense
+2024-12-21,PINV-12-01667 QuickFix Maintenance purchase expense,58809.63,12,MH,KA,true,true,purchase
+2024-09-20,PINV-09-01668 QuickFix Maintenance software expense,5579.98,12,DL,KA,true,true,software
+2024-08-14,PINV-08-01669 Kuber Warehousing purchase expense,56577.56,18,DL,KA,true,true,purchase
+2024-10-09,PINV-10-01670 Himalaya Foods Supply purchase expense,74257.66,18,KA,KA,true,true,purchase
+2024-05-17,PINV-05-01671 Bharat Transport Co marketing expense,68297.05,18,GJ,KA,false,true,marketing
+2024-08-07,PINV-08-01672 Nexa Facility Services office expense expense,61704.4,18,TS,KA,true,true,office_expense
+2024-09-12,PINV-09-01673 TruEdge Consulting purchase expense,21543.53,5,TN,KA,false,true,purchase
+2024-05-31,PINV-05-01674 QuickFix Maintenance office expense expense,56430.87,0,MH,KA,false,true,office_expense
+2025-02-28,PINV-02-01675 Insight Marketing LLP food expense,2238.13,18,MH,KA,true,true,food
+2025-03-03,PINV-03-01676 Nexa Facility Services purchase expense,92178.37,12,MH,KA,true,true,purchase
+2024-04-05,PINV-04-01677 Kuber Warehousing marketing expense,70438.44,12,GJ,KA,false,true,marketing
+2024-12-04,PINV-12-01678 Royal Insurance Brokers marketing expense,15349.38,18,DL,KA,true,true,marketing
+2024-11-27,PINV-11-01679 Insight Marketing LLP office expense expense,45602.95,18,DL,KA,true,true,office_expense
+2024-06-29,PINV-06-01680 SmartCloud Software purchase expense,11669.64,18,DL,KA,true,true,purchase
+2025-03-16,PINV-03-01681 Pioneer Chemicals rent expense,9386.45,18,TN,KA,true,false,rent
+2024-09-20,PINV-09-01682 Royal Insurance Brokers purchase expense,76486.03,12,MH,KA,true,true,purchase
+2024-11-03,PINV-11-01683 Omkar Repairs marketing expense,62691.79,18,TS,KA,true,true,marketing
+2025-02-11,PINV-02-01684 Omkar Repairs utilities expense,47003.91,18,DL,KA,true,true,utilities
+2024-08-21,PINV-08-01685 Kuber Warehousing utilities expense,64761.6,18,MH,KA,false,true,utilities
+2024-08-21,PINV-08-01686 Apex Packaging Works purchase expense,99816.99,18,GJ,KA,true,true,purchase
+2025-03-21,PINV-03-01687 Global Tech Tools software expense,1738.47,18,GJ,KA,true,true,software
+2024-11-09,PINV-11-01688 FirstFleet Logistics food expense,84249.68,12,DL,KA,false,false,food
+2024-10-10,PINV-10-01689 Himalaya Foods Supply utilities expense,14037.42,0,GJ,KA,false,true,utilities
+2024-08-25,PINV-08-01690 Jai Stationers travel expense,64504.3,5,TN,KA,true,true,travel
+2024-05-31,PINV-05-01691 Crystal Print House rent expense,80851.24,18,MH,KA,true,false,rent
+2024-05-02,PINV-05-01692 Omkar Repairs purchase expense,62060.48,18,DL,KA,true,true,purchase
+2024-07-28,PINV-07-01693 Delta Office Systems software expense,12138.94,0,DL,KA,false,true,software
+2024-08-02,PINV-08-01694 Himalaya Foods Supply purchase expense,96366.59,18,TS,KA,true,true,purchase
+2024-12-08,PINV-12-01695 Crystal Print House utilities expense,17430.37,18,DL,KA,true,true,utilities
+2024-11-01,PINV-11-01696 Global Tech Tools marketing expense,11812.65,18,MH,KA,true,true,marketing
+2025-01-04,PINV-01-01697 Apex Packaging Works utilities expense,56553.78,18,KA,KA,true,true,utilities
+2024-10-20,PINV-10-01698 Nexa Facility Services purchase expense,30963.3,18,GJ,KA,true,true,purchase
+2024-09-17,PINV-09-01699 QuickFix Maintenance software expense,39360.41,5,DL,KA,true,true,software
+2024-05-11,PINV-05-01700 QuickFix Maintenance rent expense,76448.72,5,MH,KA,true,false,rent
+2024-05-09,PINV-05-01701 FirstFleet Logistics marketing expense,54842.48,18,KA,KA,true,true,marketing
+2024-09-09,PINV-09-01702 TruEdge Consulting purchase expense,72093.47,18,DL,KA,true,true,purchase
+2024-06-29,PINV-06-01703 Royal Insurance Brokers utilities expense,62208.83,5,DL,KA,true,true,utilities
+2024-11-16,PINV-11-01704 Bharat Transport Co purchase expense,7840.52,0,TS,KA,false,true,purchase
+2024-06-25,PINV-06-01705 TruEdge Consulting utilities expense,39770.76,18,MH,KA,false,true,utilities
+2024-07-17,PINV-07-01706 FirstFleet Logistics marketing expense,39323.66,5,TN,KA,true,true,marketing
+2024-08-29,PINV-08-01707 Eco Power Utilities loan expense,75477.36,18,GJ,KA,true,false,loan
+2025-03-26,PINV-03-01708 Kuber Warehousing purchase expense,39979.99,0,KA,KA,false,true,purchase
+2024-08-03,PINV-08-01709 Eco Power Utilities purchase expense,49188.55,18,DL,KA,true,true,purchase
+2024-11-11,PINV-11-01710 Crystal Print House rent expense,16451.32,0,DL,KA,false,true,rent
+2025-02-21,PINV-02-01711 LightSpeed Internet tax payment expense,98186.75,18,MH,KA,true,false,tax_payment
+2024-09-23,PINV-09-01712 Nexa Facility Services purchase expense,12015.67,18,TN,KA,false,true,purchase
+2024-12-12,PINV-12-01713 Bharat Transport Co purchase expense,33222.84,12,GJ,KA,true,true,purchase
+2024-11-27,PINV-11-01714 Global Tech Tools purchase expense,39939.25,0,TS,KA,false,true,purchase
+2024-06-04,PINV-06-01715 FirstFleet Logistics utilities expense,69086.93,18,KA,KA,false,true,utilities
+2024-09-07,PINV-09-01716 FirstFleet Logistics loan expense,62107.59,0,DL,KA,false,false,loan
+2024-10-28,PINV-10-01717 QuickFix Maintenance office expense expense,58513.6,18,TN,KA,false,true,office_expense
+2024-11-21,PINV-11-01718 Bharat Transport Co purchase expense,41145.46,0,KA,KA,false,true,purchase
+2024-10-02,PINV-10-01719 SmartCloud Software travel expense,25123.99,18,TN,KA,false,true,travel
+2024-07-29,PINV-07-01720 QuickFix Maintenance software expense,87816.25,18,KA,KA,true,true,software
+2024-08-31,PINV-08-01721 Insight Marketing LLP utilities expense,27576.43,18,TN,KA,true,true,utilities
+2024-07-26,PINV-07-01722 Global Tech Tools purchase expense,72274.19,5,MH,KA,false,true,purchase
+2024-08-24,PINV-08-01723 Royal Insurance Brokers office expense expense,45010.03,12,KA,KA,true,true,office_expense
+2024-04-06,PINV-04-01724 Nexa Facility Services marketing expense,52733.66,5,GJ,KA,false,true,marketing
+2025-01-29,PINV-01-01725 Insight Marketing LLP rent expense,4557.92,18,GJ,KA,true,false,rent
+2024-09-13,PINV-09-01726 Global Tech Tools purchase expense,61402.83,0,MH,KA,false,true,purchase
+2025-01-20,PINV-01-01727 QuickFix Maintenance purchase expense,61648.35,0,KA,KA,false,true,purchase
+2024-10-10,PINV-10-01728 Eco Power Utilities utilities expense,38594.01,5,DL,KA,true,true,utilities
+2025-01-06,PINV-01-01729 Crystal Print House purchase expense,95024.12,18,MH,KA,true,true,purchase
+2024-07-15,PINV-07-01730 Omkar Repairs purchase expense,33659.84,18,MH,KA,true,true,purchase
+2025-02-20,PINV-02-01731 Omkar Repairs utilities expense,39815.65,18,TN,KA,false,true,utilities
+2024-10-05,PINV-10-01732 TruEdge Consulting travel expense,39972.58,18,TS,KA,false,true,travel
+2024-08-30,PINV-08-01733 LightSpeed Internet rent expense,33560.98,12,KA,KA,true,true,rent
+2024-09-23,PINV-09-01734 Kuber Warehousing marketing expense,56622.75,5,TS,KA,true,true,marketing
+2025-02-18,PINV-02-01735 Crystal Print House travel expense,31749.28,12,DL,KA,false,true,travel
+2024-05-09,PINV-05-01736 Royal Insurance Brokers purchase expense,16403.54,12,TS,KA,true,true,purchase
+2025-03-06,PINV-03-01737 LightSpeed Internet purchase expense,80173.47,18,GJ,KA,false,true,purchase
+2025-02-25,PINV-02-01738 QuickFix Maintenance purchase expense,40411.66,18,KA,KA,true,true,purchase
+2025-02-07,PINV-02-01739 FirstFleet Logistics purchase expense,38424.41,18,DL,KA,true,true,purchase
+2024-09-11,PINV-09-01740 Eco Power Utilities purchase expense,70727.4,5,TN,KA,true,true,purchase
+2025-02-17,PINV-02-01741 Mohan Industrial Gases loan expense,47221.98,18,GJ,KA,true,false,loan
+2024-06-12,PINV-06-01742 Jai Stationers rent expense,65385.51,5,TS,KA,true,false,rent
+2024-05-17,PINV-05-01743 FirstFleet Logistics food expense,94382.5,12,GJ,KA,true,false,food
+2024-07-12,PINV-07-01744 Nexa Facility Services purchase expense,79959.45,18,DL,KA,true,true,purchase
+2024-05-17,PINV-05-01745 FirstFleet Logistics loan expense,47430.56,0,TS,KA,false,false,loan
+2024-06-24,PINV-06-01746 LightSpeed Internet travel expense,54671.39,12,DL,KA,true,true,travel
+2024-12-01,PINV-12-01747 TruEdge Consulting marketing expense,68279.99,0,MH,KA,false,true,marketing
+2024-09-14,PINV-09-01748 Jai Stationers software expense,76623.72,0,KA,KA,false,true,software
+2024-07-14,PINV-07-01749 Jai Stationers food expense,20744.12,18,TN,KA,false,false,food
+2024-05-06,PINV-05-01750 Global Tech Tools purchase expense,63061.55,18,TN,KA,true,true,purchase
+2024-11-05,PINV-11-01751 Royal Insurance Brokers software expense,21246.35,5,KA,KA,false,true,software
+2024-05-30,PINV-05-01752 Eco Power Utilities purchase expense,8854.63,5,MH,KA,true,true,purchase
+2024-12-14,PINV-12-01753 Crystal Print House rent expense,25501.93,0,MH,KA,false,false,rent
+2025-02-11,PINV-02-01754 QuickFix Maintenance rent expense,46873.99,0,TN,KA,false,false,rent
+2025-03-13,PINV-03-01755 Nexa Facility Services purchase expense,16975.85,12,KA,KA,false,true,purchase
+2025-03-13,PINV-03-01756 SmartCloud Software marketing expense,14111.89,0,MH,KA,false,true,marketing
+2024-09-12,PINV-09-01757 Mohan Industrial Gases rent expense,70258.08,18,MH,KA,true,true,rent
+2024-11-07,PINV-11-01758 Mohan Industrial Gases utilities expense,97709.16,18,TS,KA,true,true,utilities
+2024-05-06,PINV-05-01759 Pioneer Chemicals purchase expense,22938.6,18,GJ,KA,true,true,purchase
+2024-05-18,PINV-05-01760 TruEdge Consulting purchase expense,76837.66,18,DL,KA,true,true,purchase
+2024-04-16,PINV-04-01761 Delta Office Systems purchase expense,15240.57,5,MH,KA,true,true,purchase
+2024-08-18,PINV-08-01762 Insight Marketing LLP office expense expense,96161.67,18,GJ,KA,true,true,office_expense
+2024-11-30,PINV-11-01763 Mohan Industrial Gases software expense,50455.69,18,TS,KA,true,true,software
+2024-06-18,PINV-06-01764 LightSpeed Internet food expense,16448.72,18,TS,KA,true,false,food
+2024-07-16,PINV-07-01765 Delta Office Systems software expense,56687.08,18,GJ,KA,false,true,software
+2024-05-10,PINV-05-01766 Crystal Print House office expense expense,75020.62,18,DL,KA,true,true,office_expense
+2025-03-20,PINV-03-01767 Omkar Repairs rent expense,95761.85,18,TN,KA,true,false,rent
+2024-07-15,PINV-07-01768 Bharat Transport Co travel expense,3661.65,18,GJ,KA,true,true,travel
+2024-08-22,PINV-08-01769 Mohan Industrial Gases marketing expense,97120.69,18,GJ,KA,true,true,marketing
+2024-08-04,PINV-08-01770 Eco Power Utilities rent expense,61975.02,5,TS,KA,true,false,rent
+2025-03-15,PINV-03-01771 Kuber Warehousing utilities expense,3414.67,0,KA,KA,false,true,utilities
+2024-08-19,PINV-08-01772 Bharat Transport Co utilities expense,17327.47,5,KA,KA,true,true,utilities
+2024-10-25,PINV-10-01773 Kuber Warehousing marketing expense,25766.19,18,GJ,KA,false,true,marketing
+2025-03-22,PINV-03-01774 QuickFix Maintenance utilities expense,65798.45,18,DL,KA,true,true,utilities
+2025-02-02,PINV-02-01775 Apex Packaging Works marketing expense,13111.39,18,DL,KA,false,true,marketing
+2025-01-03,PINV-01-01776 Eco Power Utilities office expense expense,34805.67,18,DL,KA,true,true,office_expense
+2024-05-28,PINV-05-01777 Global Tech Tools office expense expense,49477.88,0,KA,KA,false,true,office_expense
+2024-07-19,PINV-07-01778 Jai Stationers utilities expense,67339.7,5,GJ,KA,true,true,utilities
+2025-01-13,PINV-01-01779 Global Tech Tools utilities expense,40611.57,18,TS,KA,true,true,utilities
+2024-07-08,PINV-07-01780 Eco Power Utilities rent expense,4633.84,18,TN,KA,true,false,rent
+2024-10-04,PINV-10-01781 QuickFix Maintenance purchase expense,80480.01,18,TS,KA,true,true,purchase
+2024-12-02,PINV-12-01782 Insight Marketing LLP purchase expense,68724.04,5,TN,KA,true,true,purchase
+2024-07-26,PINV-07-01783 Delta Office Systems travel expense,17173.47,12,TN,KA,true,true,travel
+2024-04-20,PINV-04-01784 Delta Office Systems purchase expense,1897.65,18,TS,KA,true,true,purchase
+2024-08-16,PINV-08-01785 Insight Marketing LLP loan expense,18075.02,12,MH,KA,true,false,loan
+2025-03-26,PINV-03-01786 Mohan Industrial Gases marketing expense,46369.45,0,DL,KA,false,true,marketing
+2024-10-15,PINV-10-01787 Apex Packaging Works marketing expense,8943.84,18,MH,KA,true,true,marketing
+2024-10-22,PINV-10-01788 Apex Packaging Works loan expense,67913.93,12,DL,KA,true,true,loan
+2024-06-29,PINV-06-01789 Mohan Industrial Gases utilities expense,45831.97,5,MH,KA,true,true,utilities
+2024-12-12,PINV-12-01790 Omkar Repairs purchase expense,3906.51,12,TS,KA,true,true,purchase
+2024-08-18,PINV-08-01791 Kuber Warehousing purchase expense,54523.04,12,TN,KA,true,true,purchase
+2024-04-15,PINV-04-01792 Apex Packaging Works purchase expense,8426.33,0,TN,KA,false,true,purchase
+2025-02-24,PINV-02-01793 Eco Power Utilities purchase expense,81351.45,18,TN,KA,false,true,purchase
+2025-01-26,PINV-01-01794 Pioneer Chemicals marketing expense,69691.99,18,TS,KA,true,true,marketing
+2024-11-14,PINV-11-01795 Global Tech Tools software expense,54326.78,18,KA,KA,true,true,software
+2025-01-23,PINV-01-01796 Kuber Warehousing tax payment expense,2999.7,18,KA,KA,false,false,tax_payment
+2025-02-04,PINV-02-01797 SmartCloud Software purchase expense,91092.31,18,KA,KA,true,true,purchase
+2024-05-06,PINV-05-01798 Global Tech Tools software expense,22956.3,18,KA,KA,false,true,software
+2024-08-02,PINV-08-01799 Insight Marketing LLP tax payment expense,56986.13,18,TN,KA,true,false,tax_payment
+2024-11-24,PINV-11-01800 Bharat Transport Co purchase expense,69117.46,18,DL,KA,false,true,purchase
