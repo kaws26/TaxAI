@@ -16,7 +16,9 @@ Managing taxes in India can be complicated due to:
 * Numerous deduction sections
 * Compliance requirements
 * Financial document handling
-
+<p align="center">
+  <img src="https://res.cloudinary.com/dzffxmfsu/image/upload/v1784311334/ChatGPT_Image_Jul_16_2026_12_17_04_AM_zdnktz.png" alt="TaxAI India Preview" width="800"/>
+</p>
 ## 🎥 Demo Video
 
 👉 **Watch Demo:**
